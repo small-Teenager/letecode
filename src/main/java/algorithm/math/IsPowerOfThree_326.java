@@ -12,7 +12,7 @@ public class IsPowerOfThree_326 {
      * @param n
      * @return
      */
-    static public boolean isPowerOfThree(int n) {
+    public boolean isPowerOfThree(int n) {
         double num = Math.log(n) / Math.log(3);
         if (num - (int) num == 0) {
             return true;
@@ -23,5 +23,17 @@ public class IsPowerOfThree_326 {
         }
         return false;
     }
-
+    /**
+     * 优化method1
+     * Math.log10(n)与Math.log(n)在java中还是有区别的
+     *
+     * @param n
+     * @return
+     */
+    public boolean isPowerOfThree2(int n) {
+        double a = Math.log10(n);
+        double b = Math.log10(3);
+        double res = a / b;
+        return (res - (int) (res)) == 0;
+    }
 }
