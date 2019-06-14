@@ -2,9 +2,10 @@ package problems.algorithm.array;
 
 /**
  * @author search
- * @version ´´½¨Ê±¼ä£º2018Äê4ÔÂ23ÈÕ ÏÂÎç3:59:07 ÀàËµÃ÷ :ÒÆ³ıÔªËØ
+ * @version åˆ›å»ºæ—¶é—´ï¼š2018å¹´4æœˆ23æ—¥ ä¸‹åˆ3:59:07 ç±»è¯´æ˜ :ç§»é™¤å…ƒç´ 
  */
 public class RemoveElement_27 {
+	//v1
 	public int removeElement_27(int[] nums, int val) {
 		// if(nums==null||nums.length==0) return 0;
 		int i = 0;
@@ -17,5 +18,14 @@ public class RemoveElement_27 {
 			}
 		}
 		return i;
+	}
+	//v2
+	public int removeElementV2(int[] nums, int val) {
+		int count = 0;
+		for (int i = 0; i < nums.length; i++)
+			if (nums[i] != val)
+				nums[count++] = nums[i];
+
+		return count;
 	}
 }
