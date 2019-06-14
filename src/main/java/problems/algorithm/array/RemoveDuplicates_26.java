@@ -2,26 +2,40 @@ package problems.algorithm.array;
 
 /**
  * @author search
- * @version ´´½¨Ê±¼ä£º2018Äê4ÔÂ23ÈÕ ÏÂÎç4:05:04 ÀàËµÃ÷ : É¾³ıÅÅĞòÊı×éÖĞµÄÖØ¸´Ïî
+ * @version åˆ›å»ºæ—¶é—´ï¼š2018å¹´4æœˆ23æ—¥ ä¸‹åˆ4:05:04 ç±»è¯´æ˜ : åˆ é™¤æ’åºæ•°ç»„ä¸­çš„é‡å¤é¡¹
  */
 public class RemoveDuplicates_26 {
 
+	//v1
 	public int removeDuplicates(int[] nums) {
 		if (nums == null || nums.length == 0)
 			return 0;
-		// ÅĞ¶ÏÎŞÊäÈë
-		int number = 0;// ±ê¼Ç¼ÆÊı
+		// åˆ¤æ–­æ— è¾“å…¥
+		int number = 0;// æ ‡è®°è®¡æ•°
 		for (int i = 0; i < nums.length; i++) {
 			if (nums[i] != nums[number]) {
 				number++;
 				nums[number] = nums[i];
 			}
 		}
-		number += 1; // ±ê¼Ç+1¼´ÎªÊı×Ö¸öÊı
+		number += 1; // æ ‡è®°+1å³ä¸ºæ•°å­—ä¸ªæ•°
 		return number;
 	}
-
+	//v2
 	public int removeDuplicates2(int[] nums) {
+		if (nums.length == 0)
+			return 0;
+		int i = 0;
+		for (int j = 1; j < nums.length; j++) {
+			if (nums[j] != nums[i]) {
+				i++;
+				nums[i] = nums[j];
+			}
+		}
+		return i + 1;
+	}
+	//v3
+	public int removeDuplicates3(int[] nums) {
 		if (nums.length == 0)
 			return 0;
 		int i = 0;
