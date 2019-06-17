@@ -30,4 +30,21 @@ public class IsPalindrome_125 {
 		}
 		return true;
 	}
+	
+	//用两个指针，分别指向字符串头和字符串尾，一个向前走，一个向后面走
+	 public boolean isPalindromeV3(String s) {
+	        if (s == null) return false;
+	        if (s.length() == 0) return true;
+	        int i = 0;
+	        int j = s.length() - 1;
+	        while (i < j) {
+	            while (i < j && !Character.isLetterOrDigit(s.charAt(i))) i++;
+	            while (i < j && !Character.isLetterOrDigit(s.charAt(j))) j--;
+	            if (Character.toLowerCase(s.charAt(i)) != Character.toLowerCase(s.charAt(j))) return false;
+	            i++;
+	            j--;
+	        }
+	        return true;
+	    }
+
 }
