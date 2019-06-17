@@ -3,7 +3,7 @@ package problems.algorithm.array;
  * 
  * @author Search 75. 颜色分类
  */
-public class CanPlaceFlowers_605 {
+public class SortColors_75 {
 
     //1 常规排序算法
     //2 计数排序
