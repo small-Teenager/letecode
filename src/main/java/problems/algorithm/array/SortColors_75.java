@@ -1,26 +1,51 @@
 package problems.algorithm.array;
+
 /**
  * 
- * @author Search 75. é¢œè‰²åˆ†ç±»
+ * @author Search 75. ÑÕÉ«·ÖÀà
  */
 public class SortColors_75 {
 
-    //1 å¸¸è§„æ’åºç®—æ³•
-    //2 è®¡æ•°æ’åº
-	 public void sortColors(int[] nums) {
+	// 1 ³£¹æÅÅĞòËã·¨
+	// 2 ¼ÆÊıÅÅĞò
+	public void sortColors(int[] nums) {
 
-        int[] count = {0, 0, 0};    // å­˜æ”¾0, 1, 2ä¸‰ä¸ªå…ƒç´ çš„é¢‘ç‡
-        for(int i = 0 ; i < nums.length ; i ++){
-            assert nums[i] >= 0 && nums[i] <= 2;
-            count[nums[i]] ++;
+		int[] count = { 0, 0, 0 }; // ´æ·Å0, 1, 2Èı¸öÔªËØµÄÆµÂÊ
+		for (int i = 0; i < nums.length; i++) {
+			assert nums[i] >= 0 && nums[i] <= 2;
+			count[nums[i]]++;
+		}
+
+		int index = 0;
+		for (int i = 0; i < count[0]; i++)
+			nums[index++] = 0;
+		for (int i = 0; i < count[1]; i++)
+			nums[index++] = 1;
+		for (int i = 0; i < count[2]; i++)
+			nums[index++] = 2;
+	}
+	
+	//v2 ÈıÂ·¿ìÅÅ   Ò»´Î±éÀú£¬Èç¹ûÊÇ0£¬ÔòÒÆ¶¯µ½±íÍ·£¬Èç¹ûÊÇ2£¬ÔòÒÆ¶¯µ½±íÎ²£¬²»ÓÃ¿¼ÂÇ1
+	public void sortColorsV2(int[] nums) {
+
+        int zero = -1;          // [0...zero] == 0
+        int two = nums.length;  // [two...n-1] == 2
+        for(int i = 0 ; i < two ; ){
+            if(nums[i] == 1)
+                i ++;
+            else if (nums[i] == 2)
+                swap(nums, i, --two);
+            else{ // nums[i] == 0
+                assert nums[i] == 0;
+                swap(nums, ++zero, i++);
+            }
         }
-
-        int index = 0;
-        for(int i = 0 ; i < count[0] ; i ++)
-            nums[index++] = 0;
-        for(int i = 0 ; i < count[1] ; i ++)
-            nums[index++] = 1;
-        for(int i = 0 ; i < count[2] ; i ++)
-            nums[index++] = 2;
     }
+
+    private void swap(int[] nums, int i, int j){
+        int t = nums[i];
+        nums[i]= nums[j];
+        nums[j] = t;
+    }
+
 }
