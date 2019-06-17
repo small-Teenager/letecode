@@ -4,7 +4,7 @@ package problems.algorithm.string;
  * @author search
  * @version 创建时间：2018年4月23日 下午4:54:36 类说明 :344. 反转字符串
  */
-public class ReverseString_334 {
+public class ReverseString_344 {
 
 	public String reverseString(String s) {
 		if (s == null)
@@ -18,17 +18,16 @@ public class ReverseString_334 {
 		return sb.toString();
 	}
 
-	public String reverseString2(String s) {
-		char[] word = s.toCharArray();
-		int i = 0;
-		int j = s.length() - 1;
-		while (i < j) {
-			char temp = word[i];
-			word[i] = word[j];
-			word[j] = temp;
-			i++;
-			j--;
+	//v2 交换位置
+	public void reverseString(char[] s) {
+		if (s.length <= 1) {
+			return;
 		}
-		return new String(word);
+		int i = 0, j = s.length - 1;
+		while (i < j) {
+			char c = s[i];
+			s[i++] = s[j];
+			s[j--] = c;
+		}
 	}
 }
