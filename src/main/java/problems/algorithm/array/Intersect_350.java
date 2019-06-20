@@ -10,6 +10,7 @@ import java.util.Map;
  * @author Search yaodong199@icloud.com 350. 两个数组的交集II
  */
 public class Intersect_350 {
+
 	public int[] intersect(int[] nums1, int[] nums2) {
 		if (nums1 == null || nums1.length == 0) {
 			return nums1;
@@ -35,4 +36,5 @@ public class Intersect_350 {
 		}
 		return res;
 	}
+
 }
