@@ -9,6 +9,7 @@ import java.util.Arrays;
  */
 public class ThreeSumClosest_16 {
 
+	//v1排序  然后遍历, 然后内部使用双指针
 	public int threeSumClosest(int[] num, int target) {
 		if (num == null || num.length < 3)
 			return 0;
@@ -30,4 +31,5 @@ public class ThreeSumClosest_16 {
 		}
 		return res;
 	}
+	
 }
