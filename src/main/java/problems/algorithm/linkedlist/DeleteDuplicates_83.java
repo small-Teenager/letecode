@@ -20,7 +20,7 @@ public class DeleteDuplicates_83 {
 	 * 指针，以便它跳过下一个结点并直接指向下一个结点之后的结点。
 	 * 
 	 * @param head
-	 * @return
+ * @return
 	 */
 	public ListNode deleteDuplicates(ListNode head) {
 		ListNode current = head;
