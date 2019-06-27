@@ -29,16 +29,17 @@ public class AddTwoNumbers_2 {
 		}
 		return listNode.next;
 	}
+	class ListNode {
+		int val;
+		ListNode next;
+
+		ListNode(int x) {
+			val = x;
+		}
+	}
+
 }
 
 ///**
 // * Definition for singly-linked list.
 // * /
-class ListNode {
-	int val;
-	ListNode next;
-
-	ListNode(int x) {
-		val = x;
-	}
-}
