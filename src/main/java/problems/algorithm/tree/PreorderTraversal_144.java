@@ -70,5 +70,26 @@ public class PreorderTraversal_144 {
 	        }
 	        return res;
 	    }
+	    
+	    //v3 stack
+	    public List<Integer> preorderTraversalV3(TreeNode root) {
+
+	        ArrayList<Integer> res = new ArrayList<Integer>();
+	        if(root == null)
+	            return res;
+
+	        Stack<TreeNode> stack = new Stack<TreeNode>();
+	        stack.push(root);
+	        while(!stack.empty()){
+	            TreeNode curNode = stack.pop();
+	            res.add(curNode.val);
+
+	            if(curNode.right != null)
+	                stack.push(curNode.right);
+	            if(curNode.left != null)
+	                stack.push(curNode.left);
+	        }
+	        return res;
+	    }
 
 }
