@@ -6,7 +6,7 @@ import java.util.List;
 
 /**
  * 
- * @author Search yaodong199@ciloud.com ÕÒµ½×Ö·û´®ÖĞËùÓĞ×ÖÄ¸ÒìÎ»´Ê
+ * @author Search yaodong199@ciloud.com æ‰¾åˆ°å­—ç¬¦ä¸²ä¸­æ‰€æœ‰å­—æ¯å¼‚ä½è¯
  */
 public class FindAnagrams_438 {
 

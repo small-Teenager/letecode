@@ -4,22 +4,22 @@ package datastructure.lineartable;
  * @author Search
  */
 public class Node {
-    // ´æ·Å½áµãµÄÖµ
+    // å­˜æ”¾ç»“ç‚¹çš„å€¼
     private Object data;
-    // ºó¼Ì½áµãµÄÒıÓÃ
+    // åç»§ç»“ç‚¹çš„å¼•ç”¨
     private Node next;
 
-    // ÎŞ²ÎÊıÊ±µÄ¹¹Ôìº¯Êı
+    // æ— å‚æ•°æ—¶çš„æ„é€ å‡½æ•°
     public Node() {
         this(null, null);
     }
 
-    // ´øÓĞÒ»¸ö²ÎÊıÊ±µÄ¹¹Ôìº¯Êı
+    // å¸¦æœ‰ä¸€ä¸ªå‚æ•°æ—¶çš„æ„é€ å‡½æ•°
     public Node(Object data) {
         this(data, null);
     }
 
-    // ´øÓĞÁ½¸ö²ÎÊıÊ±µÄ¹¹Ôìº¯Êı
+    // å¸¦æœ‰ä¸¤ä¸ªå‚æ•°æ—¶çš„æ„é€ å‡½æ•°
     public Node(Object data, Node next) {
         this.data = data;
         this.next = next;

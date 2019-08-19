@@ -5,7 +5,7 @@ import java.util.Set;
 
 /**
  * 
- * @author Search yaodong199@icloud.com 349. Á½¸öÊý×éµÄ½»¼¯
+ * @author Search yaodong199@icloud.com 349. ä¸¤ä¸ªæ•°ç»„çš„äº¤é›†
  *
  */
 public class Intersection_349 {
@@ -30,7 +30,7 @@ public class Intersection_349 {
 		return result;
 	}
 
-	// v2 setÓÅ»¯
+	// v2 setä¼˜åŒ–
 	public int[] intersectionV2(int[] nums1, int[] nums2) {
 		Set<Integer> set = new HashSet<>();
 		Set<Integer> resultSet = new HashSet<>();

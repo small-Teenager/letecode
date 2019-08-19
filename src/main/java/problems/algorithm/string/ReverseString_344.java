@@ -2,7 +2,7 @@ package problems.algorithm.string;
 
 /**
  * @author search
- * @version ´´½¨Ê±¼ä£º2018Äê4ÔÂ23ÈÕ ÏÂÎç4:54:36 ÀàËµÃ÷ :344. ·´×ª×Ö·û´®
+ * @version åˆ›å»ºæ—¶é—´ï¼š2018å¹´4æœˆ23æ—¥ ä¸‹åˆ4:54:36 ç±»è¯´æ˜ :344. åè½¬å­—ç¬¦ä¸²
  */
 public class ReverseString_344 {
 
@@ -18,7 +18,7 @@ public class ReverseString_344 {
 		return sb.toString();
 	}
 
-	//v2 ½»»»Î»ÖÃ
+	//v2 äº¤æ¢ä½ç½®
 	public void reverseString(char[] s) {
 		if (s.length <= 1) {
 			return;

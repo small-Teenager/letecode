@@ -1,21 +1,21 @@
 package problems.algorithm.string;
 
 /**
- * 583. Á½¸ö×Ö·û´®µÄÉ¾³ı²Ù×÷
+ * 583. ä¸¤ä¸ªå­—ç¬¦ä¸²çš„åˆ é™¤æ“ä½œ
  * 
  * @author search yaodong199@icloud.com
  */
 public class MinDistance_583 {
 
 	/**
-	 * Çó2¸ö×Ö·û´®µÄ½»¼¯¡É s1.length+s2.length-2*¡É.length
+	 * æ±‚2ä¸ªå­—ç¬¦ä¸²çš„äº¤é›†âˆ© s1.length+s2.length-2*âˆ©.length
 	 */
 	public int minDistance(String s1, String s2) {
 		int[][] memo = new int[s1.length() + 1][s2.length() + 1];
 		return s1.length() + s2.length() - 2 * lcs(s1, s2, s1.length(), s2.length(), memo);
 	}
 
-	// ½»¼¯µÄ³¤¶È
+	// äº¤é›†çš„é•¿åº¦
 	public int lcs(String s1, String s2, int m, int n, int[][] memo) {
 		if (m == 0 || n == 0)
 			return 0;

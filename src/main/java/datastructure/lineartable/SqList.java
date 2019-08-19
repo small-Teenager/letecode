@@ -4,16 +4,16 @@ import datastructure.lineartable.inter.IList;
 
 /**
  * @author Search
- * ÏßĞÔ±íµÄË³Ğò´æ´¢¼°ÊµÏÖ
+ * çº¿æ€§è¡¨çš„é¡ºåºå­˜å‚¨åŠå®ç°
  */
 public class SqList implements IList {
-    // ÏßĞÔ±í´æ´¢¿Õ¼ä
+    // çº¿æ€§è¡¨å­˜å‚¨ç©ºé—´
     private Object[] listElem;
-    // ÏßĞÔ±íµÄµ±Ç°³¤¶È
+    // çº¿æ€§è¡¨çš„å½“å‰é•¿åº¦
     private int curLen;
 
     /**
-     * Ë³Ğò±íÀàµÄ¹¹Ôìº¯Êı£¬¹¹ÔìÒ»¸ö´æ´¢¿Õ¼äÈİÁ¿ÎªmaxSizeµÄÏßĞÔ±í
+     * é¡ºåºè¡¨ç±»çš„æ„é€ å‡½æ•°ï¼Œæ„é€ ä¸€ä¸ªå­˜å‚¨ç©ºé—´å®¹é‡ä¸ºmaxSizeçš„çº¿æ€§è¡¨
      *
      * @param maxSize
      */
@@ -23,7 +23,7 @@ public class SqList implements IList {
     }
 
     public void clear() {
-        // ÖÃË³Ğò±íµÄµ±Ç°³¤¶ÈÎª0
+        // ç½®é¡ºåºè¡¨çš„å½“å‰é•¿åº¦ä¸º0
         curLen = 0;
     }
 
@@ -32,7 +32,7 @@ public class SqList implements IList {
     }
 
     public int length() {
-        // ·µ»ØË³Ğò±íµÄµ±Ç°³¤¶È
+        // è¿”å›é¡ºåºè¡¨çš„å½“å‰é•¿åº¦
         return curLen;
     }
 
@@ -44,15 +44,15 @@ public class SqList implements IList {
     }
 
     public void insert(int i, Object x) {
-        // ÅĞ¶Ï±íÊÇ·ñÂúÁË
+        // åˆ¤æ–­è¡¨æ˜¯å¦æ»¡äº†
         if (curLen == listElem.length) {
             throw new RuntimeException("storage space is full and new elements cannot be inserted");
         }
-        // ²åÈëµÄÎ»ÖÃ²»ºÏ·¨
+        // æ’å…¥çš„ä½ç½®ä¸åˆæ³•
         if (i < 0 || i > curLen) {
             throw new RuntimeException("Illegal insertion position");
         }
-        // ±ØĞëÒª´Ó×îºóÒ»¸öÔªËØ¿ªÊ¼ÒÀ´ÎÖğ¸öºóÒÆ¶¯£¬Ö±µ½µÚi¸öÊı¾İÔªËØÒÆ¶¯Íê±ÏÎªÖ¹¡£
+        // å¿…é¡»è¦ä»æœ€åä¸€ä¸ªå…ƒç´ å¼€å§‹ä¾æ¬¡é€ä¸ªåç§»åŠ¨ï¼Œç›´åˆ°ç¬¬iä¸ªæ•°æ®å…ƒç´ ç§»åŠ¨å®Œæ¯•ä¸ºæ­¢ã€‚
         for (int j = curLen; j > i; j--) {
             listElem[j] = listElem[j - 1];
         }
@@ -100,9 +100,9 @@ public class SqList implements IList {
         sqList.insert(4, "z");
         int order = sqList.indexOf("x");
         if (order != -1) {
-            System.out.println("Ë³Ğò±íÖĞµÚÒ»´Î³öÏÖµÄÖµÎªzµÄÊı¾İÔªËØµÄÎ»ÖÃÎª£º" + order);
+            System.out.println("é¡ºåºè¡¨ä¸­ç¬¬ä¸€æ¬¡å‡ºç°çš„å€¼ä¸ºzçš„æ•°æ®å…ƒç´ çš„ä½ç½®ä¸ºï¼š" + order);
         } else {
-            System.out.println("Ë³Ğò±íÖĞ²»°üÀ¨zÔªËØ");
+            System.out.println("é¡ºåºè¡¨ä¸­ä¸åŒ…æ‹¬zå…ƒç´ ");
         }
         sqList.display();
         sqList.insert(4, "x");

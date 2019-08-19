@@ -1,7 +1,7 @@
 package problems.algorithm.string;
 
 /**
- * 345. ·´×ª×Ö·û´®ÖĞµÄÔªÒô×ÖÄ¸
+ * 345. åè½¬å­—ç¬¦ä¸²ä¸­çš„å…ƒéŸ³å­—æ¯
  * 
  * @author search yaodong199@icloud.com
  */

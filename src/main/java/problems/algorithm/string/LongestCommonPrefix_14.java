@@ -2,7 +2,7 @@ package problems.algorithm.string;
 
 /**
  * 
- * @author search yaodong199@icloud.com 最长公共前缀
+ * @author search yaodong199@icloud.com 鏈�闀垮叕鍏卞墠缂�
  */
 public class LongestCommonPrefix_14 {
 

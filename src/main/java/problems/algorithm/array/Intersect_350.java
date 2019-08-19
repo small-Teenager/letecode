@@ -7,7 +7,7 @@ import java.util.Map;
 
 /**
  * 
- * @author Search yaodong199@icloud.com 350. 两个数组的交集II
+ * @author Search yaodong199@icloud.com 350. 涓や釜鏁扮粍鐨勪氦闆咺I
  */
 public class Intersect_350 {
 

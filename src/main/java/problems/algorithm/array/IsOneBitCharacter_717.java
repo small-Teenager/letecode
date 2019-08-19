@@ -1,7 +1,7 @@
 package problems.algorithm.array;
 
 /**
- * 717. 1±ÈÌØÓë2±ÈÌØ×Ö·û
+ * 717. 1æ¯”ç‰¹ä¸2æ¯”ç‰¹å­—ç¬¦
  * 
  * @author search yaodong199@icloud.com
  */

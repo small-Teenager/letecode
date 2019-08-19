@@ -6,7 +6,7 @@ import java.util.Stack;
 
 /**
  * 
- * @author Search 二叉树的后序遍历
+ * @author Search 浜屽弶鏍戠殑鍚庡簭閬嶅巻
  */
 public class PostorderTraversal_145 {
 
@@ -21,7 +21,7 @@ public class PostorderTraversal_145 {
 		}
 	}
 
-	// V1 递归
+	// V1 閫掑綊
 	public List<Integer> postorderTraversal(TreeNode root) {
 
 		ArrayList<Integer> res = new ArrayList<Integer>();
@@ -47,7 +47,7 @@ public class PostorderTraversal_145 {
 		}
 	};
 
-	// v2非递归
+	// v2闈為�掑綊
 	public List<Integer> postorderTraversalV2(TreeNode root) {
 
 		ArrayList<Integer> res = new ArrayList<Integer>();

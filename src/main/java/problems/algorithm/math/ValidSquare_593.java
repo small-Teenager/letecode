@@ -3,7 +3,7 @@ package problems.algorithm.math;
 /**
  * @author Search
  * @data 9:37 2019/1/28
- * 有效的正方形 593
+ * 鏈夋晥鐨勬鏂瑰舰 593
  */
 public class ValidSquare_593 {
 

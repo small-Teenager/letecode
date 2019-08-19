@@ -2,12 +2,12 @@ package problems.algorithm.array;
 
 /**
  * 
- * @author search yaodong199@icloud.com 665. ·Çµİ¼õÊıÁĞ
+ * @author search yaodong199@icloud.com 665. éé€’å‡æ•°åˆ—
  */
 public class CheckPossibility_665 {
 	/**
-	 * ·Çµİ¼õÊıÁĞµÄ£º ¶ÔÓÚÊı×éÖĞËùÓĞµÄ i (1 <= i < n)£¬Âú×ã array[i] <= array[i + 1] ¼´Ô­ÊıÁĞÉ¾³ıÒ»¸öÊı
-	 * ÄÜ·ñ±äÎªµİÔöÊıÁĞ
+	 * éé€’å‡æ•°åˆ—çš„ï¼š å¯¹äºæ•°ç»„ä¸­æ‰€æœ‰çš„ i (1 <= i < n)ï¼Œæ»¡è¶³ array[i] <= array[i + 1] å³åŸæ•°åˆ—åˆ é™¤ä¸€ä¸ªæ•°
+	 * èƒ½å¦å˜ä¸ºé€’å¢æ•°åˆ—
 	 * 
 	 * @param nums
 	 * @return
@@ -28,8 +28,8 @@ public class CheckPossibility_665 {
 				|| nums[result - 1] <= nums[result + 1] || nums[result] <= nums[result + 2];
 	}
 
-	// ÊÇ·ñÎªµİÔö
-	// µİÔöÊıÁĞ£ºnums[i]<=nums[i+1]
+	// æ˜¯å¦ä¸ºé€’å¢
+	// é€’å¢æ•°åˆ—ï¼šnums[i]<=nums[i+1]
 	public boolean isPossibility(int[] nums) {
 		for (int i = 0; i < nums.length - 1; i++) {
 			if (nums[i] > nums[i] + 1) {

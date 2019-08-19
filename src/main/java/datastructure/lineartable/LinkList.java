@@ -6,31 +6,31 @@ import java.util.Scanner;
 
 /**
  * @author Search
- * ÏßĞÔ±íµÄÁ´Ê½´æ´¢¼°ÊµÏÖ
+ * çº¿æ€§è¡¨çš„é“¾å¼å­˜å‚¨åŠå®ç°
  */
 public class LinkList implements IList {
-    // µ¥Á´±íµÄÍ·Ö¸Õë
+    // å•é“¾è¡¨çš„å¤´æŒ‡é’ˆ
     private Node head;
 
-    // µ¥Á´±íµÄ¹¹Ôìº¯Êı
+    // å•é“¾è¡¨çš„æ„é€ å‡½æ•°
     public LinkList() {
-        // ³õÊ¼»¯Í·½áµã
+        // åˆå§‹åŒ–å¤´ç»“ç‚¹
         head = new Node();
     }
 
     public LinkList(int n, boolean Order) {
-        // ³õÊ¼»¯Í·½áµã
+        // åˆå§‹åŒ–å¤´ç»“ç‚¹
         this();
         if (Order) {
-            // ÓÃÎ²²å·¨Ë³Ğò½¨Á¢µ¥Á´±í
+            // ç”¨å°¾æ’æ³•é¡ºåºå»ºç«‹å•é“¾è¡¨
             create1(n);
         } else {
-            // ÓÃÍ·²å·¨Ë³Ğò½¨Á¢µ¥Á´±í
+            // ç”¨å¤´æ’æ³•é¡ºåºå»ºç«‹å•é“¾è¡¨
             create2(n);
         }
     }
 
-    // ÓÃÍ·²å·¨Ë³Ğò½¨Á¢µ¥Á´±í
+    // ç”¨å¤´æ’æ³•é¡ºåºå»ºç«‹å•é“¾è¡¨
     private void create2(int n) {
         Scanner sc = new Scanner(System.in);
         for (int i = 0; i < n; i++) {
@@ -38,7 +38,7 @@ public class LinkList implements IList {
         }
     }
 
-    // ÓÃÎ²²å·¨Ë³Ğò½¨Á¢µ¥Á´±í
+    // ç”¨å°¾æ’æ³•é¡ºåºå»ºç«‹å•é“¾è¡¨
     private void create1(int n) {
         Scanner sc = new Scanner(System.in);
         for (int i = 0; i < n; i++) {
@@ -46,36 +46,36 @@ public class LinkList implements IList {
         }
     }
 
-    // ½«Ò»¸öÒÑ¾­´æÔÚµÄ´øÍ·½áµãµÄµ¥Á´±íÖÃ³É¿Õ±í
+    // å°†ä¸€ä¸ªå·²ç»å­˜åœ¨çš„å¸¦å¤´ç»“ç‚¹çš„å•é“¾è¡¨ç½®æˆç©ºè¡¨
     @Override
     public void clear() {
         head.setData(null);
         head.setNext(null);
     }
 
-    // ÅĞ¶Ï´øÍ·½áµãµÄµ¥Á´±íÊÇ·ñÎª¿Õ
+    // åˆ¤æ–­å¸¦å¤´ç»“ç‚¹çš„å•é“¾è¡¨æ˜¯å¦ä¸ºç©º
     @Override
     public boolean isEmpty() {
         return head.getNext() == null;
     }
 
-    // Çó´øÍ·½áµãµÄµ¥Á´±íµÄ³¤¶È
+    // æ±‚å¸¦å¤´ç»“ç‚¹çš„å•é“¾è¡¨çš„é•¿åº¦
     @Override
     public int length() {
-        // ³õÊ¼»¯£¬pÖ¸ÏòÍ·½áµã£¬lengthÎª¼ÆÊıÆ÷
+        // åˆå§‹åŒ–ï¼ŒpæŒ‡å‘å¤´ç»“ç‚¹ï¼Œlengthä¸ºè®¡æ•°å™¨
         Node p = head.getNext();
         int length = 0;
-        // ´ÓÍ·½áµã¿ªÊ¼Ïòºó²éÕÒ£¬Ö±µ½pÎª¿Õ
+        // ä»å¤´ç»“ç‚¹å¼€å§‹å‘åæŸ¥æ‰¾ï¼Œç›´åˆ°pä¸ºç©º
         while (p != null) {
-            // Ö¸Ïòºó¼Ì½áµã
+            // æŒ‡å‘åç»§ç»“ç‚¹
             p = p.getNext();
-            // ³¤¶È¼Ó1
+            // é•¿åº¦åŠ 1
             length++;
         }
         return length;
     }
 
-    // ¶ÁÈ¡´øÍ·½áµãµÄµ¥Á´±íÖĞµÄµÚi¸ö½áµã
+    // è¯»å–å¸¦å¤´ç»“ç‚¹çš„å•é“¾è¡¨ä¸­çš„ç¬¬iä¸ªç»“ç‚¹
     @Override
     public Object get(int i) {
         // TODO Auto-generated method stub
@@ -85,19 +85,19 @@ public class LinkList implements IList {
             p = p.getNext();
             j++;
         }
-        // iĞ¡ÓÚ0»òÕß´óÓÚ±í³¤¼õ1
+        // iå°äº0æˆ–è€…å¤§äºè¡¨é•¿å‡1
         if (j > i || p == null) {
             throw new RuntimeException("the" + i + "element does not exist");
         }
         return p.getData();
     }
 
-    // ÔÚÍ·½áµãµÄµ¥Á´±íÖĞµÄµÚi¸ö½áµãÖ®Ç°²åÈëÒ»¸öÖµÎªxµÄĞÂ½áµã
+    // åœ¨å¤´ç»“ç‚¹çš„å•é“¾è¡¨ä¸­çš„ç¬¬iä¸ªç»“ç‚¹ä¹‹å‰æ’å…¥ä¸€ä¸ªå€¼ä¸ºxçš„æ–°ç»“ç‚¹
     @Override
     public void insert(int i, Object x) {
         Node p = head;
         int j = -1;
-        // Ñ°ÕÒµÚi¸ö½áµãµÄÇ°Çı
+        // å¯»æ‰¾ç¬¬iä¸ªç»“ç‚¹çš„å‰é©±
         while (p != null && j < i - 1) {
             p = p.getNext();
             j++;
@@ -106,12 +106,12 @@ public class LinkList implements IList {
             throw new RuntimeException("Illegal insertion position");
         }
         Node s = new Node(x);
-        // ĞŞ¸ÄÁ´£¬Ê¹ĞÂ½áµã²åÈëµ½µ¥Á´±íÖĞ
+        // ä¿®æ”¹é“¾ï¼Œä½¿æ–°ç»“ç‚¹æ’å…¥åˆ°å•é“¾è¡¨ä¸­
         s.setNext(p.getNext());
         p.setNext(s);
     }
 
-    // É¾³ı´øÍ·½áµãµÄµ¥Á´±íÖĞµÄµÚi¸ö½áµã
+    // åˆ é™¤å¸¦å¤´ç»“ç‚¹çš„å•é“¾è¡¨ä¸­çš„ç¬¬iä¸ªç»“ç‚¹
     @Override
     public void remove(int i) {
         Node p = head;
@@ -123,11 +123,11 @@ public class LinkList implements IList {
         if (j > i - 1 || p.getNext() == null) {
             throw new RuntimeException("Illegal deletion position");
         }
-        // ĞŞ¸ÄÁ´Ö¸Õë£¬Ê¹´ıÉ¾³ı½áµã´Óµ¥Á´±íÖĞÍÑÀë
+        // ä¿®æ”¹é“¾æŒ‡é’ˆï¼Œä½¿å¾…åˆ é™¤ç»“ç‚¹ä»å•é“¾è¡¨ä¸­è„±ç¦»
         p.setNext(p.getNext().getNext());
     }
 
-    // ²éÕÒÖ¸¶¨µ¥Á´±íÖĞÔªËØµÄÎ»ÖÃ£¬ÈôÔÚµ¥Á´±íÖĞÖµ·¢»Ø¸ÃÎ»ÖÃ£¬Èç¹û²»ÔÚµ¥Á´±íÖĞÔò·µ»Ø-1
+    // æŸ¥æ‰¾æŒ‡å®šå•é“¾è¡¨ä¸­å…ƒç´ çš„ä½ç½®ï¼Œè‹¥åœ¨å•é“¾è¡¨ä¸­å€¼å‘å›è¯¥ä½ç½®ï¼Œå¦‚æœä¸åœ¨å•é“¾è¡¨ä¸­åˆ™è¿”å›-1
     @Override
     public int indexOf(Object x) {
         // TODO Auto-generated method stub
@@ -144,15 +144,15 @@ public class LinkList implements IList {
         }
     }
 
-    // Êä³öµ¥Á´±íÖĞµÄËùÓĞ½áµã
+    // è¾“å‡ºå•é“¾è¡¨ä¸­çš„æ‰€æœ‰ç»“ç‚¹
     @Override
     public void display() {
-        // È¡³ö´øÍ·½áµãµÄµ¥Á´±íÖĞµÄÊ×½áµã
+        // å–å‡ºå¸¦å¤´ç»“ç‚¹çš„å•é“¾è¡¨ä¸­çš„é¦–ç»“ç‚¹
         Node p = head.getNext();
         while (p != null) {
-            // Êä³ö½áµãµÄÖµ
+            // è¾“å‡ºç»“ç‚¹çš„å€¼
             System.out.print(p.getData() + " ");
-            // È¡ÏÂÒ»¸ö½áµã
+            // å–ä¸‹ä¸€ä¸ªç»“ç‚¹
             p = p.getNext();
         }
         System.out.println();
@@ -169,12 +169,12 @@ public class LinkList implements IList {
         for (int i = 0; i < n; i++) {
             L.insert(i, i);
         }
-        System.out.println("ÇëÊäÈëiµÄÖµ£º");
+        System.out.println("è¯·è¾“å…¥içš„å€¼ï¼š");
         int i = new Scanner(System.in).nextInt();
         if (0 < i && i <= n) {
-            System.out.println("µÚ" + i + "¸öÔªËØµÄÇ°ÇıÊÇ:" + L.get(i - 1));
+            System.out.println("ç¬¬" + i + "ä¸ªå…ƒç´ çš„å‰é©±æ˜¯:" + L.get(i - 1));
         } else {
-            System.out.println("µÚ" + i + "¸öÔªËØµÄÖ±½ÓÇ°Çı²»´æÔÚ");
+            System.out.println("ç¬¬" + i + "ä¸ªå…ƒç´ çš„ç›´æ¥å‰é©±ä¸å­˜åœ¨");
         }
     }
 }

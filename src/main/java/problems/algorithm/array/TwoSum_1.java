@@ -4,7 +4,7 @@ import java.util.HashMap;
 
 /**
  * @author search
- * @version ´´½¨Ê±¼ä£º2018Äê4ÔÂ23ÈÕ ÏÂÎç3:38:58 ÀàËµÃ÷ :Á½ÊıÖ®ºÍ
+ * @version åˆ›å»ºæ—¶é—´ï¼š2018å¹´4æœˆ23æ—¥ ä¸‹åˆ3:38:58 ç±»è¯´æ˜ :ä¸¤æ•°ä¹‹å’Œ
  */
 public class TwoSum_1 {
 	// bruteforc

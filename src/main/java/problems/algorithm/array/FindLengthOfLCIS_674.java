@@ -3,7 +3,7 @@ package problems.algorithm.array;
 /**
  * @author Search
  * @date 2019/1/17
- * 最长连续递增序列 674.
+ * 鏈�闀胯繛缁�掑搴忓垪 674.
  */
 public class FindLengthOfLCIS_674 {
 

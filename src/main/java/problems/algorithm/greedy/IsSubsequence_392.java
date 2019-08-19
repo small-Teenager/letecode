@@ -1,7 +1,7 @@
 package problems.algorithm.greedy;
 
 /**
- * 392. еп╤овспРап
+ * 392. Е┬╓Ф√╜Е╜░Е╨▐Е┬≈
  * 
  * @author search
  *

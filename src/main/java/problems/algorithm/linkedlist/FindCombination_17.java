@@ -34,8 +34,8 @@ public class FindCombination_17 {
 		return res;
 	}
 
-	// sÖĞ±£´æÁË´ËÊ±´Ódigits[0...index-1]·­ÒëµÃµ½µÄÒ»¸ö×ÖÄ¸×Ö·û´®
-	// Ñ°ÕÒºÍdigits[index]Æ¥ÅäµÄ×ÖÄ¸, »ñµÃdigits[0...index]·­ÒëµÃµ½µÄ½â
+	// sä¸­ä¿å­˜äº†æ­¤æ—¶ä»digits[0...index-1]ç¿»è¯‘å¾—åˆ°çš„ä¸€ä¸ªå­—æ¯å­—ç¬¦ä¸²
+	// å¯»æ‰¾å’Œdigits[index]åŒ¹é…çš„å­—æ¯, è·å¾—digits[0...index]ç¿»è¯‘å¾—åˆ°çš„è§£
 	private void findCombination(String digits, int index, String s) {
 
 		System.out.println(index + " : " + s);

@@ -1,8 +1,8 @@
 package problems.algorithm.string;
 /** 
 * @author search 
-* @version ´´½¨Ê±¼ä£º2018Äê4ÔÂ23ÈÕ ÏÂÎç4:50:19 
-* ÀàËµÃ÷ :125. ÑéÖ¤»ØÎÄ´®
+* @version åˆ›å»ºæ—¶é—´ï¼š2018å¹´4æœˆ23æ—¥ ä¸‹åˆ4:50:19 
+* ç±»è¯´æ˜ :125. éªŒè¯å›æ–‡ä¸²
 */
 public class IsPalindrome_125 {
 	/**
@@ -31,7 +31,7 @@ public class IsPalindrome_125 {
 		return true;
 	}
 	
-	//ÓÃÁ½¸öÖ¸Õë£¬·Ö±ğÖ¸Ïò×Ö·û´®Í·ºÍ×Ö·û´®Î²£¬Ò»¸öÏòÇ°×ß£¬Ò»¸öÏòºóÃæ×ß
+	//ç”¨ä¸¤ä¸ªæŒ‡é’ˆï¼Œåˆ†åˆ«æŒ‡å‘å­—ç¬¦ä¸²å¤´å’Œå­—ç¬¦ä¸²å°¾ï¼Œä¸€ä¸ªå‘å‰èµ°ï¼Œä¸€ä¸ªå‘åé¢èµ°
 	 public boolean isPalindromeV3(String s) {
 	        if (s == null) return false;
 	        if (s.length() == 0) return true;

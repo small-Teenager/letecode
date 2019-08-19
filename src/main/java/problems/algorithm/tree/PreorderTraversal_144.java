@@ -7,7 +7,7 @@ import java.util.Stack;
 
 /**
  * 
- * @author Search 二叉树的前序遍历
+ * @author Search 浜屽弶鏍戠殑鍓嶅簭閬嶅巻
  */
 public class PreorderTraversal_144 {
 
@@ -21,7 +21,7 @@ public class PreorderTraversal_144 {
 			val = x;
 		}
 	}
-	//V1 递归
+	//V1 閫掑綊
 	public List<Integer> preorderTraversal(TreeNode root) {
 
 		ArrayList<Integer> res = new ArrayList<Integer>();
@@ -45,7 +45,7 @@ public class PreorderTraversal_144 {
 	            this.node = node;
 	        }
 	    };
-	    //非递归
+	    //闈為�掑綊
 	    public List<Integer> preorderTraversalV2(TreeNode root) {
 
 	        ArrayList<Integer> res = new ArrayList<Integer>();

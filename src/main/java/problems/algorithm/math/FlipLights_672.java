@@ -3,7 +3,7 @@ package problems.algorithm.math;
 /**
  * @author Search
  * @data 14:41 2019/2/15
- * 灯泡开关II 672
+ * 鐏场寮�鍏矷I 672
  */
 public class FlipLights_672 {
 

@@ -3,7 +3,7 @@ package problems.algorithm.array;
 /**
  * @author Search
  * @data 13:02 2019/1/21
- * 最长湍流子数组
+ * 鏈�闀挎箥娴佸瓙鏁扮粍
  */
 public class MaxTurbulenceSize_978 {
 

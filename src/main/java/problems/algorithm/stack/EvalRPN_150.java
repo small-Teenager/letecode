@@ -3,12 +3,12 @@ package problems.algorithm.stack;
 import java.util.Stack;
 
 /**
- * @author Search Äæ²¨À¼±í´ïÊ½ÇóÖµ
+ * @author Search é€†æ³¢å…°è¡¨è¾¾å¼æ±‚å€¼
  * @date 2019/6/28
  */
 public class EvalRPN_150 {
 
-	// ±éÀúÊı×é tokens£¬Èç¹ûÓöµ½·ÇÔËËã·û£¬ÔòÈëÕ»£¬Èç¹ûÓöµ½ÔËËã·ûÔòµ¯³öÕ»¶¥Á½¸öÔªËØ½øĞĞ¼ÆËã£¬È»ºó½«¼ÆËã½á¹ûÈëÕ»¡£
+	// éå†æ•°ç»„ tokensï¼Œå¦‚æœé‡åˆ°éè¿ç®—ç¬¦ï¼Œåˆ™å…¥æ ˆï¼Œå¦‚æœé‡åˆ°è¿ç®—ç¬¦åˆ™å¼¹å‡ºæ ˆé¡¶ä¸¤ä¸ªå…ƒç´ è¿›è¡Œè®¡ç®—ï¼Œç„¶åå°†è®¡ç®—ç»“æœå…¥æ ˆã€‚
 	public int evalRPN(String[] tokens) {
 		Stack<Integer> stack = new Stack<Integer>();
 		for (String token : tokens) {

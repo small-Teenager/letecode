@@ -1,8 +1,8 @@
 package problems.algorithm.string;
 /** 
 * @author search 
-* @version ´´½¨Ê±¼ä£º2018Äê4ÔÂ23ÈÕ ÏÂÎç4:52:36 
-* ÀàËµÃ÷ :557. ·´×ª×Ö·û´®ÖĞµÄµ¥´Ê III
+* @version åˆ›å»ºæ—¶é—´ï¼š2018å¹´4æœˆ23æ—¥ ä¸‹åˆ4:52:36 
+* ç±»è¯´æ˜ :557. åè½¬å­—ç¬¦ä¸²ä¸­çš„å•è¯ III
 */
 public class ReverseWords_557 {
 	/**

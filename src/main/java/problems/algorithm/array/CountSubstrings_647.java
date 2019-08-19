@@ -2,7 +2,7 @@ package problems.algorithm.array;
 
 /**
  * @author search
- * @version ´´½¨Ê±¼ä£º2018Äê5ÔÂ6ÈÕ ÏÂÎç4:46:11 ÀàËµÃ÷
+ * @version åˆ›å»ºæ—¶é—´ï¼š2018å¹´5æœˆ6æ—¥ ä¸‹åˆ4:46:11 ç±»è¯´æ˜
  */
 public class CountSubstrings_647 {
 	public int countSubstrings(String s) {

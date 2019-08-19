@@ -4,21 +4,21 @@ import java.util.HashSet;
 import java.util.Set;
 
 /**
- * 202. ¿ìÀÖÊı
+ * 202. å¿«ä¹æ•°
  * 
  * @author search yaodong199@icloud.com
  */
 public class IsHappy_202 {
 
 	/**
-	 * Ê¹ÓÃÒ»¸ö¹şÏ£¼¯À´¼ÇÂ¼·¢ÉúµÄÃ¿¸öÊı×ÖµÄÃ¿¸öÊı×ÖÆ½·½µÄ×ÜºÍ¡£ Ò»µ©µ±Ç°×ÜºÍÎŞ·¨Ìí¼Óµ½ÉèÖÃ£¬Ôò·µ»Øfalse; Ò»µ©µ±Ç°×ÜºÍµÈÓÚ1£¬Ôò·µ»Øtrue;
+	 * ä½¿ç”¨ä¸€ä¸ªå“ˆå¸Œé›†æ¥è®°å½•å‘ç”Ÿçš„æ¯ä¸ªæ•°å­—çš„æ¯ä¸ªæ•°å­—å¹³æ–¹çš„æ€»å’Œã€‚ ä¸€æ—¦å½“å‰æ€»å’Œæ— æ³•æ·»åŠ åˆ°è®¾ç½®ï¼Œåˆ™è¿”å›false; ä¸€æ—¦å½“å‰æ€»å’Œç­‰äº1ï¼Œåˆ™è¿”å›true;
 	 * 
 	 * @param n
 	 * @return
 	 */
 	public boolean isHappy(int n) {
 		Set<Integer> inLoop = new HashSet<Integer>();
-		// ¶¨ÒåÇóºÍ,Êı×ÖÖµ
+		// å®šä¹‰æ±‚å’Œ,æ•°å­—å€¼
 		int sum, number;
 		while (inLoop.add(n)) {
 			sum = 0;

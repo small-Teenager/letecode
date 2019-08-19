@@ -1,8 +1,8 @@
 package problems.algorithm.array;
 /** 
 * @author search 
-* @version ´´½¨Ê±¼ä£º2018Äê5ÔÂ6ÈÕ ÏÂÎç4:36:05 
-* ÀàËµÃ÷ 
+* @version åˆ›å»ºæ—¶é—´ï¼š2018å¹´5æœˆ6æ—¥ ä¸‹åˆ4:36:05 
+* ç±»è¯´æ˜ 
 */
 public class Rotate_118 {
 	public void rotate(int[] nums, int k) {

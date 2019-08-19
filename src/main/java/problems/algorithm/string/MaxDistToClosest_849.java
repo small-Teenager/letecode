@@ -3,7 +3,7 @@ package problems.algorithm.string;
 /**
  * 
  * @author search yaodong199@icloud.com
- * µ½×î½üµÄÈËµÄ×î´ó¾àÀë
+ * åˆ°æœ€è¿‘çš„äººçš„æœ€å¤§è·ç¦»
  */
 public class MaxDistToClosest_849 {
 

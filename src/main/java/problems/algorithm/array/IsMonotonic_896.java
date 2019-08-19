@@ -1,13 +1,13 @@
 package problems.algorithm.array;
 
 /**
- * 896. µ¥µ÷ÊıÁĞ
+ * 896. å•è°ƒæ•°åˆ—
  * 
  * @author search yaodong199@icloud.com
  */
 public class IsMonotonic_896 {
 	/**
-	 * µ¥µ÷Ôö»òµ¥µ÷¼õ
+	 * å•è°ƒå¢æˆ–å•è°ƒå‡
 	 * @param A
 	 * @return
 	 */

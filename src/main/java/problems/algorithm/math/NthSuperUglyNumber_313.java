@@ -2,12 +2,12 @@ package problems.algorithm.math;
 /**
  * @author Search
  * @data 9:53 2019/1/25
- * 超级丑数 313
+ * 瓒呯骇涓戞暟 313
  */
 public class NthSuperUglyNumber_313 {
 
     public int nthSuperUglyNumber(int n, int[] primes) {
-        //dp[i]由min{primes[j] * dp[index[j]]},j=[0,n)得到
+        //dp[i]鐢眒in{primes[j] * dp[index[j]]},j=[0,n)寰楀埌
         int[] index = new int[primes.length],dp = new int[n];
         int i = 1;
         dp[0] = 1;

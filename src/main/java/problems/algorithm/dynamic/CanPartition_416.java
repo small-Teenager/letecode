@@ -3,18 +3,18 @@ package problems.algorithm.dynamic;
 import java.util.Arrays;
 
 /**
- * 416. ·Ö¸îµÈºÍ×Ó¼¯
+ * 416. åˆ†å‰²ç­‰å’Œå­é›†
  * 
  * @author search
  *
  */
 public class CanPartition_416 {
 
-	// memo[i][c] ±íÊ¾Ê¹ÓÃË÷ÒıÎª[0...i]µÄÕâĞ©ÔªËØ,ÊÇ·ñ¿ÉÒÔÍêÈ«Ìî³äÒ»¸öÈİÁ¿ÎªcµÄ±³°ü
-	// -1 ±íÊ¾ÎªÎ´¼ÆËã; 0 ±íÊ¾²»¿ÉÒÔÌî³ä; 1 ±íÊ¾¿ÉÒÔÌî³ä
+	// memo[i][c] è¡¨ç¤ºä½¿ç”¨ç´¢å¼•ä¸º[0...i]çš„è¿™äº›å…ƒç´ ,æ˜¯å¦å¯ä»¥å®Œå…¨å¡«å……ä¸€ä¸ªå®¹é‡ä¸ºcçš„èƒŒåŒ…
+	// -1 è¡¨ç¤ºä¸ºæœªè®¡ç®—; 0 è¡¨ç¤ºä¸å¯ä»¥å¡«å……; 1 è¡¨ç¤ºå¯ä»¥å¡«å……
 	private int[][] memo;
 
-	// V1 ¼ÇÒä»¯ËÑË÷
+	// V1 è®°å¿†åŒ–æœç´¢
 	public boolean canPartition(int[] nums) {
 
 		int sum = 0;
@@ -33,7 +33,7 @@ public class CanPartition_416 {
 		return tryPartition(nums, nums.length - 1, sum / 2);
 	}
 
-	// Ê¹ÓÃnums[0...index], ÊÇ·ñ¿ÉÒÔÍêÈ«Ìî³äÒ»¸öÈİÁ¿ÎªsumµÄ±³°ü
+	// ä½¿ç”¨nums[0...index], æ˜¯å¦å¯ä»¥å®Œå…¨å¡«å……ä¸€ä¸ªå®¹é‡ä¸ºsumçš„èƒŒåŒ…
 	private boolean tryPartition(int[] nums, int index, int sum) {
 
 		if (sum == 0)
@@ -55,7 +55,7 @@ public class CanPartition_416 {
 		System.out.println(res ? "True" : "False");
 	}
 
-	// V2 ¶¯Ì¬¹æ»®
+	// V2 åŠ¨æ€è§„åˆ’
 	public boolean canPartitionv2(int[] nums) {
 		int sum = 0;
 		for (int i = 0; i < nums.length; i++) {

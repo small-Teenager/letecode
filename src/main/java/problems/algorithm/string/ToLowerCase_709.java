@@ -1,7 +1,7 @@
 package problems.algorithm.string;
 
 /**
- * 709. ×ª»»³ÉĞ¡Ğ´×ÖÄ¸
+ * 709. è½¬æ¢æˆå°å†™å­—æ¯
  * 
  * @author search yaodong199@icloud.com
  */
@@ -9,7 +9,7 @@ public class ToLowerCase_709 {
 
 	/**
 	 * method 1
-	 * ÊµÏÖº¯Êı ToLowerCase()
+	 * å®ç°å‡½æ•° ToLowerCase()
 	 * @param str
 	 * @return
 	 */

@@ -2,7 +2,7 @@
 package problems.algorithm.math;
 
 /**
- * Excel 表序列号171
+ * Excel 琛ㄥ簭鍒楀彿171
  * 
  * @author search yaodong199@icloud.com
  */

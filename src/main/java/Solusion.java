@@ -1,7 +1,7 @@
 import java.util.HashMap;
 import java.util.Map;
 /**
- * ÕÒ³öÊı×éÖĞµÚ2¸öÖØ¸´³öÏÖµÄÔªËØ
+ * æ‰¾å‡ºæ•°ç»„ä¸­ç¬¬2ä¸ªé‡å¤å‡ºç°çš„å…ƒç´ 
  * @author search
  *
  */
@@ -14,7 +14,7 @@ public class Solusion {
 
 		Map<Integer, Integer> map = new HashMap<>();
 		for (int i = 0, length = items.length; i < length; i++) {
-			// mapÊÇ·ñ´æÔÚÔªËØ£¬ÒÑ´æÔÚ·µ»Ø¸ÄÔªËØ£¬Ã»ÓĞÔòÌí¼Ó
+			// mapæ˜¯å¦å­˜åœ¨å…ƒç´ ï¼Œå·²å­˜åœ¨è¿”å›æ”¹å…ƒç´ ï¼Œæ²¡æœ‰åˆ™æ·»åŠ 
 			if (map.containsKey(items[i])) {
 				return items[i];
 			} else {

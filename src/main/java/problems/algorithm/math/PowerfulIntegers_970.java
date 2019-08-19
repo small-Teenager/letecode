@@ -6,13 +6,13 @@ import java.util.List;
 /**
  * @author Search
  * @data 9:13 2019/1/22
- * Ç¿ÕûÊý 970
+ * å¼ºæ•´æ•° 970
  */
 public class PowerfulIntegers_970 {
 
     /**
-     * ±©Á¦ÆÆ½â
-     * ¸Ã·½·¨»á³¬Ê±  40 40 1000
+     * æš´åŠ›ç ´è§£
+     * è¯¥æ–¹æ³•ä¼šè¶…æ—¶  40 40 1000
      * method1
      *
      * @param x
@@ -39,7 +39,7 @@ public class PowerfulIntegers_970 {
     }
 
     /**
-     * ¶Ômethod1 µÄÓÅ»¯
+     * å¯¹method1 çš„ä¼˜åŒ–
      *
      * @param x
      * @param y

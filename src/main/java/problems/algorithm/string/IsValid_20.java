@@ -4,7 +4,7 @@ import java.util.Stack;
 
 /**
  * 
- * @author search yaodong199@icloud.com ÓĞĞ§µÄÀ¨ºÅ
+ * @author search yaodong199@icloud.com æœ‰æ•ˆçš„æ‹¬å·
  * 
  *         stack string
  */

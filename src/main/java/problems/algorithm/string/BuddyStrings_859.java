@@ -1,13 +1,13 @@
 package problems.algorithm.string;
 
 /**
- * 859. Ç×ÃÜ×Ö·û´®
+ * 859. äº²å¯†å­—ç¬¦ä¸²
  * 
  * @author search yaodong199@icloud.com
  */
 public class BuddyStrings_859 {
 	/**
-	 * ×Ö·û´®a¡¢b³¤¶È±ØĞëÏàµÈ£¬Ö»ÄÜ½»»»Á½¸ö×Ö·û
+	 * å­—ç¬¦ä¸²aã€bé•¿åº¦å¿…é¡»ç›¸ç­‰ï¼Œåªèƒ½äº¤æ¢ä¸¤ä¸ªå­—ç¬¦
 	 * @param A
 	 * @param B
 	 * @return

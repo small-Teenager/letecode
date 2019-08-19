@@ -1,13 +1,13 @@
 package problems.algorithm.string;
 
 /**
- * 537. ¸´Êı³Ë·¨
+ * 537. å¤æ•°ä¹˜æ³•
  * 
  * @author search yaodong199@icloud.com
  */
 public class ComplexNumberMultiply_537 {
 	/**
-	 * ½«ÊäÈë×Ö·û´®'a+bi'²ğ·Ö³É×Ö·û´®'a'ºÍ×Ö·û´®'b'
+	 * å°†è¾“å…¥å­—ç¬¦ä¸²'a+bi'æ‹†åˆ†æˆå­—ç¬¦ä¸²'a'å’Œå­—ç¬¦ä¸²'b'
 	 * @param a
 	 * @param b
 	 * @return

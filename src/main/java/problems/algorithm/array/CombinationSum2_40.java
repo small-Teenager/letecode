@@ -7,7 +7,7 @@ import java.util.List;
 /**
  * @author Search
  * @date 2019/1/15
- * 40. 组合总和 II
+ * 40. 缁勫悎鎬诲拰 II
  */
 public class CombinationSum2_40 {
 

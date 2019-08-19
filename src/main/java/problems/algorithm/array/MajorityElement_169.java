@@ -4,11 +4,11 @@ import java.util.Arrays;
 
 /**
  * @author search
- * @version ´´½¨Ê±¼ä£º2018Äê4ÔÂ23ÈÕ ÏÂÎç5:48:01 ÀàËµÃ÷ :ÇóÖÚÊıI
+ * @version åˆ›å»ºæ—¶é—´ï¼š2018å¹´4æœˆ23æ—¥ ä¸‹åˆ5:48:01 ç±»è¯´æ˜ :æ±‚ä¼—æ•°I
  */
 public class MajorityElement_169 {
 	/**
-	 * ¼ÙÉèÖÚÊı×ÜÊÇ´æÔÚ
+	 * å‡è®¾ä¼—æ•°æ€»æ˜¯å­˜åœ¨
 	 * 
 	 * @param nums
 	 * @return

@@ -5,8 +5,8 @@ import java.util.List;
 
 /** 
 * @author search 
-* @version ´´½¨Ê±¼ä£º2018Äê5ÔÂ6ÈÕ ÏÂÎç4:33:42 
-* ÀàËµÃ÷  Ñî»ÔÈı½Ç I
+* @version åˆ›å»ºæ—¶é—´ï¼š2018å¹´5æœˆ6æ—¥ ä¸‹åˆ4:33:42 
+* ç±»è¯´æ˜  æ¨è¾‰ä¸‰è§’ I
 */
 public class Generate_118 {
 	public List<List<Integer>> generate(int numRows) {

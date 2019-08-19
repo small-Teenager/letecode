@@ -2,7 +2,7 @@ package problems.algorithm.string;
 /**
  * 
  * @author search
- * 删除排序链表中的重复元素 83
+ * 鍒犻櫎鎺掑簭閾捐〃涓殑閲嶅鍏冪礌 83
  */
 public class DeleteDuplicates_83 {
 

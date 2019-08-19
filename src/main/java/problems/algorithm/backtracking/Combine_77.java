@@ -5,7 +5,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 /**
- * ×éºÏ
+ * ç»„åˆ
  * 
  * @author search
  *
@@ -26,7 +26,7 @@ public class Combine_77 {
 		return res;
 	}
 
-	// Çó½âC(n,k), µ±Ç°ÒÑ¾­ÕÒµ½µÄ×éºÏ´æ´¢ÔÚcÖĞ, ĞèÒª´Óstart¿ªÊ¼ËÑË÷ĞÂµÄÔªËØ
+	// æ±‚è§£C(n,k), å½“å‰å·²ç»æ‰¾åˆ°çš„ç»„åˆå­˜å‚¨åœ¨cä¸­, éœ€è¦ä»startå¼€å§‹æœç´¢æ–°çš„å…ƒç´ 
 	private void generateCombinations(int n, int k, int start, LinkedList<Integer> c) {
 
 		if (c.size() == k) {
@@ -69,7 +69,7 @@ public class Combine_77 {
 		return res;
 	}
 
-	// Çó½âC(n,k), µ±Ç°ÒÑ¾­ÕÒµ½µÄ×éºÏ´æ´¢ÔÚcÖĞ, ĞèÒª´Óstart¿ªÊ¼ËÑË÷ĞÂµÄÔªËØ
+	// æ±‚è§£C(n,k), å½“å‰å·²ç»æ‰¾åˆ°çš„ç»„åˆå­˜å‚¨åœ¨cä¸­, éœ€è¦ä»startå¼€å§‹æœç´¢æ–°çš„å…ƒç´ 
 	private void generateCombinationsV2(int n, int k, int start, LinkedList<Integer> c) {
 
 		if (c.size() == k) {
@@ -77,8 +77,8 @@ public class Combine_77 {
 			return;
 		}
 
-		// »¹ÓĞk - c.size()¸ö¿ÕÎ», ËùÒÔ, [i...n] ÖĞÖÁÉÙÒªÓĞ k - c.size() ¸öÔªËØ
-		// i×î¶àÎª n - (k - c.size()) + 1
+		// è¿˜æœ‰k - c.size()ä¸ªç©ºä½, æ‰€ä»¥, [i...n] ä¸­è‡³å°‘è¦æœ‰ k - c.size() ä¸ªå…ƒç´ 
+		// iæœ€å¤šä¸º n - (k - c.size()) + 1
 		for (int i = start; i <= n - (k - c.size()) + 1; i++) {
 			c.addLast(i);
 			generateCombinations(n, k, i + 1, c);

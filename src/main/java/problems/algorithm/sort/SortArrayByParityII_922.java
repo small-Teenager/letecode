@@ -2,12 +2,12 @@ package problems.algorithm.sort;
 /**
  * @author Search
  * @data 14:51 2019/2/13
- * 按奇偶排序数组II 922
+ * 鎸夊鍋舵帓搴忔暟缁処I 922
  */
 public class SortArrayByParityII_922 {
 
     /**
-     * i 为奇 A[i]为奇 i为偶 A[i]为偶;
+     * i 涓哄 A[i]涓哄 i涓哄伓 A[i]涓哄伓;
      * odd number  m%n==1
      * even number m%n==0
      * @param A

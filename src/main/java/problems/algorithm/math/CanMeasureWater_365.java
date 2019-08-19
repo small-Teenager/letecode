@@ -3,13 +3,13 @@ package problems.algorithm.math;
 /**
  * @author Search
  * @data 15:35 2019/4/4
- * 水壶问题 365
+ * 姘村６闂 365
  */
 public class CanMeasureWater_365 {
 
     /**
      * ax + by = z
-     * 即为 x,y的最大公约数能否z被整除
+     * 鍗充负 x,y鐨勬渶澶у叕绾︽暟鑳藉惁z琚暣闄�
      * @param x
      * @param y
      * @param z
@@ -24,7 +24,7 @@ public class CanMeasureWater_365 {
             x=y;
             y=temp;
         }
-        //最大公约数
+        //鏈�澶у叕绾︽暟
         int val=x;
         while (y%x!=0){
             val=y%x;

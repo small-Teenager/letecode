@@ -1,6 +1,6 @@
 package problems.algorithm.string;
 /**
- * Ñ¹Ëõ×Ö·û´®
+ * åŽ‹ç¼©å­—ç¬¦ä¸²
  * @author search yaodong199@icloud.com
  */
 public class Compress_443 {

@@ -4,15 +4,15 @@ import java.util.ArrayDeque;
 import java.util.Deque;
 
 /**
- * ����ʵ��ջ 225
+ * 队列实现栈 225
  * @author search
  *
  */
 public class MyStack_225 {
 /**
- * for push����ΪDeque����Ԫ�أ���Ϊ����ʹ��que��ʵ�ֶ�ջ
-����top��pop������ֻ�跴תque�е����ݲ�����Ԫ�أ�
-�����ڷ�ת֮��������κ���Ԫ�س��֣���push������Ҫʼ����addFirst�����Ӹ�Ԫ��
+ * for push总是为Deque添加元素，因为我们使用que来实现堆栈
+对于top和pop方法，只需反转que中的数据并返回元素，
+但是在反转之后如果有任何新元素出现，即push，则需要始终在addFirst中添加该元素
  */
 }
 

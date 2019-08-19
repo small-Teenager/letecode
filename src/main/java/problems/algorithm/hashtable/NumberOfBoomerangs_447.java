@@ -4,15 +4,15 @@ import java.util.HashMap;
 
 /**
  * 
- * @author @author Search yaodong199@ciloud.com �����ڵ�����
+ * @author @author Search yaodong199@ciloud.com 回旋镖的数量
  *
  */
 public class NumberOfBoomerangs_447 {
 
-	// ����һ���������֮��ľ��룬ʹ�ù�ϣ���洢����ͬһ������ֶ�Σ�������γɻ����ڡ�����ͬһ������� n �Σ������ֹ��ɿ��Ƴ������ڵ����� sum =
-	// n*(n-1) ���洢����ϣ����Ȼ�󰴸ù�ʽ�ۼӵõ���������Ż����£����赱ǰͬһ���������Ϊ n, ����������Ϊ
-	// n*(n-1), ���ٳ���һ��ͬһ����ʱ�������ڵ�����ӦΪ (n+1)*n����֮ǰ��� (n+1)*n - n*(n-1) = 2*n��
-	// ����ֻ��Ҫ�����𰸼��� 2*n, ��� n+1 �ٴ洢����ϣ���С�
+	// 计算一点和其他点之间的距离，使用哈希表存储，若同一距离出现多次，则可以形成回旋镖。假设同一距离出现 n 次，由数字规律可推出回旋镖的数量 sum =
+	// n*(n-1) 。存储到哈希表，然后按该公式累加得到最后结果，优化如下：假设当前同一距离的数量为 n, 回旋镖数量为
+	// n*(n-1), 当再出现一个同一距离时，回旋镖的数量应为 (n+1)*n，与之前相差 (n+1)*n - n*(n-1) = 2*n，
+	// 所以只需要把最后答案加上 2*n, 最后 n+1 再存储到哈希表中。
 	public int numberOfBoomerangs(int[][] points) {
 		int len = points.length;
 		int ans = 0;

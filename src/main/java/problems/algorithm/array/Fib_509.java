@@ -3,12 +3,12 @@ package problems.algorithm.array;
 /**
  * @author Search
  * @date 2019/1/17
- * ì³²¨ÄÇÆõÊıÁĞ 509
+ * æ–æ³¢é‚£å¥‘æ•°åˆ— 509
  */
 public class Fib_509 {
 
     /**
-     * µİ¹é
+     * é€’å½’
      * method1
      *
      * @param N
@@ -25,7 +25,7 @@ public class Fib_509 {
     }
 
     /**
-     * ¶Ômethod1 µİ¹éµÄÓÅ»¯
+     * å¯¹method1 é€’å½’çš„ä¼˜åŒ–
      *
      * @param N
      * @return

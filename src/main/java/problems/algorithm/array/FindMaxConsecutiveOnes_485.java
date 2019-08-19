@@ -2,7 +2,7 @@ package problems.algorithm.array;
 
 /**
  * @author search
- * @version ´´½¨Ê±¼ä£º2018Äê4ÔÂ23ÈÕ ÏÂÎç4:24:57 ÀàËµÃ÷ :×î´óÁ¬Ğø1µÄ¸öÊı
+ * @version åˆ›å»ºæ—¶é—´ï¼š2018å¹´4æœˆ23æ—¥ ä¸‹åˆ4:24:57 ç±»è¯´æ˜ :æœ€å¤§è¿ç»­1çš„ä¸ªæ•°
  */
 public class FindMaxConsecutiveOnes_485 {
 	public int findMaxConsecutiveOnes(int[] nums) {

@@ -3,13 +3,13 @@ package problems.algorithm.sort;
 import java.util.Arrays;
 
 /**
- * ÓĞĞ§µÄ×ÖÄ¸ÒìÎ»´Ê
+ * æœ‰æ•ˆçš„å­—æ¯å¼‚ä½è¯
  * 
  * @author search yaodong199@icloud.com
  */
 public class IsAnagram_242 {
 	/**
-	 * ÅÅĞòºó±È½Ï
+	 * æ’åºåæ¯”è¾ƒ
 	 * 
 	 * @param s
 	 * @param t

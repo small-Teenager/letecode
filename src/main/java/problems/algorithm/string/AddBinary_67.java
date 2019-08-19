@@ -1,13 +1,13 @@
 package problems.algorithm.string;
 
 /**
- * ¶þ½øÖÆÇóºÍ 67
+ * äºŒè¿›åˆ¶æ±‚å’Œ 67
  * 
  * @author search yaodong199@icloud.com
  */
 public class AddBinary_67 {
 	/**
-	 * n½øÖÆÇóºÍ
+	 * nè¿›åˆ¶æ±‚å’Œ
 	 * 
 	 * @param a
 	 * @param b

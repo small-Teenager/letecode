@@ -1,5 +1,5 @@
 
-// ±¾µØ²âÊÔÁ´±í
+// æœ¬åœ°æµ‹è¯•é“¾è¡¨
 public class ListNode {
 
     public int val;
@@ -9,8 +9,8 @@ public class ListNode {
         val = x;
     }
 
-    // ¸ù¾İn¸öÔªËØµÄÊı×éarr´´½¨Ò»¸öÁ´±í
-    // Ê¹ÓÃarrÎª²ÎÊı£¬´´½¨ÁíÍâÒ»¸öListNodeµÄ¹¹Ôìº¯Êı
+    // æ ¹æ®nä¸ªå…ƒç´ çš„æ•°ç»„arråˆ›å»ºä¸€ä¸ªé“¾è¡¨
+    // ä½¿ç”¨arrä¸ºå‚æ•°ï¼Œåˆ›å»ºå¦å¤–ä¸€ä¸ªListNodeçš„æ„é€ å‡½æ•°
     public ListNode (int[] arr){
 
         if(arr == null || arr.length == 0)
@@ -24,7 +24,7 @@ public class ListNode {
         }
     }
 
-    // ·µ»ØÒÔµ±Ç°ListNodeÎªÍ·½áµãµÄÁ´±íĞÅÏ¢×Ö·û´®
+    // è¿”å›ä»¥å½“å‰ListNodeä¸ºå¤´ç»“ç‚¹çš„é“¾è¡¨ä¿¡æ¯å­—ç¬¦ä¸²
     @Override
     public String toString(){
 

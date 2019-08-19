@@ -5,7 +5,7 @@ import java.util.LinkedList;
 import java.util.Stack;
 
 /**
- * ±È½Ïº¬ÍË¸ñµÄ×Ö·û´®
+ * æ¯”è¾ƒå«é€€æ ¼çš„å­—ç¬¦ä¸²
  * @author search
  *
  */

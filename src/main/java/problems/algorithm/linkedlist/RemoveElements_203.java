@@ -2,14 +2,14 @@ package problems.algorithm.linkedlist;
 
 /**
  * 
- * @author Search ÒÆ³ıÁ´±íÔªËØ
+ * @author Search ç§»é™¤é“¾è¡¨å…ƒç´ 
  *
  */
 public class RemoveElements_203 {
 
 	public ListNode removeElements(ListNode head, int val) {
 
-		// ĞèÒª¶ÔÍ·½áµã½øĞĞÌØÊâ´¦Àí
+		// éœ€è¦å¯¹å¤´ç»“ç‚¹è¿›è¡Œç‰¹æ®Šå¤„ç†
 		while (head != null && head.val == val) {
 			ListNode node = head;
 			head = head.next;

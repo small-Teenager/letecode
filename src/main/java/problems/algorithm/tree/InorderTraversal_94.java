@@ -6,7 +6,7 @@ import java.util.Stack;
 
 
 /**
- * 二叉树的中序遍历
+ * 浜屽弶鏍戠殑涓簭閬嶅巻
  * 
  * @author search
  *
@@ -24,7 +24,7 @@ public class InorderTraversal_94 {
 		}
 	}
 	
-	//V1 递归
+	//V1 閫掑綊
 	public List<Integer> inorderTraversal(TreeNode root) {
 
 		ArrayList<Integer> res = new ArrayList<Integer>();
@@ -50,7 +50,7 @@ public class InorderTraversal_94 {
 		}
 	};
 
-	//V2 非递归
+	//V2 闈為�掑綊
 	public List<Integer> inorderTraversalV2(TreeNode root) {
 
 		ArrayList<Integer> res = new ArrayList<Integer>();

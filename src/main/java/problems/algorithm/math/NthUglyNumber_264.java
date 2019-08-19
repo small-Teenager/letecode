@@ -3,12 +3,12 @@ package problems.algorithm.math;
 /**
  * @author Search
  * @data 18:08 2019/1/21
- * 264. ³óÊı II
+ * 264. ä¸‘æ•° II
  */
 public class NthUglyNumber_264 {
     /**
-     * ³óÊı¾ÍÊÇÖ»°üº¬ÖÊÒòÊı 2, 3, 5 µÄÕıÕûÊı
-     * ÕÒ³öµÚ n ¸ö³óÊı
+     * ä¸‘æ•°å°±æ˜¯åªåŒ…å«è´¨å› æ•° 2, 3, 5 çš„æ­£æ•´æ•°
+     * æ‰¾å‡ºç¬¬ n ä¸ªä¸‘æ•°
      *
      * @param n
      * @return

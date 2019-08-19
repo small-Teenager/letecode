@@ -4,7 +4,7 @@ import java.util.HashMap;
 
 /**
  * 
- * @author search yaodong199@icloud.com ÂÞÂíÊý×Ö×ªÕûÊý
+ * @author search yaodong199@icloud.com ç½—é©¬æ•°å­—è½¬æ•´æ•°
  */
 public class RomanToInt_13 {
 

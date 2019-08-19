@@ -3,14 +3,14 @@ package problems.algorithm.dynamic;
 import java.util.Arrays;
 
 /**
- * 343. ÕûÊý²ð·Ö
+ * 343. æ•´æ•°æ‹†åˆ†
  * 
  * @author search
  *
  */
 public class IntegerBreak_343 {
 
-	// V1 ±©Á¦ÆÆ½â
+	// V1 æš´åŠ›ç ´è§£
 	public int integerBreak(int n) {
 
 		if (n < 1)
@@ -18,7 +18,7 @@ public class IntegerBreak_343 {
 		return breakInteger(n);
 	}
 
-	// ½«n½øÐÐ·Ö¸î(ÖÁÉÙ·Ö¸îÁ½²¿·Ö), ¿ÉÒÔ»ñµÃµÄ×î´ó³Ë»ý
+	// å°†nè¿›è¡Œåˆ†å‰²(è‡³å°‘åˆ†å‰²ä¸¤éƒ¨åˆ†), å¯ä»¥èŽ·å¾—çš„æœ€å¤§ä¹˜ç§¯
 	private int breakInteger(int n) {
 
 		if (n == 1)
@@ -36,7 +36,7 @@ public class IntegerBreak_343 {
 
 	private int[] memo;
 
-	// v2 ¼ÇÒä»°ËÑË÷
+	// v2 è®°å¿†è¯æœç´¢
 	public int integerBreakv2(int n) {
 
 		if (n < 1)
@@ -48,7 +48,7 @@ public class IntegerBreak_343 {
 		return breakIntegerv2(n);
 	}
 
-	// ½«n½øÐÐ·Ö¸î(ÖÁÉÙ·Ö¸îÁ½²¿·Ö), ¿ÉÒÔ»ñµÃµÄ×î´ó³Ë»ý
+	// å°†nè¿›è¡Œåˆ†å‰²(è‡³å°‘åˆ†å‰²ä¸¤éƒ¨åˆ†), å¯ä»¥èŽ·å¾—çš„æœ€å¤§ä¹˜ç§¯
 	private int breakIntegerv2(int n) {
 
 		if (n == 1)
@@ -64,7 +64,7 @@ public class IntegerBreak_343 {
 		return res;
 	}
 
-	// v3 ¶¯Ì¬¹æ»®
+	// v3 åŠ¨æ€è§„åˆ’
 	public int integerBreakv3(int n) {
 
 		if (n < 1)
@@ -73,7 +73,7 @@ public class IntegerBreak_343 {
 		int[] memo = new int[n + 1];
 		memo[1] = 1;
 		for (int i = 2; i <= n; i++)
-			// Çó½âmemo[i]
+			// æ±‚è§£memo[i]
 			for (int j = 1; j <= i - 1; j++)
 				memo[i] = max3(memo[i], j * (i - j), j * memo[i - j]);
 

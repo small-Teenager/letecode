@@ -1,21 +1,21 @@
 package problems.algorithm.string;
 
 /**
- * 819. ×î³£¼ûµÄµ¥´Ê
+ * 819. æœ€å¸¸è§çš„å•è¯
  * 
  * @author search yaodong199@icloud.com
  */
 public class MostCommonWord_819 {
-	// ³öÏÖÆµÂÊ×î¸ßµÄ´ÊÇÒ²»ÔÚ½ûÖ¹ÁĞ±íÖĞ
+	// å‡ºç°é¢‘ç‡æœ€é«˜çš„è¯ä¸”ä¸åœ¨ç¦æ­¢åˆ—è¡¨ä¸­
 
 //	public String mostCommonWord(String paragraph, String[] banned) {
 //		paragraph += ".";
-//		// ½ûÓÃÁĞ±í
+//		// ç¦ç”¨åˆ—è¡¨
 //		Set<String> banset = new HashSet<>();
 //		for (String sb : banned) {
 //			banset.add(sb);
 //		}
-//		// Map<String, Integer> count String ->µ¥´Ê Integer->ÆµÂÊ
+//		// Map<String, Integer> count String ->å•è¯ Integer->é¢‘ç‡
 //		Map<String, Integer> count = new HashMap<>();
 //
 //		String ans = "";

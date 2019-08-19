@@ -1,12 +1,12 @@
 package problems.algorithm.math;
 /**
- * 633. Æ½·½ÊıÖ®ºÍ
+ * 633. å¹³æ–¹æ•°ä¹‹å’Œ
  * @author search
  * yaodong199@icloud.com
  */
 public class JudgeSquareSum_633 {
 	/**
-	 * ±©Á¦ÆÆ½â ³¬³öÊ±¼äÏŞÖÆ
+	 * æš´åŠ›ç ´è§£ è¶…å‡ºæ—¶é—´é™åˆ¶
 	 * @param c
 	 * @return
 	 */

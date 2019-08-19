@@ -7,21 +7,21 @@ import java.util.List;
 
 /**
  * 
- * @author Search yaodong199@ciloud.com ×ÖÄ¸ÒìÎ»´Ê·Ö×é
+ * @author Search yaodong199@ciloud.com å­—æ¯å¼‚ä½è¯åˆ†ç»„
  *
  */
 public class GroupAnagrams_49 {
 	
-	//V1 Ñ°ÕÒÏàÍ¬µÄÓ³Éä
+	//V1 å¯»æ‰¾ç›¸åŒçš„æ˜ å°„
 	public List<List<String>> groupAnagrams(String[] strs) {
 	    HashMap<String, List<String>> hash = new HashMap<>();
 	    for (int i = 0; i < strs.length; i++) {
 	        char[] s_arr = strs[i].toCharArray();
-	        //ÅÅĞò
+	        //æ’åº
 	        Arrays.sort(s_arr);
-	        //Ó³Éäµ½ key
+	        //æ˜ å°„åˆ° key
 	        String key = String.valueOf(s_arr); 
-	        //Ìí¼Óµ½¶ÔÓ¦µÄÀàÖĞ
+	        //æ·»åŠ åˆ°å¯¹åº”çš„ç±»ä¸­
 	        if (hash.containsKey(key)) {
 	            hash.get(key).add(strs[i]);
 	        } else {

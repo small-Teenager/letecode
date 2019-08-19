@@ -7,7 +7,7 @@ import java.util.Map;
  * 
  * @author Search yaodong199@icloud.com
  * 
- *         ×îĞ¡¸²¸Ç×Ó´®
+ *         æœ€å°è¦†ç›–å­ä¸²
  */
 public class MinWindow_76 {
 
@@ -16,52 +16,52 @@ public class MinWindow_76 {
 		if (s.length() == 0 || t.length() == 0) {
 			return "";
 		}
-		// ±£´ætÖĞËùÓĞÎ¨Ò»×Ö·û¼ÆÊıµÄ×Öµä¡£
+		// ä¿å­˜tä¸­æ‰€æœ‰å”¯ä¸€å­—ç¬¦è®¡æ•°çš„å­—å…¸ã€‚
 		Map<Character, Integer> dictT = new HashMap<Character, Integer>();
 		for (int i = 0; i < t.length(); i++) {
 			int count = dictT.getOrDefault(t.charAt(i), 0);
 			dictT.put(t.charAt(i), count + 1);
 		}
-		// tÖĞµÄÎ¨Ò»×Ö·ûÊı£¬ĞèÒª³öÏÖÔÚËùĞèµÄ´°¿ÚÖĞ¡£
+		// tä¸­çš„å”¯ä¸€å­—ç¬¦æ•°ï¼Œéœ€è¦å‡ºç°åœ¨æ‰€éœ€çš„çª—å£ä¸­ã€‚
 		int required = dictT.size();
-		// ×ó ÓÒ Ö¸Õë
+		// å·¦ å³ æŒ‡é’ˆ
 		int l = 0, r = 0;
 		/*
-		 * formed ÓÃÓÚ¸ú×Ùµ±Ç°´°¿ÚÖĞÒÔÆäËùĞèÆµÂÊ´æÔÚ¶àÉÙ¸öÎ¨Ò»×Ö·û¡£ ÀıÈç Èç¹ûtÊÇ¡°AABC¡±ÄÇÃ´´°¿Ú±ØĞëÓĞÁ½¸öA£¬Ò»¸öBºÍÒ»¸öC.
-		 * Òò´Ë£¬µ±Âú×ãËùÓĞÕâĞ©Ìõ¼şÊ±£¬formed = 3¡£
+		 * formed ç”¨äºè·Ÿè¸ªå½“å‰çª—å£ä¸­ä»¥å…¶æ‰€éœ€é¢‘ç‡å­˜åœ¨å¤šå°‘ä¸ªå”¯ä¸€å­—ç¬¦ã€‚ ä¾‹å¦‚ å¦‚æœtæ˜¯â€œAABCâ€é‚£ä¹ˆçª—å£å¿…é¡»æœ‰ä¸¤ä¸ªAï¼Œä¸€ä¸ªBå’Œä¸€ä¸ªC.
+		 * å› æ­¤ï¼Œå½“æ»¡è¶³æ‰€æœ‰è¿™äº›æ¡ä»¶æ—¶ï¼Œformed = 3ã€‚
 		 */
 		int formed = 0;
-		// ×Öµä£¬ÓÃÓÚ±£´æµ±Ç°´°¿ÚÖĞËùÓĞÎ¨Ò»×Ö·ûµÄ¼ÆÊı¡£
+		// å­—å…¸ï¼Œç”¨äºä¿å­˜å½“å‰çª—å£ä¸­æ‰€æœ‰å”¯ä¸€å­—ç¬¦çš„è®¡æ•°ã€‚
 		Map<Character, Integer> windowCounts = new HashMap<Character, Integer>();
-		// (´°¿Ú³¤¶È, ×óÖ¸Õë, ÓÒÖ¸Õë)
+		// (çª—å£é•¿åº¦, å·¦æŒ‡é’ˆ, å³æŒ‡é’ˆ)
 		int[] ans = { -1, 0, 0 };
 		while (r < s.length()) {
-			// ´ÓÓÒ²àÏò´°¿ÚÌí¼ÓÒ»¸ö×Ö·û
+			// ä»å³ä¾§å‘çª—å£æ·»åŠ ä¸€ä¸ªå­—ç¬¦
 			char c = s.charAt(r);
 			int count = windowCounts.getOrDefault(c, 0);
 			windowCounts.put(c, count + 1);
-			// Èç¹ûÌí¼ÓµÄµ±Ç°×Ö·ûµÄÆµÂÊµÈÓÚtÖĞµÄËùĞè¼ÆÊı£¬Ôò½«formedÔö¼Ó1¡£
+			// å¦‚æœæ·»åŠ çš„å½“å‰å­—ç¬¦çš„é¢‘ç‡ç­‰äºtä¸­çš„æ‰€éœ€è®¡æ•°ï¼Œåˆ™å°†formedå¢åŠ 1ã€‚
 			if (dictT.containsKey(c) && windowCounts.get(c).intValue() == dictT.get(c).intValue()) {
 				formed++;
 			}
-			// ³¢ÊÔ²¢ÊÕËõ´°¿Ú£¬Ö±µ½Ëü²»ÔÙÊÇ¡°ÀíÏëµÄ¡±¡£
+			// å°è¯•å¹¶æ”¶ç¼©çª—å£ï¼Œç›´åˆ°å®ƒä¸å†æ˜¯â€œç†æƒ³çš„â€ã€‚
 			while (l <= r && formed == required) {
 				c = s.charAt(l);
-				// ¸üĞÂÂú×ãÌõ¼şµÄ×îĞ¡µÄ´°¿ÚºÍ l r Ö¸Õë
+				// æ›´æ–°æ»¡è¶³æ¡ä»¶çš„æœ€å°çš„çª—å£å’Œ l r æŒ‡é’ˆ
 				if (ans[0] == -1 || r - l + 1 < ans[0]) {
 					ans[0] = r - l + 1;
 					ans[1] = l;
 					ans[2] = r;
 				}
-				// Left¡±Ö¸ÕëÖ¸ÏòµÄÎ»ÖÃ´¦µÄ×Ö·û²»ÔÙÊÇ´°¿ÚµÄÒ»²¿·Ö¡£
+				// Leftâ€æŒ‡é’ˆæŒ‡å‘çš„ä½ç½®å¤„çš„å­—ç¬¦ä¸å†æ˜¯çª—å£çš„ä¸€éƒ¨åˆ†ã€‚
 				windowCounts.put(c, windowCounts.get(c) - 1);
 				if (dictT.containsKey(c) && windowCounts.get(c).intValue() < dictT.get(c).intValue()) {
 					formed--;
 				}
-				// ½«×óÖ¸ÕëÏòÇ°ÒÆ¶¯£¬Õâ½«ÓĞÖúÓÚ²éÕÒĞÂ´°¿Ú¡£
+				// å°†å·¦æŒ‡é’ˆå‘å‰ç§»åŠ¨ï¼Œè¿™å°†æœ‰åŠ©äºæŸ¥æ‰¾æ–°çª—å£ã€‚
 				l++;
 			}
-			// ¼ÌĞøÀ©´ó´°¿Ú
+			// ç»§ç»­æ‰©å¤§çª—å£
 			r++;
 		}
 		return ans[0] == -1 ? "" : s.substring(ans[1], ans[2] + 1);

@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 /**
  * @author search
- * @version ´´½¨Ê±¼ä£º2018Äê4ÔÂ23ÈÕ ÏÂÎç4:22:50 ÀàËµÃ÷ 628. Èı¸öÊıµÄ×î´ó³Ë»ı
+ * @version åˆ›å»ºæ—¶é—´ï¼š2018å¹´4æœˆ23æ—¥ ä¸‹åˆ4:22:50 ç±»è¯´æ˜ 628. ä¸‰ä¸ªæ•°çš„æœ€å¤§ä¹˜ç§¯
  */
 public class MaximumProduct_628 {
 	public int maximumProduct(int[] nums) {

@@ -2,13 +2,13 @@ package problems.algorithm.string;
 
 /**
  * 
- * @author search yaodong199@icloud.com ¼ì²â´óÐ´×ÖÄ¸
+ * @author search yaodong199@icloud.com æ£€æµ‹å¤§å†™å­—æ¯
  */
 public class DetectCapitalUse_520 {
 
-	// ÅÐ¶ÏÊÇ·ñÎª´óÐ´×ÖÄ¸
+	// åˆ¤æ–­æ˜¯å¦ä¸ºå¤§å†™å­—æ¯
 	// A-Z:65-90 a-z:97-122
-	// ÀûÓÃÕýÔò±í´ïÊ½£¿
+	// åˆ©ç”¨æ­£åˆ™è¡¨è¾¾å¼ï¼Ÿ
 	public boolean detectCapitalUse(String word) {
 		boolean lower = Character.isLowerCase(word.charAt(0));
 		if (!lower && word.length() > 1)

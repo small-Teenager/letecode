@@ -3,7 +3,7 @@ package problems.algorithm.stack;
 import java.util.Stack;
 
 /**
- * 用栈实现队列 232
+ * 鐢ㄦ爤瀹炵幇闃熷垪 232
  * 
  * @author search
  *

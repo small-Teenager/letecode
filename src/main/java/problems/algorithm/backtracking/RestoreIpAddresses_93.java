@@ -4,13 +4,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * 93. 复原IP地址
+ * 93. 澶嶅師IP鍦板潃
  * @author search
  *
  */
 public class RestoreIpAddresses_93 {
 
-	//v1 暴力破解 
+	//v1 鏆村姏鐮磋В 
 	 public List<String> restoreIpAddresses(String s) {
 	        List<String> res = new ArrayList<>();
 	        int n = s.length();
@@ -37,7 +37,7 @@ public class RestoreIpAddresses_93 {
 	        return true;
 	    }
 	    
-	    //v2 回溯
+	    //v2 鍥炴函
 	    public List<String> restoreIpAddressesv2(String s) {
 	        List<String> res = new ArrayList<>();
 	        int n = s.length();

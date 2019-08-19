@@ -1,7 +1,7 @@
 package problems.algorithm.linkedlist;
 
 /**
- * @author Search 删除排序链表中的重复元素 II
+ * @author Search 鍒犻櫎鎺掑簭閾捐〃涓殑閲嶅鍏冪礌 II
  * @date 2019/6/25
  */
 public class DeleteDuplicates_82 {

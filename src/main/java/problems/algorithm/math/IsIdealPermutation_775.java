@@ -3,12 +3,12 @@ package problems.algorithm.math;
 /**
  * @author Search
  * @data 9:13 2019/2/22
- * ȫ�ֵ�����ֲ����� 775
+ * 全局倒置与局部倒置 775
  */
 public class IsIdealPermutation_775 {
 
     /**
-     * ��һ�����������Ӧ�ĽǱ�ƫ�Ƴ���1ʱ�ͻ���־ֲ�������ȫ�ֵ��ò�ͬ
+     * 当一个数字与其对应的角标偏移超过1时就会出现局部倒置与全局倒置不同
      * @param A
      * @return
      */

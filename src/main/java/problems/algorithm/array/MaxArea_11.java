@@ -1,14 +1,14 @@
 package problems.algorithm.array;
 
 /**
- * Ê¢×î¶àË®µÄÈÝÆ÷
+ * ç››æœ€å¤šæ°´çš„å®¹å™¨
  * 
  * @author search yaodong199@icloud.com
  */
 public class MaxArea_11 {
 
 	/**
-	 * ±©Á¦ÆÆ½â
+	 * æš´åŠ›ç ´è§£
 	 * 
 	 * @param height
 	 * @return
@@ -22,7 +22,7 @@ public class MaxArea_11 {
 	}
 
 	/**
-	 * 2 Ö¸Õë
+	 * 2 æŒ‡é’ˆ
 	 * 
 	 * @param height
 	 * @return

@@ -2,12 +2,12 @@ package problems.algorithm.array;
 
 /**
  * 
- * @author search ÖÖ»¨ÎÊÌâ 605
+ * @author search ç§èŠ±é—®é¢˜ 605
  */
 public class CanPlaceFlowers_605 {
 
 	/**
-	 * method 1 ±éÀúÊý×é ÕÒµ½ÆäÖÐÓÉ¶àÉÙ¸ö0 Êý×éÊ×Î»ºÍÄ©Î²ÑéÖ¤ÁÙ½çÌõ¼þ
+	 * method 1 éåŽ†æ•°ç»„ æ‰¾åˆ°å…¶ä¸­ç”±å¤šå°‘ä¸ª0 æ•°ç»„é¦–ä½å’Œæœ«å°¾éªŒè¯ä¸´ç•Œæ¡ä»¶
 	 * 
 	 * @param flowerbed
 	 * @param n
@@ -25,7 +25,7 @@ public class CanPlaceFlowers_605 {
 		return res >= n;
 	}
 
-	// ÓÅ»¯method 1
+	// ä¼˜åŒ–method 1
 	public boolean canPlaceFlowers2(int[] flowerbed, int n) {
 		int res = 0;
 		for (int i = 0; i < flowerbed.length; i++) {

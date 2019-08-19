@@ -5,7 +5,7 @@ import java.util.HashMap;
 /**
  * @author Search
  * @data 9:01 2019/3/12
- * 535. TinyURL 的加密与解密
+ * 535. TinyURL 鐨勫姞瀵嗕笌瑙ｅ瘑
  */
 public class Codec_535 {
     String alphas ="abcdefghijklmnopqrstuvwxyz0123456789";

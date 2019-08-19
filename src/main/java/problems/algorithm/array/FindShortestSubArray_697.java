@@ -7,11 +7,11 @@ import java.util.Map;
 /**
  * 
  * @author search yaodong199@icloud.com
- * Êı×éµÄ¶È 697 £º¼´¿ÉÒÔÀí½âÎªÊı×éÖĞ ×î´óµÄÖÚÊı
+ * æ•°ç»„çš„åº¦ 697 ï¼šå³å¯ä»¥ç†è§£ä¸ºæ•°ç»„ä¸­ æœ€å¤§çš„ä¼—æ•°
  */
 public class FindShortestSubArray_697 {
 	/**
-	 * ±éÀúÊı×é map´æ´¢ key´ú±ínumsÖµ value´ú±í³öÏÖ´ÎÊı
+	 * éå†æ•°ç»„ mapå­˜å‚¨ keyä»£è¡¨numså€¼ valueä»£è¡¨å‡ºç°æ¬¡æ•°
 	 * 
 	 * @param nums
 	 * @return

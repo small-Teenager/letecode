@@ -3,7 +3,7 @@ package problems.algorithm.math;
 /**
  * @author Search
  * @data 16:42 2019/1/28
- * 增减字符串匹配 942
+ * 澧炲噺瀛楃涓插尮閰� 942
  */
 public class DiStringMatch_942{
 

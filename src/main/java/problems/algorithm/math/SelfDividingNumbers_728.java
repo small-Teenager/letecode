@@ -4,15 +4,15 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * 728. ×Ô³ıÊı
- * ÀàËÆÓÚ´Óm-nÖ®¼äµÄËØÊı
+ * 728. è‡ªé™¤æ•°
+ * ç±»ä¼¼äºä»m-nä¹‹é—´çš„ç´ æ•°
  * @author search yaodong199@icloud.com
  */
 public class SelfDividingNumbers_728 {
 
 	/**
-	 * Êä³ö´Óleft µ½right µÄËùÓĞ×Ô³ıÊı 
-	 * ×Ô³ıÊı ÊÇÖ¸¿ÉÒÔ±»Ëü°üº¬µÄÃ¿Ò»Î»Êı³ı¾¡µÄÊı
+	 * è¾“å‡ºä»left åˆ°right çš„æ‰€æœ‰è‡ªé™¤æ•° 
+	 * è‡ªé™¤æ•° æ˜¯æŒ‡å¯ä»¥è¢«å®ƒåŒ…å«çš„æ¯ä¸€ä½æ•°é™¤å°½çš„æ•°
 	 * @param left
 	 * @param right
 	 * @return

@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * 131. ·Ö¸î»ØÎÄ´®
+ * 131. åˆ†å‰²å›æ–‡ä¸²
  * 
  * @author search
  *
@@ -35,7 +35,7 @@ public class Partition_131 {
 		}
 	}
 
-	public boolean isParlindrome(String s) { // ÅĞ¶ÏÊÇ·ñÎª»ØÎÄ´®
+	public boolean isParlindrome(String s) { // åˆ¤æ–­æ˜¯å¦ä¸ºå›æ–‡ä¸²
 		if (s == "" || s.length() == 0) {
 			return false;
 		}

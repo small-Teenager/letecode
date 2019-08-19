@@ -1,15 +1,15 @@
 package problems.algorithm.linkedlist;
 
 /**
- * @author Search É¾³ıÁ´±íÖĞµÄ½Úµã
+ * @author Search åˆ é™¤é“¾è¡¨ä¸­çš„èŠ‚ç‚¹
  * @date 2019/6/26
  */
 public class DeleteNode_237 {
 
 	public void deleteNode(ListNode node) {
 
-		// ×¢Òâ: Õâ¸ö·½·¨¶ÔÎ²½Úµã²»ÊÊÓÃ¡£ÌâÄ¿ÖĞÒªÇóÁË¸ø¶¨µÄnode²»ÊÇÎ²½Úµã
-		// ÎÒÃÇ¼ì²énode.next, Èç¹ûÎªnullÔòÅ×³öÒì³£, È·±£ÁËnode²»ÊÇÎ²½Úµã
+		// æ³¨æ„: è¿™ä¸ªæ–¹æ³•å¯¹å°¾èŠ‚ç‚¹ä¸é€‚ç”¨ã€‚é¢˜ç›®ä¸­è¦æ±‚äº†ç»™å®šçš„nodeä¸æ˜¯å°¾èŠ‚ç‚¹
+		// æˆ‘ä»¬æ£€æŸ¥node.next, å¦‚æœä¸ºnullåˆ™æŠ›å‡ºå¼‚å¸¸, ç¡®ä¿äº†nodeä¸æ˜¯å°¾èŠ‚ç‚¹
 		if (node == null || node.next == null)
 			throw new IllegalArgumentException("node should be valid and can not be the tail node.");
 
@@ -39,8 +39,8 @@ class ListNode {
 		val = x;
 	}
 
-	// ¸ù¾İn¸öÔªËØµÄÊı×éarr´´½¨Ò»¸öÁ´±í
-	// Ê¹ÓÃarrÎª²ÎÊı£¬´´½¨ÁíÍâÒ»¸öListNodeµÄ¹¹Ôìº¯Êı
+	// æ ¹æ®nä¸ªå…ƒç´ çš„æ•°ç»„arråˆ›å»ºä¸€ä¸ªé“¾è¡¨
+	// ä½¿ç”¨arrä¸ºå‚æ•°ï¼Œåˆ›å»ºå¦å¤–ä¸€ä¸ªListNodeçš„æ„é€ å‡½æ•°
 	public ListNode(int[] arr) {
 
 		if (arr == null || arr.length == 0)
@@ -65,7 +65,7 @@ class ListNode {
 		return null;
 	}
 
-	// ·µ»ØÒÔµ±Ç°ListNodeÎªÍ·½áµãµÄÁ´±íĞÅÏ¢×Ö·û´®
+	// è¿”å›ä»¥å½“å‰ListNodeä¸ºå¤´ç»“ç‚¹çš„é“¾è¡¨ä¿¡æ¯å­—ç¬¦ä¸²
 	@Override
 	public String toString() {
 

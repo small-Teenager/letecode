@@ -7,7 +7,7 @@ import java.util.Set;
 
 /**
  * 
- * @author Search yaodong199@icloud.com 3. ÎŞÖØ¸´×Ö·ûµÄ×î³¤×Ó´®
+ * @author Search yaodong199@icloud.com 3. æ— é‡å¤å­—ç¬¦çš„æœ€é•¿å­ä¸²
  */
 public class LengthOfLongestSubstring_3 {
 
@@ -29,11 +29,11 @@ public class LengthOfLongestSubstring_3 {
 
 	// optimization
 	/**
-	 * ±êÇ©£º»¬¶¯´°¿Ú ±©Á¦½â·¨Ê±¼ä¸´ÔÓ¶È½Ï¸ß£¬»á´ïµ½ O(n^2)O(n 2 )£¬¹Ê¶ø²ÉÈ¡»¬¶¯´°¿ÚµÄ·½·¨½µµÍÊ±¼ä¸´ÔÓ¶È ¶¨ÒåÒ»¸ö map Êı¾İ½á¹¹´æ´¢ (k,
-	 * v)£¬ÆäÖĞ key ÖµÎª×Ö·û£¬value ÖµÎª×Ö·ûÎ»ÖÃ +1£¬¼Ó 1 ±íÊ¾´Ó×Ö·ûÎ»ÖÃºóÒ»¸ö²Å¿ªÊ¼²»ÖØ¸´ ÎÒÃÇ¶¨Òå²»ÖØ¸´×Ó´®µÄ¿ªÊ¼Î»ÖÃÎª
-	 * start£¬½áÊøÎ»ÖÃÎª end Ëæ×Å end ²»¶Ï±éÀúÏòºó£¬»áÓöµ½Óë [start, end] Çø¼äÄÚ×Ö·ûÏàÍ¬µÄÇé¿ö£¬´ËÊ±½«×Ö·û×÷Îª key Öµ£¬»ñÈ¡Æä
-	 * value Öµ£¬²¢¸üĞÂ start£¬´ËÊ± [start, end] Çø¼äÄÚ²»´æÔÚÖØ¸´×Ö·û ÎŞÂÛÊÇ·ñ¸üĞÂ start£¬¶¼»á¸üĞÂÆä map Êı¾İ½á¹¹ºÍ½á¹û
-	 * ans¡£ Ê±¼ä¸´ÔÓ¶È
+	 * æ ‡ç­¾ï¼šæ»‘åŠ¨çª—å£ æš´åŠ›è§£æ³•æ—¶é—´å¤æ‚åº¦è¾ƒé«˜ï¼Œä¼šè¾¾åˆ° O(n^2)O(n 2 )ï¼Œæ•…è€Œé‡‡å–æ»‘åŠ¨çª—å£çš„æ–¹æ³•é™ä½æ—¶é—´å¤æ‚åº¦ å®šä¹‰ä¸€ä¸ª map æ•°æ®ç»“æ„å­˜å‚¨ (k,
+	 * v)ï¼Œå…¶ä¸­ key å€¼ä¸ºå­—ç¬¦ï¼Œvalue å€¼ä¸ºå­—ç¬¦ä½ç½® +1ï¼ŒåŠ  1 è¡¨ç¤ºä»å­—ç¬¦ä½ç½®åä¸€ä¸ªæ‰å¼€å§‹ä¸é‡å¤ æˆ‘ä»¬å®šä¹‰ä¸é‡å¤å­ä¸²çš„å¼€å§‹ä½ç½®ä¸º
+	 * startï¼Œç»“æŸä½ç½®ä¸º end éšç€ end ä¸æ–­éå†å‘åï¼Œä¼šé‡åˆ°ä¸ [start, end] åŒºé—´å†…å­—ç¬¦ç›¸åŒçš„æƒ…å†µï¼Œæ­¤æ—¶å°†å­—ç¬¦ä½œä¸º key å€¼ï¼Œè·å–å…¶
+	 * value å€¼ï¼Œå¹¶æ›´æ–° startï¼Œæ­¤æ—¶ [start, end] åŒºé—´å†…ä¸å­˜åœ¨é‡å¤å­—ç¬¦ æ— è®ºæ˜¯å¦æ›´æ–° startï¼Œéƒ½ä¼šæ›´æ–°å…¶ map æ•°æ®ç»“æ„å’Œç»“æœ
+	 * ansã€‚ æ—¶é—´å¤æ‚åº¦
 	 * https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/solution/hua-jie-suan-fa-3-wu-zhong-fu-zi-fu-de-zui-chang-z/
 	 * 
 	 * @param s
@@ -54,22 +54,22 @@ public class LengthOfLongestSubstring_3 {
 		return ans;
 	}
 
-	// »¬¶¯´°¿Ú
+	// æ»‘åŠ¨çª—å£
 	public int lengthOfLongestSubstringV3(String s) {
 
 		int[] freq = new int[256];
 
-		int l = 0, r = -1; // »¬¶¯´°¿ÚÎªs[l...r]
+		int l = 0, r = -1; // æ»‘åŠ¨çª—å£ä¸ºs[l...r]
 		int res = 0;
 
-		// Õû¸öÑ­»·´Ó l == 0; r == -1 Õâ¸ö¿Õ´°¿Ú¿ªÊ¼
-		// µ½l == s.size(); r == s.size()-1 Õâ¸ö¿Õ´°¿Ú½ØÖ¹
-		// ÔÚÃ¿´ÎÑ­»·ÀïÖğ½¥¸Ä±ä´°¿Ú, Î¬»¤freq, ²¢¼ÇÂ¼µ±Ç°´°¿ÚÖĞÊÇ·ñÕÒµ½ÁËÒ»¸öĞÂµÄ×îÓÅÖµ
+		// æ•´ä¸ªå¾ªç¯ä» l == 0; r == -1 è¿™ä¸ªç©ºçª—å£å¼€å§‹
+		// åˆ°l == s.size(); r == s.size()-1 è¿™ä¸ªç©ºçª—å£æˆªæ­¢
+		// åœ¨æ¯æ¬¡å¾ªç¯é‡Œé€æ¸æ”¹å˜çª—å£, ç»´æŠ¤freq, å¹¶è®°å½•å½“å‰çª—å£ä¸­æ˜¯å¦æ‰¾åˆ°äº†ä¸€ä¸ªæ–°çš„æœ€ä¼˜å€¼
 		while (l < s.length()) {
 
 			if (r + 1 < s.length() && freq[s.charAt(r + 1)] == 0)
 				freq[s.charAt(++r)]++;
-			else // rÒÑ¾­µ½Í· || freq[s[r+1]] == 1
+			else // rå·²ç»åˆ°å¤´ || freq[s[r+1]] == 1
 				freq[s.charAt(l++)]--;
 
 			res = Math.max(res, r - l + 1);
@@ -78,15 +78,15 @@ public class LengthOfLongestSubstring_3 {
 		return res;
 	}
 
-	// »¬¶¯´°¿Ú
+	// æ»‘åŠ¨çª—å£
 	public int lengthOfLongestSubstringV4(String s) {
 
 		int[] freq = new int[256];
 
-		int l = 0, r = -1; // »¬¶¯´°¿ÚÎªs[l...r]
+		int l = 0, r = -1; // æ»‘åŠ¨çª—å£ä¸ºs[l...r]
 		int res = 0;
 
-		// ÔÚÕâÀï, Ñ­»·ÖĞÖ¹µÄÌõ¼ş¿ÉÒÔÊÇ r + 1 < s.length()
+		// åœ¨è¿™é‡Œ, å¾ªç¯ä¸­æ­¢çš„æ¡ä»¶å¯ä»¥æ˜¯ r + 1 < s.length()
 
 		while (r + 1 < s.length()) {
 
@@ -101,12 +101,12 @@ public class LengthOfLongestSubstring_3 {
 		return res;
 	}
 
-	// »¬¶¯´°¿ÚµÄÁíÒ»ÖÖÊµÏÖ
+	// æ»‘åŠ¨çª—å£çš„å¦ä¸€ç§å®ç°
 	public int lengthOfLongestSubstringV5(String s) {
 
 		int[] freq = new int[256];
 
-		int l = 0, r = -1; // »¬¶¯´°¿ÚÎªs[l...r]
+		int l = 0, r = -1; // æ»‘åŠ¨çª—å£ä¸ºs[l...r]
 		int res = 0;
 
 		while (r + 1 < s.length()) {
@@ -127,19 +127,19 @@ public class LengthOfLongestSubstring_3 {
 		return res;
 	}
 
-	// v6 lÃ¿´Î¿ÉÒÔÏòÇ°ÌøÔ¾, ¶ø²»½ö½öÊÇ+1
-	// µ«´ú¼ÛÊÇ, ÎªÁË»ñµÃÕâ¸öÌøÔ¾µÄÎ»ÖÃ, Ã¿´ÎĞèÒª±éÀúÕû¸ö´°¿ÚµÄ×Ö·û´®
+	// v6 læ¯æ¬¡å¯ä»¥å‘å‰è·³è·ƒ, è€Œä¸ä»…ä»…æ˜¯+1
+	// ä½†ä»£ä»·æ˜¯, ä¸ºäº†è·å¾—è¿™ä¸ªè·³è·ƒçš„ä½ç½®, æ¯æ¬¡éœ€è¦éå†æ•´ä¸ªçª—å£çš„å­—ç¬¦ä¸²
 	public int lengthOfLongestSubstringV6(String s) {
 
-		int l = 0, r = 0; // »¬¶¯´°¿ÚÎªs[l...r]
+		int l = 0, r = 0; // æ»‘åŠ¨çª—å£ä¸ºs[l...r]
 		int res = 0;
 
 		while (r < s.length()) {
 
 			int index = isDuplicateChar(s, l, r);
 
-			// Èç¹ûs[r]Ö®Ç°³öÏÖ¹ı
-			// l¿ÉÒÔÖ±½ÓÌøµ½s[r+1]Ö®Ç°³öÏÖµÄÎ»ÖÃ + 1µÄµØ·½
+			// å¦‚æœs[r]ä¹‹å‰å‡ºç°è¿‡
+			// lå¯ä»¥ç›´æ¥è·³åˆ°s[r+1]ä¹‹å‰å‡ºç°çš„ä½ç½® + 1çš„åœ°æ–¹
 			if (index != -1)
 				l = index + 1;
 
@@ -150,8 +150,8 @@ public class LengthOfLongestSubstring_3 {
 		return res;
 	}
 
-	// ²é¿´s[l...r-1]Ö®¼äÊÇ·ñ´æÔÚs[r]
-	// Èô´æÔÚ,·µ»ØÏàÓ¦µÄË÷Òı, ·ñÔò·µ»Ø-1
+	// æŸ¥çœ‹s[l...r-1]ä¹‹é—´æ˜¯å¦å­˜åœ¨s[r]
+	// è‹¥å­˜åœ¨,è¿”å›ç›¸åº”çš„ç´¢å¼•, å¦åˆ™è¿”å›-1
 	private int isDuplicateChar(String s, int l, int r) {
 		for (int i = l; i < r; i++)
 			if (s.charAt(i) == s.charAt(r))

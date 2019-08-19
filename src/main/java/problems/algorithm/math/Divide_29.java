@@ -1,7 +1,7 @@
 package problems.algorithm.math;
 
 /**
- * 两数相除
+ * 涓ゆ暟鐩搁櫎
  * 
  * @author search yaodong199@icloud.com
  */
@@ -13,7 +13,7 @@ public class Divide_29 {
 		System.out.println(a.divide(22, 23));
 	}
 	/**
-	 * 要求不能使用使用乘法、除法、mod运算符，so考虑>> || <<
+	 * 瑕佹眰涓嶈兘浣跨敤浣跨敤涔樻硶銆侀櫎娉曘�乵od杩愮畻绗︼紝so鑰冭檻>> || <<
 	 * @param div
 	 * @param dsor
 	 * @return

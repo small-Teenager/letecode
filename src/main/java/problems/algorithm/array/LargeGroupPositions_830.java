@@ -4,7 +4,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 /**
- * 830. ½Ï´ó·Ö×éµÄÎ»ÖÃ
+ * 830. è¾ƒå¤§åˆ†ç»„çš„ä½ç½®
  * 
  * @author search yaodong199@icloud.com
  */

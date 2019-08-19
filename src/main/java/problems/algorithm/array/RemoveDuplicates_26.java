@@ -2,7 +2,7 @@ package problems.algorithm.array;
 
 /**
  * @author search
- * @version 创建时间：2018年4月23日 下午4:05:04 类说明 : 删除排序数组中的重复项
+ * @version 鍒涘缓鏃堕棿锛�2018骞�4鏈�23鏃� 涓嬪崍4:05:04 绫昏鏄� : 鍒犻櫎鎺掑簭鏁扮粍涓殑閲嶅椤�
  */
 public class RemoveDuplicates_26 {
 
@@ -10,15 +10,15 @@ public class RemoveDuplicates_26 {
 	public int removeDuplicates(int[] nums) {
 		if (nums == null || nums.length == 0)
 			return 0;
-		// 判断无输入
-		int number = 0;// 标记计数
+		// 鍒ゆ柇鏃犺緭鍏�
+		int number = 0;// 鏍囪璁℃暟
 		for (int i = 0; i < nums.length; i++) {
 			if (nums[i] != nums[number]) {
 				number++;
 				nums[number] = nums[i];
 			}
 		}
-		number += 1; // 标记+1即为数字个数
+		number += 1; // 鏍囪+1鍗充负鏁板瓧涓暟
 		return number;
 	}
 	//v2

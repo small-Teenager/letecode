@@ -3,11 +3,11 @@ package problems.algorithm.array;
 /**
  * 
  * @author Search
- *	88. ºÏ²¢Á½¸öÓÐÐòÊý×é
+ *	88. åˆå¹¶ä¸¤ä¸ªæœ‰åºæ•°ç»„
  */
 public class Merge_88 {
 
-	//1 ½«Êý×éºÏ²¢Ö®ºóÅÅÐò
+	//1 å°†æ•°ç»„åˆå¹¶ä¹‹åŽæŽ’åº
 	public void merge(int[] nums1, int m, int[] nums2, int n) {
 		int index1 = m - 1;
 		int index2 = n - 1;
@@ -30,9 +30,9 @@ public class Merge_88 {
 		}
 	}
 
-	// V2 ´ÓÎ²²¿¿ªÊ¼ºÏ²¢£¬Ã¿´ÎÕÒ³ö×î´óµÄ£¬ÕâÑùÒ»±éÉ¨Ãè¼´¿ÉÍê³É
+	// V2 ä»Žå°¾éƒ¨å¼€å§‹åˆå¹¶ï¼Œæ¯æ¬¡æ‰¾å‡ºæœ€å¤§çš„ï¼Œè¿™æ ·ä¸€éæ‰«æå³å¯å®Œæˆ
 	public void mergeV2(int[] nums1, int m, int[] nums2, int n) {
-		// ÏÈ¹é²¢´óµÄ£¬ÕâÑùÒ»±éÉ¨Ãæ¼´¿É¡£
+		// å…ˆå½’å¹¶å¤§çš„ï¼Œè¿™æ ·ä¸€éæ‰«é¢å³å¯ã€‚
 		for (int k = m + n - 1, i = m - 1, j = n - 1; k >= 0; k--) {
 			if (i < 0) {
 				nums1[k] = nums2[j--];

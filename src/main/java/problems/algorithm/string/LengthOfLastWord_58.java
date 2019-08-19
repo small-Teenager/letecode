@@ -2,7 +2,7 @@ package problems.algorithm.string;
 
 /**
  * @author search
- * @version ´´½¨Ê±¼ä£º2018Äê4ÔÂ23ÈÕ ÏÂÎç4:59:37 ÀàËµÃ÷ : ×îºóÒ»¸öµ¥´ÊµÄ³¤¶È
+ * @version åˆ›å»ºæ—¶é—´ï¼š2018å¹´4æœˆ23æ—¥ ä¸‹åˆ4:59:37 ç±»è¯´æ˜ : æœ€åä¸€ä¸ªå•è¯çš„é•¿åº¦
  */
 public class LengthOfLastWord_58 {
 	

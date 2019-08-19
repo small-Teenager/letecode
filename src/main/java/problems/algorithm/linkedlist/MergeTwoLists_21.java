@@ -2,7 +2,7 @@ package problems.algorithm.linkedlist;
 
 /**
  * 
- * @author Search 合并两个有序链表
+ * @author Search 鍚堝苟涓や釜鏈夊簭閾捐〃
  */
 public class MergeTwoLists_21 {
 

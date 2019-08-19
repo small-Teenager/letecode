@@ -3,7 +3,7 @@ package problems.algorithm.math;
 /**
  * @author Search
  * @data 17:07 2019/3/18
- * µÆÅİ¿ª¹Ø
+ * ç¯æ³¡å¼€å…³
  */
 public class BulbSwitch_319 {
     public int bulbSwitch(int n) {

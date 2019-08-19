@@ -3,12 +3,12 @@ package problems.algorithm.math;
 /**
  * @date 2019/1/10
  * @author Search
- * ¾ØĞÎÖØµş 836
+ * çŸ©å½¢é‡å  836
  */
 public class IsRectangleOverlap_836 {
 
     /**
-     * ÅĞ¶Ï2¸ö¾ØĞÎÊÇ·ñÖØµş
+     * åˆ¤æ–­2ä¸ªçŸ©å½¢æ˜¯å¦é‡å 
      * @param rec1
      * @param rec2
      * @return

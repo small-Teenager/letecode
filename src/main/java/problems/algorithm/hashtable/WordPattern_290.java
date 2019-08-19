@@ -5,7 +5,7 @@ import java.util.Map;
 
 /**
  * 
- * @author Search yaodong199@ciloud.com µ¥´Ê¹æÂÉ
+ * @author Search yaodong199@ciloud.com å•è¯è§„å¾‹
  *
  */
 public class WordPattern_290 {

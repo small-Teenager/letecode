@@ -5,8 +5,8 @@ import java.util.Map;
 
 /** 
 * @author search 
-* @version ´´½¨Ê±¼ä£º2018Äê5ÔÂ6ÈÕ ÏÂÎç3:34:26 
-* ÀàËµÃ÷   ÍĞÆÕÀû´Ä¾ØÕó
+* @version åˆ›å»ºæ—¶é—´ï¼š2018å¹´5æœˆ6æ—¥ ä¸‹åˆ3:34:26 
+* ç±»è¯´æ˜   æ‰˜æ™®åˆ©èŒ¨çŸ©é˜µ
 */
 public class IsToeplitzMatrix_766 {
 	public boolean isToeplitzMatrix(int[][] matrix) {

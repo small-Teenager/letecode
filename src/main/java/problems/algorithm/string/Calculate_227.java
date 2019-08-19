@@ -5,7 +5,7 @@ import java.util.Stack;
 /**
  * @author Search
  * @date 2019/1/10
- * 227. »ù±¾¼ÆËãÆ÷ II
+ * 227. åŸºæœ¬è®¡ç®—å™¨ II
  */
 public class Calculate_227 {
 
@@ -31,7 +31,7 @@ public class Calculate_227 {
         Stack<Integer> num = new Stack<Integer>();
         int res = 0;
         int temp=0;
-        //µ±Ç°Êı×ÖÇ°µÄÔËËã·û¡£
+        //å½“å‰æ•°å­—å‰çš„è¿ç®—ç¬¦ã€‚
         char sign = '+';
         for(int i=0;i<s.length();i++){
             if(s.charAt(i)>='0'&&s.charAt(i)<='9'){

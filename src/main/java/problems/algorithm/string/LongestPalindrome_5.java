@@ -1,8 +1,8 @@
 package problems.algorithm.string;
 /** 
 * @author search 
-* @version ´´½¨Ê±¼ä£º2018Äê5ÔÂ6ÈÕ ÏÂÎç3:46:55 
-* ÀàËµÃ÷  ×î³¤»ØÎÄ×Ó´®
+* @version åˆ›å»ºæ—¶é—´ï¼š2018å¹´5æœˆ6æ—¥ ä¸‹åˆ3:46:55 
+* ç±»è¯´æ˜  æœ€é•¿å›æ–‡å­ä¸²
 */
 public class LongestPalindrome_5 {
 	 public String longestPalindrome(String s) {

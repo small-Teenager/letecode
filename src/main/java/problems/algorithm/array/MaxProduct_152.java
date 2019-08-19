@@ -2,10 +2,10 @@ package problems.algorithm.array;
 
 /**
  * @author search
- * @version ´´½¨Ê±¼ä£º2018Äê4ÔÂ23ÈÕ ÏÂÎç4:45:49 ÀàËµÃ÷ :³Ë»ı×î´ó×ÓĞòÁĞ
+ * @version åˆ›å»ºæ—¶é—´ï¼š2018å¹´4æœˆ23æ—¥ ä¸‹åˆ4:45:49 ç±»è¯´æ˜ :ä¹˜ç§¯æœ€å¤§å­åºåˆ—
  */
 public class MaxProduct_152 {
-	// ´Ó¿ªÊ¼ºÍ½áÊø¼ÆËã£¬µ±½á¹ûÎª0ÖØÖÃÎª1£¬Ñ¡ÔñÖ®¼äµÄ×î´óÖµ¡£
+	// ä»å¼€å§‹å’Œç»“æŸè®¡ç®—ï¼Œå½“ç»“æœä¸º0é‡ç½®ä¸º1ï¼Œé€‰æ‹©ä¹‹é—´çš„æœ€å¤§å€¼ã€‚
 	public int maxProduct(int[] nums) {
 		int res = Integer.MIN_VALUE, first = 1, second = 1, n = nums.length;
 

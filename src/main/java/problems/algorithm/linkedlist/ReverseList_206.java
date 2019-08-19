@@ -1,7 +1,7 @@
 package problems.algorithm.linkedlist;
 
 /**
- * @author Search ·­×ªÁ´±í
+ * @author Search ç¿»è½¬é“¾è¡¨
  * @date 2019/1/2
  */
 public class ReverseList_206 {
@@ -30,17 +30,17 @@ public class ReverseList_206 {
 		return pre;
 	}
 
-	// µİ¹é·½Ê½·­×ª
+	// é€’å½’æ–¹å¼ç¿»è½¬
 	public ListNode reverseListV2(ListNode head) {
 
-		// µİ¹éÖÕÖ¹Ìõ¼ş
+		// é€’å½’ç»ˆæ­¢æ¡ä»¶
 		if (head == null || head.next == null)
 			return head;
 
 		ListNode rhead = reverseList(head.next);
 
-		// head->next´Ë¿ÌÖ¸ÏòheadºóÃæµÄÁ´±íµÄÎ²½Úµã
-		// head->next->next = head°Ñhead½Úµã·ÅÔÚÁËÎ²²¿
+		// head->nextæ­¤åˆ»æŒ‡å‘headåé¢çš„é“¾è¡¨çš„å°¾èŠ‚ç‚¹
+		// head->next->next = headæŠŠheadèŠ‚ç‚¹æ”¾åœ¨äº†å°¾éƒ¨
 		head.next.next = head;
 		head.next = null;
 

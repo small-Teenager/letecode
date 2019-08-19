@@ -1,13 +1,13 @@
 package problems.algorithm.array;
 
 /**
- * Á½ÊıÖ®ºÍ II - ÊäÈëÓĞĞòÊı×é
+ * ä¸¤æ•°ä¹‹å’Œ II - è¾“å…¥æœ‰åºæ•°ç»„
  * 
- * @author search 2018Äê4ÔÂ23ÈÕ ÏÂÎç3:36:32
+ * @author search 2018å¹´4æœˆ23æ—¥ ä¸‹åˆ3:36:32
  */
 public class TwoSum_167 {
 	/**
-	 * ±©Á¦ÆÆ½â
+	 * æš´åŠ›ç ´è§£
 	 * 
 	 * @param nums
 	 * @param target
@@ -28,7 +28,7 @@ public class TwoSum_167 {
 		throw new IllegalArgumentException("No two sum solution");
 	}
 	
-	// ¶ş·ÖËÑË÷
+	// äºŒåˆ†æœç´¢
 	public int[] twoSumV2(int[] numbers, int target) {
 
         if(numbers.length < 2 /*|| !isSorted(numbers)*/)
@@ -66,7 +66,7 @@ public class TwoSum_167 {
         return -1;
     }
     
-    //Ë«Ö¸Õë
+    //åŒæŒ‡é’ˆ
     public int[] twoSumV3(int[] numbers, int target) {
 
         if(numbers.length < 2 /*|| !isSorted(numbers)*/)

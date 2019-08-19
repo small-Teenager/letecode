@@ -5,12 +5,12 @@ import java.util.LinkedList;
 /**
  * @author Search
  * @date 2019/1/15
- * µÚk¸öÅÅÁĞ 60
+ * ç¬¬kä¸ªæ’åˆ— 60
  */
 public class GetPermutation_60 {
 
     /**
-     * ÁĞ³ö¼¯ºÏµÄÅÅÁĞ È¡ÆäÖĞµÚk ¸ö
+     * åˆ—å‡ºé›†åˆçš„æ’åˆ— å–å…¶ä¸­ç¬¬k ä¸ª
      *
      * @param n
      * @param k
@@ -18,7 +18,7 @@ public class GetPermutation_60 {
      */
     public String getPermutation(int n, int k) {
         LinkedList<Integer> link = new LinkedList<Integer>();
-        //ÅÅÁĞÊıÁ¿
+        //æ’åˆ—æ•°é‡
         int weight = 1;
 
         for (int i = 1; i <= n; i++) {

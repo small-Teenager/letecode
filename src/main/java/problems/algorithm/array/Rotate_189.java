@@ -2,7 +2,7 @@ package problems.algorithm.array;
 
 /**
  * @author search
- * @version ´´½¨Ê±¼ä£º2018Äê4ÔÂ23ÈÕ ÏÂÎç3:54:30 ÀàËµÃ÷ :Ğı×ªÊı×é
+ * @version åˆ›å»ºæ—¶é—´ï¼š2018å¹´4æœˆ23æ—¥ ä¸‹åˆ3:54:30 ç±»è¯´æ˜ :æ—‹è½¬æ•°ç»„
  */
 public class Rotate_189 {
 	public void rotate(int[] nums, int k) {

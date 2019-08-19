@@ -4,11 +4,11 @@ import java.util.HashSet;
 
 /**
  * @author search
- * @version ´´½¨Ê±¼ä£º2018Äê4ÔÂ23ÈÕ ÏÂÎç4:34:14 ÀàËµÃ÷ :´æÔÚÖØ¸´ II
+ * @version åˆ›å»ºæ—¶é—´ï¼š2018å¹´4æœˆ23æ—¥ ä¸‹åˆ4:34:14 ç±»è¯´æ˜ :å­˜åœ¨é‡å¤ II
  */
 public class ContainsNearbyDuplicate_219 {
 
-	// v1 ±©Á¦ÆÆ½â
+	// v1 æš´åŠ›ç ´è§£
 	public boolean containsNearbyDuplicate(int[] nums, int k) {
 		for (int i = 0; i < nums.length; i++) {
 			for (int j = i + 1; j < nums.length; j++) {
@@ -20,7 +20,7 @@ public class ContainsNearbyDuplicate_219 {
 		return false;
 	}
 
-	// v2 ²éÕÒ±í
+	// v2 æŸ¥æ‰¾è¡¨
 	public boolean containsNearbyDuplicateV2(int[] nums, int k) {
 
 		if (nums == null || nums.length <= 1)

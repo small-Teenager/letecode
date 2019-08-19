@@ -1,7 +1,7 @@
 package problems.algorithm.linkedlist;
 
 /**
- * @author Search 两两交换链表中的节点
+ * @author Search 涓や袱浜ゆ崲閾捐〃涓殑鑺傜偣
  * @date 2019/6/26
  */
 public class SwapPairs_24 {

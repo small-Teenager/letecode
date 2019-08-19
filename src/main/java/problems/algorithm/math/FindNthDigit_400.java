@@ -2,12 +2,12 @@ package problems.algorithm.math;
 /**
  * @author Search
  * @data 9:32 2019/1/23
- * 第n个数字 400
+ * 绗琻涓暟瀛� 400
  */
 public class FindNthDigit_400 {
 
     /**
-     * 无限整数序列组成的字符串中第n的数字？
+     * 鏃犻檺鏁存暟搴忓垪缁勬垚鐨勫瓧绗︿覆涓n鐨勬暟瀛楋紵
      *
      * @param n
      * @return

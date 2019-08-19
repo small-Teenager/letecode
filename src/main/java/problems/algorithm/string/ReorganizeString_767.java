@@ -3,8 +3,8 @@ package problems.algorithm.string;
 import java.util.Arrays;
 
 /**
- * 767. ÖØ¹¹×Ö·û´®
- * Ê¹µÃÈÎÒâÏàÁÚ×Ö·û²»Í¬¼´¿É
+ * 767. é‡æ„å­—ç¬¦ä¸²
+ * ä½¿å¾—ä»»æ„ç›¸é‚»å­—ç¬¦ä¸åŒå³å¯
  * @author search yaodong199@icloud.com
  */
 public class ReorganizeString_767 {

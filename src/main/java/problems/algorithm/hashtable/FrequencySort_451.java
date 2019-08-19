@@ -7,22 +7,22 @@ import java.util.List;
 
 /**
  * 
- * @author Search yaodong199@ciloud.com ¸ù¾İ×Ö·û³öÏÖÆµÂÊÅÅĞò
+ * @author Search yaodong199@ciloud.com æ ¹æ®å­—ç¬¦å‡ºç°é¢‘ç‡æ’åº
  *
  */
 public class FrequencySort_451 {
 
-	// HashMapÖ´ĞĞÒ»±éÍ³¼Æ£¬È»ºóÓÃÁĞ±í´æ´¢£¨char-×Ö·û, int-ÖØ¸´´ÎÊı£©ĞÅÏ¢£¬°´ÖØ¸´´ÎÊı´Ó´óµ½Ğ¡¶ÔÁĞ±íÅÅĞò£¬Æ´×°×îÖÕµÄString
+	// HashMapæ‰§è¡Œä¸€éç»Ÿè®¡ï¼Œç„¶åç”¨åˆ—è¡¨å­˜å‚¨ï¼ˆchar-å­—ç¬¦, int-é‡å¤æ¬¡æ•°ï¼‰ä¿¡æ¯ï¼ŒæŒ‰é‡å¤æ¬¡æ•°ä»å¤§åˆ°å°å¯¹åˆ—è¡¨æ’åºï¼Œæ‹¼è£…æœ€ç»ˆçš„String
 	public String frequencySort(String s) {
 		int[] hash = new int[256];
 		StringBuilder sb = new StringBuilder();
 		for (int i = 0; i < s.length(); i++) {
 			hash[s.charAt(i)]++;
 		}
-		int[] hash1 = hash.clone();// Õâ¸öÊı×éÊÇÎªÁËÕÒµ½hashÊı×éÅÅĞòºó¶ÔÓ¦µÄÏÂ±ê
-		Arrays.sort(hash);// ½«Êı×éÅÅĞò
-		for (int i = 255; i >= 0 && hash[i] > 0; i--) {// Îª0µÄ²¿·ÖÖ±½Ó²»ÓÃ¹Ü
-			for (int j = 0; j < 256; j++) { // ´ÓÎ´ÅÅĞòµÄÀïÃæÕÒµ½¶ÔÓ¦Öµ
+		int[] hash1 = hash.clone();// è¿™ä¸ªæ•°ç»„æ˜¯ä¸ºäº†æ‰¾åˆ°hashæ•°ç»„æ’åºåå¯¹åº”çš„ä¸‹æ ‡
+		Arrays.sort(hash);// å°†æ•°ç»„æ’åº
+		for (int i = 255; i >= 0 && hash[i] > 0; i--) {// ä¸º0çš„éƒ¨åˆ†ç›´æ¥ä¸ç”¨ç®¡
+			for (int j = 0; j < 256; j++) { // ä»æœªæ’åºçš„é‡Œé¢æ‰¾åˆ°å¯¹åº”å€¼
 				if (hash[i] == hash1[j]) {
 					while (hash1[j]-- > 0)
 						sb.append((char) j);
@@ -33,7 +33,7 @@ public class FrequencySort_451 {
 	}
 
 	// V2 stack
-	// Í°ÅÅĞò£¬½«×Ö·ûµÄ³öÏÖ´ÎÊı×÷ÎªÊı×éµÄÏÂ±ê£¬½«³öÏÖµÄ×Ö·û×÷ÎªÊı×éµÄÄÚÈİ¡£¸ù¾İ×ø±ê½øĞĞ½µĞò£¬È»ºó°Ñ×ø±êºÍ¶ÔÓ¦µÄÄÚÈİ¡°Ïà³Ë¡±ºó´æ·ÅÔÚ×Ö·û´®ÖĞ£¬·µ»Ø±éÀúºóµÄ½á¹û
+	// æ¡¶æ’åºï¼Œå°†å­—ç¬¦çš„å‡ºç°æ¬¡æ•°ä½œä¸ºæ•°ç»„çš„ä¸‹æ ‡ï¼Œå°†å‡ºç°çš„å­—ç¬¦ä½œä¸ºæ•°ç»„çš„å†…å®¹ã€‚æ ¹æ®åæ ‡è¿›è¡Œé™åºï¼Œç„¶åæŠŠåæ ‡å’Œå¯¹åº”çš„å†…å®¹â€œç›¸ä¹˜â€åå­˜æ”¾åœ¨å­—ç¬¦ä¸²ä¸­ï¼Œè¿”å›éå†åçš„ç»“æœ
 	public static String frequencySortV2(String s) {
 		HashMap<Character, Integer> map = new HashMap<Character, Integer>();
 		for (int i = 0; i < s.length(); i++) {

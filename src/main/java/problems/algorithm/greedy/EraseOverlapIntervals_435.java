@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Comparator;
 
 /**
- * 435. ÎŞÖØµşÇø¼ä
+ * 435. æ— é‡å åŒºé—´
  * 
  * @author search
  *
@@ -12,8 +12,8 @@ import java.util.Comparator;
 public class EraseOverlapIntervals_435 {
 
 	/**
-	 * Ê¹ÓÃÌ°ĞÄ²ßÂÔ£¬½«Çø¼äµÄtail½øĞĞÉıĞòÅÅĞò£¬ÕâÑùÎÒÃÇ±£Ö¤tailĞ¡µÄÓëÏÂÒ»¸ötail´óµÄ·¢ËÍÖØµşÊ±£¬
-	 * ÎÒÃÇÒÆ³ıµÄÊÇ´ótailµÄÇø¼ä£¬ÁôÏÂtailĞ¡µÄ¿Õ¼ä£¬´Ó¶ø±£Ö¤ºÍÏÂÒ»¸ötail´óµÄÇø¼ä½øĞĞ±È½ÏÊ±ÖØµşµÄ¿ÉÄÜĞÔ¸üĞ¡ ½ø¶ø×öµ½É¾³ı×îÉÙµÄÇø¼äÊı¡£
+	 * ä½¿ç”¨è´ªå¿ƒç­–ç•¥ï¼Œå°†åŒºé—´çš„tailè¿›è¡Œå‡åºæ’åºï¼Œè¿™æ ·æˆ‘ä»¬ä¿è¯tailå°çš„ä¸ä¸‹ä¸€ä¸ªtailå¤§çš„å‘é€é‡å æ—¶ï¼Œ
+	 * æˆ‘ä»¬ç§»é™¤çš„æ˜¯å¤§tailçš„åŒºé—´ï¼Œç•™ä¸‹tailå°çš„ç©ºé—´ï¼Œä»è€Œä¿è¯å’Œä¸‹ä¸€ä¸ªtailå¤§çš„åŒºé—´è¿›è¡Œæ¯”è¾ƒæ—¶é‡å çš„å¯èƒ½æ€§æ›´å° è¿›è€Œåšåˆ°åˆ é™¤æœ€å°‘çš„åŒºé—´æ•°ã€‚
 	 * 
 	 * @param intervals
 	 * @return
@@ -21,7 +21,7 @@ public class EraseOverlapIntervals_435 {
 	public int eraseOverlapIntervals(int[][] intervals) {
 		if (intervals.length == 0)
 			return 0;
-		// °´ÕÕÃ¿¸öĞ¡Êı×éµÄtail´óĞ¡½øĞĞÅÅĞò
+		// æŒ‰ç…§æ¯ä¸ªå°æ•°ç»„çš„tailå¤§å°è¿›è¡Œæ’åº
 		Arrays.sort(intervals, new Comparator<int[]>() {
 			@Override
 			public int compare(int[] o1, int[] o2) {
@@ -29,13 +29,13 @@ public class EraseOverlapIntervals_435 {
 			}
 		});
 
-		// ÅÅĞòºóintervals[0]¿Ï¶¨±£Áô
+		// æ’åºåintervals[0]è‚¯å®šä¿ç•™
 		int num = 1;
 		int prevTail = intervals[0][1];
 		for (int i = 1; i < intervals.length; i++) {
 			if (prevTail > intervals[i][0])
 				continue;
-			// µ±²»ÖØµşÊ±½øĞĞÒÆÎ»
+			// å½“ä¸é‡å æ—¶è¿›è¡Œç§»ä½
 			prevTail = intervals[i][1];
 			num++;
 		}

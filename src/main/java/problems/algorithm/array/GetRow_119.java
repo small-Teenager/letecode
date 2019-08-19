@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Ñî»ÔÈı½Ç II
+ * æ¨è¾‰ä¸‰è§’ II
  * 
  * @author search yaodong199@icloud.com
  */
@@ -17,7 +17,7 @@ public class GetRow_119 {
 		}
 		
 		for (int i = 0; i < rowIndex + 1; i++) {
-			list.add(0, 1);//Ìí¼ÓÔªËØ 1
+			list.add(0, 1);//æ·»åŠ å…ƒç´  1
 			for (int j = 1; j < list.size() - 1; j++) {
 				list.set(j, list.get(j) + list.get(j + 1));
 			}

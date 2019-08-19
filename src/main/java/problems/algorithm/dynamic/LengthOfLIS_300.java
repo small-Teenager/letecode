@@ -3,7 +3,7 @@ package problems.algorithm.dynamic;
 import java.util.Arrays;
 
 /**
- * 300. ×î³¤ÉÏÉı×ÓĞòÁĞ
+ * 300. æœ€é•¿ä¸Šå‡å­åºåˆ—
  * 
  * @author search
  *
@@ -26,7 +26,7 @@ public class LengthOfLIS_300 {
 		return res;
 	}
 
-	// ÒÔ nums[index] Îª½áÎ²µÄ×î³¤ÉÏÉı×ÓĞòÁĞµÄ³¤¶È
+	// ä»¥ nums[index] ä¸ºç»“å°¾çš„æœ€é•¿ä¸Šå‡å­åºåˆ—çš„é•¿åº¦
 	private int getMaxLength(int[] nums, int index) {
 
 		if (memo[index] != -1)
@@ -40,13 +40,13 @@ public class LengthOfLIS_300 {
 		return memo[index] = res;
 	}
 
-	// V2 ¶¯Ì¬¹æ»®
+	// V2 åŠ¨æ€è§„åˆ’
 	public int lengthOfLISV2(int[] nums) {
 
 		if (nums.length == 0)
 			return 0;
 
-		// memo[i] ±íÊ¾ÒÔ nums[i] Îª½áÎ²µÄ×î³¤ÉÏÉı×ÓĞòÁĞµÄ³¤¶È
+		// memo[i] è¡¨ç¤ºä»¥ nums[i] ä¸ºç»“å°¾çš„æœ€é•¿ä¸Šå‡å­åºåˆ—çš„é•¿åº¦
 		int memo[] = new int[nums.length];
 		Arrays.fill(memo, 1);
 		for (int i = 1; i < nums.length; i++)

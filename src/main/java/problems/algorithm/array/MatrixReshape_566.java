@@ -3,17 +3,17 @@ package problems.algorithm.array;
 /**
  * 
  * @author search 
- *  566. ÖØËÜ¾ØÕó
+ *  566. é‡å¡‘çŸ©é˜µ
  */
 public class MatrixReshape_566 {
 
 	public int[][] matrixReshape(int[][] nums, int r, int c) {
 		int[][] result = new int[r][c];
-		// nums.length * nums[0].lengthÎª¶şÎ¬Êı×éµÄĞĞ*ÁĞ
+		// nums.length * nums[0].lengthä¸ºäºŒç»´æ•°ç»„çš„è¡Œ*åˆ—
 		if (nums.length == 0 || r * c != nums.length * nums[0].length)
 			return nums;
 		int count = 0;
-		// °ÑÔ­Ê¼Êı×éÀïµÄÖµ¸³Öµ¸øĞÂÊı×é
+		// æŠŠåŸå§‹æ•°ç»„é‡Œçš„å€¼èµ‹å€¼ç»™æ–°æ•°ç»„
 		for (int i = 0; i < nums.length; i++) {
 			for (int j = 0; j < nums[0].length; j++) {
 				result[count / c][count % c] = nums[i][j];

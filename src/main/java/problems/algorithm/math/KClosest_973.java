@@ -3,7 +3,7 @@ package problems.algorithm.math;
 import java.util.Arrays;
 
 /**
- * ��ӽ�ԭ���k ���� 973
+ * 最接近原点的k 个点 973
  *
  * @author Search
  * @date 2019/1/14
@@ -11,7 +11,7 @@ import java.util.Arrays;
 public class KClosest_973 {
 
     /**
-     * ������Ե��������Ȼ��ȡ�����K��
+     * 按距离对点进行排序，然后取最近的K点
      *
      * @param points
      * @param K
@@ -41,8 +41,8 @@ public class KClosest_973 {
     }
 
     /**
-     * ��ȡһ�㣬����õ㼴Ϊ��ԭ��������Ծ���Ϊ�뾶��Բ���Ƿ��е���԰�ڣ�
-     * ����Բ�ڣ���Ϊ���·��
-     * ��Բ�ڣ��ݹ��Ըõ�Ϊ�뾶
+     * 任取一点，假设该点即为距原点最近。以距离为半径做圆，是否有点在园内，
+     * 不再圆内，即为最短路径
+     * 在圆内，递归以该点为半径
      */
 }

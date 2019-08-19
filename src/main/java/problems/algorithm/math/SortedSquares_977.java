@@ -5,7 +5,7 @@ import java.util.Arrays;
 /**
  * @author Search
  * @date 2019/1/20
- * 有序数组的平方 977
+ * 鏈夊簭鏁扮粍鐨勫钩鏂� 977
  */
 public class SortedSquares_977 {
 
@@ -26,7 +26,7 @@ public class SortedSquares_977 {
 		return A;
 	}
 	
-	//V2数组有序，则数组的第一个元素的平方与最后一个元素的平方中的最大值一定为整个数组的最大值，故给定2个指针，一个为从0开始，一个为最大值
+	//V2鏁扮粍鏈夊簭锛屽垯鏁扮粍鐨勭涓�涓厓绱犵殑骞虫柟涓庢渶鍚庝竴涓厓绱犵殑骞虫柟涓殑鏈�澶у�间竴瀹氫负鏁翠釜鏁扮粍鐨勬渶澶у�硷紝鏁呯粰瀹�2涓寚閽堬紝涓�涓负浠�0寮�濮嬶紝涓�涓负鏈�澶у��
 	public int[] sortedSquaresV2(int[] A) {
         int maxIndex = A.length;
         int beforeIndex = 0;

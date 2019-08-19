@@ -1,14 +1,14 @@
 package problems.algorithm.string;
 
 /**
- * 686. ÖØ¸´µş¼Ó×Ö·û´®Æ¥Åä
+ * 686. é‡å¤å åŠ å­—ç¬¦ä¸²åŒ¹é…
  * 
  * @author search yaodong199@icloud.com
  */
 public class RepeatedStringMatch_686 {
 
 	/**
-	 * B ÊÇ·ñÎªA ÖØ¸´µş¼ÓºóµÄ×Ó´®
+	 * B æ˜¯å¦ä¸ºA é‡å¤å åŠ åçš„å­ä¸²
 	 * @param A
 	 * @param B
 	 * @return

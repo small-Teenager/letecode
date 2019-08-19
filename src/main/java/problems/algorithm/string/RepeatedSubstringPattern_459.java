@@ -1,14 +1,14 @@
 package problems.algorithm.string;
 
 /**
- * ÖØ¸´µÄ×Ó×Ö·û´®
+ * é‡å¤çš„å­å­—ç¬¦ä¸²
  * 
  * @author search yaodong199@icloud.com
  */
 public class RepeatedSubstringPattern_459 {
 
 	/**
-	 * ÓĞÒ»¸öÎÊÌâ aÊÇ²»ÊÇaµÄ×Ó´®
+	 * æœ‰ä¸€ä¸ªé—®é¢˜ aæ˜¯ä¸æ˜¯açš„å­ä¸²
 	 * 
 	 * @param s
 	 * @return

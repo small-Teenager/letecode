@@ -1,7 +1,7 @@
 package problems.algorithm.string;
 
 /**
- * 551. Ñ§Éú³öÇÚ¼ÍÂ¼ I ÓĞ2¸öÒÔÉÏµÄÁ¬Ğø³Ùµ½²Å»á±»´¦·££¬ÇÒÈ±ÇÚĞ¡ÓÚ2
+ * 551. å­¦ç”Ÿå‡ºå‹¤çºªå½• I æœ‰2ä¸ªä»¥ä¸Šçš„è¿ç»­è¿Ÿåˆ°æ‰ä¼šè¢«å¤„ç½šï¼Œä¸”ç¼ºå‹¤å°äº2
  * 
  * @author search yaodong199@icloud.com
  */
@@ -80,7 +80,7 @@ public class CheckRecord_551 {
 			if (absentCount > 1)
 				return false;
 		}
-		// ÊÇ·ñ´æÔÚ2¸öÒÔÉÏÁ¬ĞøµÄ³Ùµ½
+		// æ˜¯å¦å­˜åœ¨2ä¸ªä»¥ä¸Šè¿ç»­çš„è¿Ÿåˆ°
 		return absentCount < 2 && s.indexOf("LLL") < 0;
 	}
 }

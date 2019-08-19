@@ -2,13 +2,13 @@ package problems.algorithm.array;
 
 /**
  * @author Search
- * ÔÚÅÅĞòÊı×éÖĞ²éÕÒÔªËØµÄµÚÒ»¸öºÍ×îºóÒ»¸öÎ»ÖÃ 34
+ * åœ¨æ’åºæ•°ç»„ä¸­æŸ¥æ‰¾å…ƒç´ çš„ç¬¬ä¸€ä¸ªå’Œæœ€åä¸€ä¸ªä½ç½® 34
  * @date 2019/1/14
  */
 public class SearchRange_34 {
 
     /**
-     * ±éÀúÊı×é Ç°Ğò¡¢ºóĞò±éÀúÊı×é
+     * éå†æ•°ç»„ å‰åºã€ååºéå†æ•°ç»„
      *
      * @param nums
      * @param target
@@ -36,7 +36,7 @@ public class SearchRange_34 {
     }
 
     /***
-     * ¶ş´Î¶ş·Ö²éÕÒ
+     * äºŒæ¬¡äºŒåˆ†æŸ¥æ‰¾
      * @param nums
      * @param target
      * @return
@@ -49,13 +49,13 @@ public class SearchRange_34 {
         if (target < nums[0] || target > nums[nums.length - 1]) {
             return res;
         }
-        // Á½´Î¶ş·Ö²éÕÒ
-        // µÚÒ»´Î
+        // ä¸¤æ¬¡äºŒåˆ†æŸ¥æ‰¾
+        // ç¬¬ä¸€æ¬¡
         int start = 0, end = nums.length - 1;
         while (start <= end) {
             int mid = (start + end) >> 1;
             if (nums[mid] == target) {
-                // mid==0 ¾Í²»»áÅĞ¶ÏºóÃæµÄÁË
+                // mid==0 å°±ä¸ä¼šåˆ¤æ–­åé¢çš„äº†
                 if (mid == 0 || nums[mid - 1] != nums[mid]) {
                     res[0] = mid;
                     break;
@@ -69,12 +69,12 @@ public class SearchRange_34 {
             }
         }
         start = 0;
-        // µÚ¶ş´Î
+        // ç¬¬äºŒæ¬¡
         end = nums.length - 1;
         while (start <= end) {
             int mid = (start + end) >> 1;
             if (nums[mid] == target) {
-                // mid==0 ¾Í²»»áÅĞ¶ÏºóÃæµÄÁË
+                // mid==0 å°±ä¸ä¼šåˆ¤æ–­åé¢çš„äº†
                 if (mid == nums.length - 1 || nums[mid + 1] != nums[mid]) {
                     res[1] = mid;
                     break;

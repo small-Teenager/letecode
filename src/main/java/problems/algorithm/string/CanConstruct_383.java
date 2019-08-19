@@ -1,12 +1,12 @@
 package problems.algorithm.string;
 /**
- * Êê½ðÐÅ 383
+ * èµŽé‡‘ä¿¡ 383
  * @author search
  * yaodong199@icloud.com
  */
 public class CanConstruct_383 {
 
-	//magazine ÊÇ ransomNoteµÄÑ¹Ëõ×Ö·û
+	//magazine æ˜¯ ransomNoteçš„åŽ‹ç¼©å­—ç¬¦
 	public boolean canConstruct(String ransomNote, String magazine) {
         if ("".equals(ransomNote)) {
             return true;

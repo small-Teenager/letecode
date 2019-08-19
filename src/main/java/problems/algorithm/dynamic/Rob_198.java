@@ -3,15 +3,15 @@ package problems.algorithm.dynamic;
 import java.util.Arrays;
 
 /**
- * 198. ´ò¼Ò½ÙÉá
+ * 198. æ‰“å®¶åŠ«èˆ
  * 
  * @author search
  *
  */
 public class Rob_198 {
 
-	// V1 ¼ÇÒä»°ËÑË÷
-	// memo[i] ±íÊ¾¿¼ÂÇÇÀ½Ù nums[i...n) ËùÄÜ»ñµÃµÄ×î´óÊÕÒæ
+	// V1 è®°å¿†è¯æœç´¢
+	// memo[i] è¡¨ç¤ºè€ƒè™‘æŠ¢åŠ« nums[i...n) æ‰€èƒ½èŽ·å¾—çš„æœ€å¤§æ”¶ç›Š
 	private int[] memo;
 
 	public int rob(int[] nums) {
@@ -20,7 +20,7 @@ public class Rob_198 {
 		return tryRob(nums, 0);
 	}
 
-	// ¿¼ÂÇÇÀ½Ùnums[index...nums.size())Õâ¸ö·¶Î§µÄËùÓÐ·¿×Ó
+	// è€ƒè™‘æŠ¢åŠ«nums[index...nums.size())è¿™ä¸ªèŒƒå›´çš„æ‰€æœ‰æˆ¿å­
 	private int tryRob(int[] nums, int index) {
 
 		if (index >= nums.length)
@@ -36,14 +36,14 @@ public class Rob_198 {
 		return res;
 	}
 
-	// v2 ¶¯Ì¬¹æ»®
+	// v2 åŠ¨æ€è§„åˆ’
 	public int robv2(int[] nums) {
 
 		int n = nums.length;
 		if (n == 0)
 			return 0;
 
-		// memo[i] ±íÊ¾¿¼ÂÇÇÀ½Ù nums[i...n) ËùÄÜ»ñµÃµÄ×î´óÊÕÒæ
+		// memo[i] è¡¨ç¤ºè€ƒè™‘æŠ¢åŠ« nums[i...n) æ‰€èƒ½èŽ·å¾—çš„æœ€å¤§æ”¶ç›Š
 		int[] memo = new int[nums.length];
 		memo[n - 1] = nums[n - 1];
 		for (int i = n - 2; i >= 0; i--)

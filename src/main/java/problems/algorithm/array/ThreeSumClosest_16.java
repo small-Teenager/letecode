@@ -3,13 +3,13 @@ package problems.algorithm.array;
 import java.util.Arrays;
 
 /**
- * ×î½Ó½üµÄ3ÊıÖ®ºÍ
+ * æœ€æ¥è¿‘çš„3æ•°ä¹‹å’Œ
  * 
  * @author search yaodong199@icloud.com
  */
 public class ThreeSumClosest_16 {
 
-	//v1ÅÅĞò  È»ºó±éÀú, È»ºóÄÚ²¿Ê¹ÓÃË«Ö¸Õë
+	//v1æ’åº  ç„¶åéå†, ç„¶åå†…éƒ¨ä½¿ç”¨åŒæŒ‡é’ˆ
 	public int threeSumClosest(int[] num, int target) {
 		if (num == null || num.length < 3)
 			return 0;

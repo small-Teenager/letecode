@@ -1,7 +1,7 @@
 package problems.algorithm.array;
 
 /**
- * ·´×ªÕûÊı
+ * åè½¬æ•´æ•°
  * 
  * @author search yaodong199@icloud.com
  */
@@ -51,10 +51,10 @@ public class Reverse_7 {
 	
 	/**
 	 * method 3
-	 * 1 È¡xµÄ¾ø¶ÔÖµ  x=Math.abs(x)
-	 * 2 ¶Ôstr½øĞĞ·´×ª    str = String.valueOf(x)
+	 * 1 å–xçš„ç»å¯¹å€¼  x=Math.abs(x)
+	 * 2 å¯¹strè¿›è¡Œåè½¬    str = String.valueOf(x)
 	 * 				  str = new StringBuffer(str).reverse().toString()
-	 * 3 ½« str ×ª»Ø int    int res = Integer.parseInt(str)
+	 * 3 å°† str è½¬å› int    int res = Integer.parseInt(str)
 	 * 4 x > 0 ? res : -res 
 	 * @param x
 	 * @return

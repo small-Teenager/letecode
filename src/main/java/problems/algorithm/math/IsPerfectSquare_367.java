@@ -2,16 +2,16 @@ package problems.algorithm.math;
 /**
  * @author Search
  * @data 9:06 2019/1/24
- * 有效的完全平方数 367
+ * 鏈夋晥鐨勫畬鍏ㄥ钩鏂规暟 367
  */
 public class IsPerfectSquare_367 {
     /**
-     * 完全平凡数是前n个连续奇数的和
-     * 使用等差数列的求和
+     * 瀹屽叏骞冲嚒鏁版槸鍓峮涓繛缁鏁扮殑鍜�
+     * 浣跨敤绛夊樊鏁板垪鐨勬眰鍜�
      */
 
     /**
-     * 牛顿 二分
+     * 鐗涢】 浜屽垎
      *
      * @param num
      * @return

@@ -5,12 +5,12 @@ import java.util.Map;
 
 /**
  * 
- * @author Search yaodong199@ciloud.com ÕÒµ½×Ö·û´®ÖĞËùÓĞ×ÖÄ¸ÒìÎ»´Ê
+ * @author Search yaodong199@ciloud.com æ‰¾åˆ°å­—ç¬¦ä¸²ä¸­æ‰€æœ‰å­—æ¯å¼‚ä½è¯
  *
  */
 public class FourSumCount_454 {
 
-	// v1 ½«Êı×éC£¬D ÈÎÒâ×éºÏµÄºÍ´æÈë²éÕÒ±íÖĞ£¬ keyÊÇºÍ£¬value ÊÇ³öÏÖµÄ´ÎÊı¡£¼ÇÂ¼A£¬B ÈÎÒâ×éºÏµÄºÍµÄ¸ºÖµ£¬È»ºóÔÚ²éÕÒ±íÖĞ²éÕÒÊÇ·ñÓĞ¶ÔÓ¦µÄÖµ
+	// v1 å°†æ•°ç»„Cï¼ŒD ä»»æ„ç»„åˆçš„å’Œå­˜å…¥æŸ¥æ‰¾è¡¨ä¸­ï¼Œ keyæ˜¯å’Œï¼Œvalue æ˜¯å‡ºç°çš„æ¬¡æ•°ã€‚è®°å½•Aï¼ŒB ä»»æ„ç»„åˆçš„å’Œçš„è´Ÿå€¼ï¼Œç„¶ååœ¨æŸ¥æ‰¾è¡¨ä¸­æŸ¥æ‰¾æ˜¯å¦æœ‰å¯¹åº”çš„å€¼
 	public int fourSumCount(int[] A, int[] B, int[] C, int[] D) {
 
 		HashMap<Integer, Integer> map = new HashMap<>();

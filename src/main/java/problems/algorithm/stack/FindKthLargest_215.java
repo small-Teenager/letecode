@@ -5,12 +5,12 @@ import java.util.PriorityQueue;
 /**
  * 
  * @author Search
- * @date 2019/6/17 215. Êı×éÖĞµÄµÚK¸ö×î´óÔªËØ
+ * @date 2019/6/17 215. æ•°ç»„ä¸­çš„ç¬¬Kä¸ªæœ€å¤§å…ƒç´ 
  */
 public class FindKthLargest_215 {
 
 	/**
-	 * ¿ìÅÅ v1
+	 * å¿«æ’ v1
 	 * 
 	 * @param nums
 	 * @param k
@@ -60,9 +60,9 @@ public class FindKthLargest_215 {
 		nums[j] = temp;
 	}
 
-	// ¶ÑÅÅĞòv2
+	// å †æ’åºv2
 	public int findKthLargestV2(int[] nums, int k) {
-		// ±£´æ×î´óµÄk¸öÊı
+		// ä¿å­˜æœ€å¤§çš„kä¸ªæ•°
 		PriorityQueue<Integer> heap = new PriorityQueue<>(k);
 		for (int i = 0; i < nums.length; i++) {
 			if (heap.size() != k) {

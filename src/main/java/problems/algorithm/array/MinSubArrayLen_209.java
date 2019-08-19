@@ -2,12 +2,12 @@ package problems.algorithm.array;
 
 /**
  * 
- * @author Search yaodong199@icloud.com 209. ³¤¶È×îĞ¡µÄ×ÓÊı×é
+ * @author Search yaodong199@icloud.com 209. é•¿åº¦æœ€å°çš„å­æ•°ç»„
  *
  */
 public class MinSubArrayLen_209 {
 
-	// v1 ±©Á¦ÆÆ½â
+	// v1 æš´åŠ›ç ´è§£
 	public int minSubArrayLen(int s, int[] nums) {
 
 		if (s <= 0 || nums == null)
@@ -29,13 +29,13 @@ public class MinSubArrayLen_209 {
 		return res;
 	}
 
-	// v2 ÓÅ»¯±©Á¦ÆÆ½â
+	// v2 ä¼˜åŒ–æš´åŠ›ç ´è§£
 	public int minSubArrayLenV2(int s, int[] nums) {
 
 		if (s <= 0 || nums == null)
 			throw new IllegalArgumentException("Illigal Arguments");
 
-		// sums[i]´æ·Ånums[0...i-1]µÄºÍ
+		// sums[i]å­˜æ”¾nums[0...i-1]çš„å’Œ
 		int[] sums = new int[nums.length + 1];
 		sums[0] = 0;
 		for (int i = 1; i <= nums.length; i++)
@@ -44,7 +44,7 @@ public class MinSubArrayLen_209 {
 		int res = nums.length + 1;
 		for (int l = 0; l < nums.length; l++)
 			for (int r = l; r < nums.length; r++) {
-				// Ê¹ÓÃsums[r+1] - sums[l] ¿ìËÙ»ñµÃnums[l...r]µÄºÍ
+				// ä½¿ç”¨sums[r+1] - sums[l] å¿«é€Ÿè·å¾—nums[l...r]çš„å’Œ
 				if (sums[r + 1] - sums[l] >= s)
 					res = Math.min(res, r - l + 1);
 			}
@@ -55,21 +55,21 @@ public class MinSubArrayLen_209 {
 		return res;
 	}
 
-	// v3»¬¶¯´°¿Ú
+	// v3æ»‘åŠ¨çª—å£
 	public int minSubArrayLenV3(int s, int[] nums) {
 
 		if (s <= 0 || nums == null)
 			throw new IllegalArgumentException("Illigal Arguments");
 
-		int l = 0, r = -1; // nums[l...r]ÎªÎÒÃÇµÄ»¬¶¯´°¿Ú
+		int l = 0, r = -1; // nums[l...r]ä¸ºæˆ‘ä»¬çš„æ»‘åŠ¨çª—å£
 		int sum = 0;
 		int res = nums.length + 1;
 
-		while (l < nums.length) { // ´°¿ÚµÄ×ó±ß½çÔÚÊı×é·¶Î§ÄÚ,ÔòÑ­»·¼ÌĞø
+		while (l < nums.length) { // çª—å£çš„å·¦è¾¹ç•Œåœ¨æ•°ç»„èŒƒå›´å†…,åˆ™å¾ªç¯ç»§ç»­
 
 			if (r + 1 < nums.length && sum < s)
 				sum += nums[++r];
-			else // rÒÑ¾­µ½Í· »òÕß sum >= s
+			else // rå·²ç»åˆ°å¤´ æˆ–è€… sum >= s
 				sum -= nums[l++];
 
 			if (sum >= s)
@@ -81,17 +81,17 @@ public class MinSubArrayLen_209 {
 		return res;
 	}
 
-	// v4 »¬¶¯´°¿ÚµÄÁíÒ»ÖÖÊµÏÖ
+	// v4 æ»‘åŠ¨çª—å£çš„å¦ä¸€ç§å®ç°
 	public int minSubArrayLenV4(int s, int[] nums) {
 
 		if (s <= 0 || nums == null)
 			throw new IllegalArgumentException("Illigal Arguments");
 
-		int l = 0, r = -1; // [l...r]ÎªÎÒÃÇµÄ´°¿Ú
+		int l = 0, r = -1; // [l...r]ä¸ºæˆ‘ä»¬çš„çª—å£
 		int sum = 0;
 		int res = nums.length + 1;
 
-		while (r + 1 < nums.length) { // ´°¿ÚµÄÓÒ±ß½çÎŞ·¨¼ÌĞøÀ©Õ¹ÁË, ÔòÑ­»·¼ÌĞø
+		while (r + 1 < nums.length) { // çª—å£çš„å³è¾¹ç•Œæ— æ³•ç»§ç»­æ‰©å±•äº†, åˆ™å¾ªç¯ç»§ç»­
 
 			while (r + 1 < nums.length && sum < s)
 				sum += nums[++r];
@@ -111,13 +111,13 @@ public class MinSubArrayLen_209 {
 		return res;
 	}
 
-	// v5 ¶ş·ÖËÑË÷
+	// v5 äºŒåˆ†æœç´¢
 	public int minSubArrayLenV5(int s, int[] nums) {
 
 		if (s <= 0 || nums == null)
 			throw new IllegalArgumentException("Illigal Arguments");
 
-		// sums[i]´æ·Ånums[0...i-1]µÄºÍ
+		// sums[i]å­˜æ”¾nums[0...i-1]çš„å’Œ
 		int[] sums = new int[nums.length + 1];
 		sums[0] = 0;
 		for (int i = 1; i <= nums.length; i++)
@@ -125,8 +125,8 @@ public class MinSubArrayLen_209 {
 
 		int res = nums.length + 1;
 		for (int l = 0; l < nums.length - 1; l++) {
-			// JavaÀà¿âÖĞÃ»ÓĞÄÚÖÃµÄlowerBound·½·¨£¬
-			// ÎÒÃÇĞèÒª×Ô¼ºÊµÏÖÒ»¸ö»ùÓÚ¶ş·ÖËÑË÷µÄlowerBound:)
+			// Javaç±»åº“ä¸­æ²¡æœ‰å†…ç½®çš„lowerBoundæ–¹æ³•ï¼Œ
+			// æˆ‘ä»¬éœ€è¦è‡ªå·±å®ç°ä¸€ä¸ªåŸºäºäºŒåˆ†æœç´¢çš„lowerBound:)
 			int r = lowerBound(sums, sums[l] + s);
 			if (r != sums.length) {
 				res = Math.min(res, r - l);
@@ -138,14 +138,14 @@ public class MinSubArrayLen_209 {
 		return res;
 	}
 
-	// ÔÚÓĞĞòÊı×énumsÖĞÑ°ÕÒ´óÓÚµÈÓÚtargetµÄ×îĞ¡Öµ
-	// Èç¹ûÃ»ÓĞ£¨numsÊı×éÖĞËùÓĞÖµ¶¼Ğ¡ÓÚtarget£©£¬Ôò·µ»Ønums.length
+	// åœ¨æœ‰åºæ•°ç»„numsä¸­å¯»æ‰¾å¤§äºç­‰äºtargetçš„æœ€å°å€¼
+	// å¦‚æœæ²¡æœ‰ï¼ˆnumsæ•°ç»„ä¸­æ‰€æœ‰å€¼éƒ½å°äºtargetï¼‰ï¼Œåˆ™è¿”å›nums.length
 	private int lowerBound(int[] nums, int target) {
 
 		if (nums == null /* || !isSorted(nums) */)
 			throw new IllegalArgumentException("Illegal argument nums in lowerBound.");
 
-		int l = 0, r = nums.length; // ÔÚnums[l...r)µÄ·¶Î§ÀïÑ°ÕÒ½â
+		int l = 0, r = nums.length; // åœ¨nums[l...r)çš„èŒƒå›´é‡Œå¯»æ‰¾è§£
 		while (l != r) {
 			int mid = l + (r - l) / 2;
 			if (nums[mid] >= target)

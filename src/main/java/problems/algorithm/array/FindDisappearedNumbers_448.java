@@ -5,11 +5,11 @@ import java.util.List;
 
 /** 
 * @author search 
-* @version ´´½¨Ê±¼ä£º2018Äê5ÔÂ6ÈÕ ÏÂÎç4:34:56 
-* ÀàËµÃ÷ 
+* @version åˆ›å»ºæ—¶é—´ï¼š2018å¹´5æœˆ6æ—¥ ä¸‹åˆ4:34:56 
+* ç±»è¯´æ˜ 
 */
 public class FindDisappearedNumbers_448 {
-	 //Êı×éÖĞ×î´óµÄÔªËØÎª n  
+	 //æ•°ç»„ä¸­æœ€å¤§çš„å…ƒç´ ä¸º n  
 	   public List<Integer> findDisappearedNumbers(int[] nums) {
 			List<Integer> list = new ArrayList<>();
 			int[] arr = new int[nums.length];

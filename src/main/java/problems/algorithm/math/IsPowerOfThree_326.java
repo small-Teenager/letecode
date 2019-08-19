@@ -2,13 +2,13 @@ package problems.algorithm.math;
 /**
  * @author Search
  * @data 17:00 2019/1/24
- * 3的幂 326
+ * 3鐨勫箓 326
  */
 public class IsPowerOfThree_326 {
 
     /**
-     * 3的幂
-     * 以3为底取对数结果 =log(n)/log(3)一定为整数
+     * 3鐨勫箓
+     * 浠�3涓哄簳鍙栧鏁扮粨鏋� =log(n)/log(3)涓�瀹氫负鏁存暟
      * @param n
      * @return
      */
@@ -24,8 +24,8 @@ public class IsPowerOfThree_326 {
         return false;
     }
     /**
-     * 优化method1
-     * Math.log10(n)与Math.log(n)在java中还是有区别的
+     * 浼樺寲method1
+     * Math.log10(n)涓嶮ath.log(n)鍦╦ava涓繕鏄湁鍖哄埆鐨�
      *
      * @param n
      * @return

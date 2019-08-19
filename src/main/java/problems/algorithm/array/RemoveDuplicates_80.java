@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 /**
  * @author search
- * 80. 删除排序数组中的重复项 II
+ * 80. 鍒犻櫎鎺掑簭鏁扮粍涓殑閲嶅椤� II
  */
 public class RemoveDuplicates_80 {
 

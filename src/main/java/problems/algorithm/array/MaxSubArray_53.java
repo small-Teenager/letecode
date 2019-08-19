@@ -2,7 +2,7 @@ package problems.algorithm.array;
 
 /**
  * @author search
- * @version ´´½¨Ê±¼ä£º2018Äê4ÔÂ23ÈÕ ÏÂÎç5:36:33 ÀàËµÃ÷ :×î´ó×ÓĞòºÍ
+ * @version åˆ›å»ºæ—¶é—´ï¼š2018å¹´4æœˆ23æ—¥ ä¸‹åˆ5:36:33 ç±»è¯´æ˜ :æœ€å¤§å­åºå’Œ
  */
 public class MaxSubArray_53 {
 

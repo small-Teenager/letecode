@@ -2,7 +2,7 @@ package problems.algorithm.linkedlist;
 
 /**
  * 
- * @author Search ÆæÅ¼Á´±í
+ * @author Search å¥‡å¶é“¾è¡¨
  *
  */
 public class OddEvenList_328 {
@@ -20,11 +20,11 @@ public class OddEvenList_328 {
 		if (head == null || head.next == null) {
 			return head;
 		}
-		// head ÎªÆæÁ´±íÍ·½áµã£¬o ÎªÆæÁ´±íÎ²½Úµã
+		// head ä¸ºå¥‡é“¾è¡¨å¤´ç»“ç‚¹ï¼Œo ä¸ºå¥‡é“¾è¡¨å°¾èŠ‚ç‚¹
 		ListNode o = head;
-		// p ÎªÅ¼Á´±íÍ·½áµã
+		// p ä¸ºå¶é“¾è¡¨å¤´ç»“ç‚¹
 		ListNode p = head.next;
-		// e ÎªÅ¼Á´±íÎ²½Úµã
+		// e ä¸ºå¶é“¾è¡¨å°¾èŠ‚ç‚¹
 		ListNode e = p;
 		while (o.next != null && e.next != null) {
 			o.next = e.next;

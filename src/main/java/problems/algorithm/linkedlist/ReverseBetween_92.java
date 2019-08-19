@@ -2,7 +2,7 @@ package problems.algorithm.linkedlist;
 /**
  * 
  * @author Search 
- * ·´×ªÁ´±í II
+ * åè½¬é“¾è¡¨ II
  *
  */
 public class ReverseBetween_92 {

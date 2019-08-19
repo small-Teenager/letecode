@@ -2,12 +2,12 @@ package problems.algorithm.linkedlist;
 
 /**
  * 
- * @author Search É¾³ıÁ´±íµÄµ¹ÊıµÚN¸ö½Úµã
+ * @author Search åˆ é™¤é“¾è¡¨çš„å€’æ•°ç¬¬Nä¸ªèŠ‚ç‚¹
  *
  */
 public class RemoveNthFromEnd_19 {
 
-	// ÏÈ¼ÇÂ¼Á´±í³¤¶È ºó±éÀú
+	// å…ˆè®°å½•é“¾è¡¨é•¿åº¦ åéå†
 	public ListNode removeNthFromEnd(ListNode head, int n) {
 
 		ListNode dummyHead = new ListNode(0);
@@ -28,7 +28,7 @@ public class RemoveNthFromEnd_19 {
 		return dummyHead.next;
 	}
 
-	// ëpÖ¸á˜
+	// é›™æŒ‡é‡
 	public ListNode removeNthFromEndV2(ListNode head, int n) {
 
 		ListNode dummyHead = new ListNode(0);

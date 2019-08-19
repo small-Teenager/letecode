@@ -5,7 +5,7 @@ import java.util.List;
 
 /**
  * @author Search
- * À¨ºÅÉú³É 22
+ * æ‹¬å·ç”Ÿæˆ 22
  * @date 2019/1/10
  */
 public class GenerateParenthesis_22 {

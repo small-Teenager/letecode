@@ -2,7 +2,7 @@ package problems.algorithm.string;
 
 /**
  * @author search
- * @version ´´½¨Ê±¼ä£º2018Äê4ÔÂ23ÈÕ ÏÂÎç4:57:46 ÀàËµÃ÷ :×Ö·û´®ÖĞµÄµ¥´ÊÊı
+ * @version åˆ›å»ºæ—¶é—´ï¼š2018å¹´4æœˆ23æ—¥ ä¸‹åˆ4:57:46 ç±»è¯´æ˜ :å­—ç¬¦ä¸²ä¸­çš„å•è¯æ•°
  */
 public class CountSegments_434 {
 	public int countSegments(String s) {

@@ -3,20 +3,20 @@ package problems.algorithm.array;
 import java.util.Arrays;
 
 /**
- * Á½¸öÅÅĞòÊı×éµÄÖĞÎ»Êı
+ * ä¸¤ä¸ªæ’åºæ•°ç»„çš„ä¸­ä½æ•°
  * @author search
  * yaodong199@icloud.com
  */
 public class FindMedianSortedArrays_4 {
 
 	/**
-	 * ½«Á½¸öÊı×éºÏ²¢ÎªÒ»¸öÊı×é
+	 * å°†ä¸¤ä¸ªæ•°ç»„åˆå¹¶ä¸ºä¸€ä¸ªæ•°ç»„
 	 * @param nums1
 	 * @param nums2
 	 * @return
 	 */
 	public double findMedianSortedArrays(int[] nums1, int[] nums2) {
-		//ºÏ²¢Êı×é
+		//åˆå¹¶æ•°ç»„
 		int[] nums = new int[nums1.length + nums2.length];
 		for (int i = 0; i < nums1.length; i++) {
 			nums[i] = nums1[i];
@@ -26,7 +26,7 @@ public class FindMedianSortedArrays_4 {
 		}
 		Arrays.sort(nums);
 		
-		//Èç¹ûĞÂÊı×é³¤¶ÈÎªÅ¼Êı ÖĞÎ»Êı£ºnums[nums.length / 2] + nums[nums.length / 2 - 1]
+		//å¦‚æœæ–°æ•°ç»„é•¿åº¦ä¸ºå¶æ•° ä¸­ä½æ•°ï¼šnums[nums.length / 2] + nums[nums.length / 2 - 1]
 		if (nums == null || nums.length == 0)
 			return 0.0;
 		
@@ -34,7 +34,7 @@ public class FindMedianSortedArrays_4 {
 			return (nums[nums.length / 2] + nums[nums.length / 2 - 1]) / 2.0;
 		}
 		
-       //ĞÂÊı×éµÄ³¤¶ÈÎªÆæÊı£¬ÖĞÎ»Êı£º nums[nums.length / 2]
+       //æ–°æ•°ç»„çš„é•¿åº¦ä¸ºå¥‡æ•°ï¼Œä¸­ä½æ•°ï¼š nums[nums.length / 2]
 		return nums[nums.length / 2];
 	}
 }

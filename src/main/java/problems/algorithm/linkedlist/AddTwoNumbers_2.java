@@ -1,7 +1,7 @@
 package problems.algorithm.linkedlist;
 
 /**
- * @author Search 2. 两数相加
+ * @author Search 2. 涓ゆ暟鐩稿姞
  * @date 2019/1/2
  */
 public class AddTwoNumbers_2 {

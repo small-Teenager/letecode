@@ -1,13 +1,13 @@
 package problems.algorithm.string;
 /**
- * 788. Ðý×ªÊý×Ö
+ * 788. æ—‹è½¬æ•°å­—
  * @author search
  * yaodong199@icloud.com
  */
 public class RotatedDigits_788 {
 
 	/**
-	 * 1-nÓÐ¶àÉÙÐý×ªÊý×Ö
+	 * 1-næœ‰å¤šå°‘æ—‹è½¬æ•°å­—
 	 * @param N
 	 * @return
 	 */

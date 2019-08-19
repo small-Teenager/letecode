@@ -1,13 +1,13 @@
 package problems.algorithm.string;
 
 /**
- * ÑéÖ¤»ØÎÄ×Ö·û´® ¢ò
+ * éªŒè¯å›æ–‡å­—ç¬¦ä¸² â…¡
  * 
  * @author search
  *
  */
 public class ValidPalindrome_680 {
-	//Ê×ÏÈÏëµ½µÄÊÇ±©Á¦ÆÆ½â  ¼´Ã¿É¾³ıÒ»¸ö×Ö·ûÑéÖ¤Ò»´Î
+	//é¦–å…ˆæƒ³åˆ°çš„æ˜¯æš´åŠ›ç ´è§£  å³æ¯åˆ é™¤ä¸€ä¸ªå­—ç¬¦éªŒè¯ä¸€æ¬¡
 	public boolean validPalindrome(String s) {
 		int l = 0, r = s.length() - 1;
 		for (; l < r; l++, r--)

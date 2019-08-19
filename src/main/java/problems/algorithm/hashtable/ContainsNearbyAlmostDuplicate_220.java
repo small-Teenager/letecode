@@ -4,15 +4,15 @@ import java.util.TreeSet;
 
 /**
  * 
- * @author Search yaodong199@ciloud.com 找到字符串中所有字母异位词
+ * @author Search yaodong199@ciloud.com 鎵惧埌瀛楃涓蹭腑鎵�鏈夊瓧姣嶅紓浣嶈瘝
  *
  */
 public class ContainsNearbyAlmostDuplicate_220 {
 
 	public boolean containsNearbyAlmostDuplicate(int[] nums, int k, int t) {
 
-		// 这个问题的测试数据在使用int进行加减运算时会溢出
-		// 所以使用long long
+		// 杩欎釜闂鐨勬祴璇曟暟鎹湪浣跨敤int杩涜鍔犲噺杩愮畻鏃朵細婧㈠嚭
+		// 鎵�浠ヤ娇鐢╨ong long
 		TreeSet<Long> record = new TreeSet<Long>();
 		for (int i = 0; i < nums.length; i++) {
 

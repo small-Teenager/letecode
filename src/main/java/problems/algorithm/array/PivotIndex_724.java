@@ -1,14 +1,14 @@
 package problems.algorithm.array;
 
 /**
- * 724.Ñ°ÕÒÊı×éµÄÖĞĞÄË÷Òı
+ * 724.å¯»æ‰¾æ•°ç»„çš„ä¸­å¿ƒç´¢å¼•
  * 
  * @author search yaodong199@icloud.com
  *
  */
 public class PivotIndex_724 {
 	/**
-	 * Êı×é×ó²à- Ë÷Òı= Êı×éÓÒ²à
+	 * æ•°ç»„å·¦ä¾§- ç´¢å¼•= æ•°ç»„å³ä¾§
 	 * 
 	 * @param nums
 	 * @return

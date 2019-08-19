@@ -2,15 +2,15 @@ package problems.algorithm.array;
 
 /**
  * 
- * @author Search 75. ÑÕÉ«·ÖÀà
+ * @author Search 75. é¢œè‰²åˆ†ç±»
  */
 public class SortColors_75 {
 
-	// 1 ³£¹æÅÅĞòËã·¨
-	// 2 ¼ÆÊıÅÅĞò
+	// 1 å¸¸è§„æ’åºç®—æ³•
+	// 2 è®¡æ•°æ’åº
 	public void sortColors(int[] nums) {
 
-		int[] count = { 0, 0, 0 }; // ´æ·Å0, 1, 2Èı¸öÔªËØµÄÆµÂÊ
+		int[] count = { 0, 0, 0 }; // å­˜æ”¾0, 1, 2ä¸‰ä¸ªå…ƒç´ çš„é¢‘ç‡
 		for (int i = 0; i < nums.length; i++) {
 			assert nums[i] >= 0 && nums[i] <= 2;
 			count[nums[i]]++;
@@ -25,7 +25,7 @@ public class SortColors_75 {
 			nums[index++] = 2;
 	}
 	
-	//v2 ÈıÂ·¿ìÅÅ   Ò»´Î±éÀú£¬Èç¹ûÊÇ0£¬ÔòÒÆ¶¯µ½±íÍ·£¬Èç¹ûÊÇ2£¬ÔòÒÆ¶¯µ½±íÎ²£¬²»ÓÃ¿¼ÂÇ1
+	//v2 ä¸‰è·¯å¿«æ’   ä¸€æ¬¡éå†ï¼Œå¦‚æœæ˜¯0ï¼Œåˆ™ç§»åŠ¨åˆ°è¡¨å¤´ï¼Œå¦‚æœæ˜¯2ï¼Œåˆ™ç§»åŠ¨åˆ°è¡¨å°¾ï¼Œä¸ç”¨è€ƒè™‘1
 	public void sortColorsV2(int[] nums) {
 
         int zero = -1;          // [0...zero] == 0

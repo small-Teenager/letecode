@@ -1,8 +1,8 @@
 package problems.algorithm.array;
 /** 
 * @author search 
-* @version ´´½¨Ê±¼ä£º2018Äê5ÔÂ7ÈÕ ÉÏÎç9:31:15 
-* ÀàËµÃ÷  ÂòÂô¹ÉÆ±µÄ×î¼ÑÊ±»úII
+* @version åˆ›å»ºæ—¶é—´ï¼š2018å¹´5æœˆ7æ—¥ ä¸Šåˆ9:31:15 
+* ç±»è¯´æ˜  ä¹°å–è‚¡ç¥¨çš„æœ€ä½³æ—¶æœºII
 */
 public class MaxProfit_122 {
 	public int maxProfit(int[] prices) {

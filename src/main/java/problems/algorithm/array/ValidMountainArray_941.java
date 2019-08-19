@@ -3,11 +3,11 @@ package problems.algorithm.array;
 /**
  * @author Search
  * @data 17:29 2019/1/21
- * ÓĞĞ§µÄÉ½ÂöÊı×é
+ * æœ‰æ•ˆçš„å±±è„‰æ•°ç»„
  */
 public class ValidMountainArray_941 {
     /**
-     * Êı×é×ó±ßµ¥µ÷µİÔö£¬ÓÒ±ßµ¥µ÷µİ¼õ
+     * æ•°ç»„å·¦è¾¹å•è°ƒé€’å¢ï¼Œå³è¾¹å•è°ƒé€’å‡
      *
      * @param A
      * @return

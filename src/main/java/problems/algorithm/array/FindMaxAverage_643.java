@@ -2,18 +2,18 @@ package problems.algorithm.array;
 
 /**
  * 
- * @author search 643. ×ÓÊı×é×î´óÆ½¾ùÊı I
+ * @author search 643. å­æ•°ç»„æœ€å¤§å¹³å‡æ•° I
  */
 public class FindMaxAverage_643 {
 
 	public double findMaxAverage(int[] nums, int k) {
 		double sum = 0;
-		// ÇóºÍ£ºÊı×éÇ°k¸öµÄºÍ
+		// æ±‚å’Œï¼šæ•°ç»„å‰kä¸ªçš„å’Œ
 		for (int i = 0; i < k; i++)
 			sum += nums[i];
 
 		double max = sum;
-		// ±È½Ïmax¸úºóĞøÊı×éµÄ´óĞ¡
+		// æ¯”è¾ƒmaxè·Ÿåç»­æ•°ç»„çš„å¤§å°
 		for (int i = k; i < nums.length; i++) {
 			sum += nums[i] - nums[i - k];
 			max = Math.max(max, sum);

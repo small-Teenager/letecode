@@ -1,17 +1,16 @@
 #version java jre "1.8" 
 
-#code : GBK GBK GBK 
-	ÓÉÓÚÒ»¿ªÊ¼Ð´µÄÊ±ºòÃ»ÔÚÒâ±àÂë¸ñÊ½£¬µÈ·¢ÏÖ×Ö·û¼¯ÊÇGBK Ê±£¬ÒÑ¾­Ð´ÁËºÃ¶à£¬Ò²¾Í²»Ì«ÏëÐÞ¸Ä×Ö·û¼¯£¬ËùÒÔ±¾ÏîÄ¿ÒÔºó½«Ò»ÖÂÑÓÐøÕâÖÖ·ç¸ñ,‡å£¬²»ÒªÔÚÒâÕâÐ©Ï¸½ÚÀ²£¡£¡£¡·¢ÏÖemoji ÓÃGBK»¹²»ÄÜ±£´æ£¬¹ûÈ»ÔÚÏîÄ¿¿ªÊ¼¶¨ºÃ×Ö·û¼¯»¹ÊÇºÜÓÐÒâÒåµÄ...
+#code : UTF-8 
 
 <<<<<<< HEAD 
-#ÕâÊÇÒ»¸öletecodeµÄÎÄµµ 
+#è¿™æ˜¯ä¸€ä¸ªletecodeçš„æ–‡æ¡£ 
 --
-#Èç¹ûÏëÒª²âÊÔ´úÂë£¬ÇëÔÚ [letecode](https://leetcode.com/)²é¿´ÌâÄ¿ÃèÊö¼°²âÊÔ 
+#å¦‚æžœæƒ³è¦æµ‹è¯•ä»£ç ï¼Œè¯·åœ¨ [letecode](https://leetcode.com/)æŸ¥çœ‹é¢˜ç›®æè¿°åŠæµ‹è¯• 
 
-#°üÃüÃû·½Ê½£ºorder by tags
+#åŒ…å‘½åæ–¹å¼ï¼šorder by tags
 
-#ÎÄ¼þÃüÃû·½Ê½£º·½·¨Ãû+ÌâÄ¿±êºÅ
+#æ–‡ä»¶å‘½åæ–¹å¼ï¼šæ–¹æ³•å+é¢˜ç›®æ ‡å·
 
-#[¸üÐÂÁ¬½Ó](https://github.com/small-Teenager/letecode.git)
+#[æ›´æ–°è¿žæŽ¥](https://github.com/small-Teenager/letecode.git)
 
 ![](letecode.png)  

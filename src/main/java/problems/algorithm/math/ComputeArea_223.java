@@ -2,13 +2,13 @@ package problems.algorithm.math;
 
 /**
  * @author Search
- * ¾ØĞÎÃæ»ı 223
+ * çŸ©å½¢é¢ç§¯ 223
  * @date 2019/1/10
  */
 public class ComputeArea_223 {
     /**
      * math
-     * ¶ş¸ö´ó¾ØĞÎµÄÃæ»ıºÍ-ÖØµşµÄÃæ»ıºÍ
+     * äºŒä¸ªå¤§çŸ©å½¢çš„é¢ç§¯å’Œ-é‡å çš„é¢ç§¯å’Œ
      * a U b -a*b
      * @param A
      * @param B
@@ -37,7 +37,7 @@ public class ComputeArea_223 {
     }
 
     /**
-     * a½»b ÆäÖĞ¿¼ÂÇa b ²»Ïà½»
+     * aäº¤b å…¶ä¸­è€ƒè™‘a b ä¸ç›¸äº¤
      * @param A
      * @param B
      * @param C

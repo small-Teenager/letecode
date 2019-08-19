@@ -3,12 +3,12 @@ package problems.algorithm.math;
 /**
  * @author Search
  * @date 2019/1/9
- * 2µÄÃİ 231
+ * 2çš„å¹‚ 231
  */
 public class IsPowerOfTwo_231 {
 
     /**
-     * & Óë
+     * & ä¸
      * @param n
      * @return
      */
@@ -24,7 +24,7 @@ public class IsPowerOfTwo_231 {
 
     /**
      * math method
-     * b=log2(n)-->×ª³Élog10Îªµ×
+     * b=log2(n)-->è½¬æˆlog10ä¸ºåº•
      * b==int
      * @param n
      * @return

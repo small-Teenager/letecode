@@ -1,7 +1,7 @@
 package problems.algorithm.string;
 
 /**
- * 43. ×Ö·û´®Ïà³Ë
+ * 43. å­—ç¬¦ä¸²ç›¸ä¹˜
  * 
  * @author search yaodong199@icloud.com
  */
@@ -23,10 +23,10 @@ public class Multiply_43 {
 				arr[j + i + 1] = value % 10;
 			}
 		}
-		// ×éºÏÊı×Ö
+		// ç»„åˆæ•°å­—
 		StringBuilder sb = new StringBuilder();
 		int k = 0;
-		// È¥µôÊ×0
+		// å»æ‰é¦–0
 		while (k < arr.length && arr[k] == 0)
 			k++;
 		while (k < arr.length)

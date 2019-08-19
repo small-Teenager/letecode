@@ -3,7 +3,7 @@ package problems.algorithm.stack;
 import java.util.Stack;
 
 /**
- * 394. ×Ö·û´®½âÂë
+ * 394. å­—ç¬¦ä¸²è§£ç 
  * 
  * @author search
  *

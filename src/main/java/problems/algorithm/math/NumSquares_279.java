@@ -2,30 +2,30 @@ package problems.algorithm.math;
 /**
  * @author Search
  * @data 16:41 2019/1/24
- * ÍêÈ«Æ½·½Êý 279
+ * å®Œå…¨å¹³æ–¹æ•° 279
  */
 public class NumSquares_279 {
     /**
-     * ËÄÆ½·½¶¨Àí£º ÈÎºÎÒ»¸öÕýÕûÊý¶¼¿ÉÒÔ±íÊ¾³É²»³¬¹ýËÄ¸öÕûÊýµÄÆ½·½Ö®ºÍ¡£ ÍÆÂÛ£ºÂú×ãËÄÊýÆ½·½ºÍ¶¨ÀíµÄÊýn£¨ËÄ¸öÕûÊýµÄÇé¿ö£©£¬±Ø¶¨Âú×ã n=4^a(8b+7)
+     * å››å¹³æ–¹å®šç†ï¼š ä»»ä½•ä¸€ä¸ªæ­£æ•´æ•°éƒ½å¯ä»¥è¡¨ç¤ºæˆä¸è¶…è¿‡å››ä¸ªæ•´æ•°çš„å¹³æ–¹ä¹‹å’Œã€‚ æŽ¨è®ºï¼šæ»¡è¶³å››æ•°å¹³æ–¹å’Œå®šç†çš„æ•°nï¼ˆå››ä¸ªæ•´æ•°çš„æƒ…å†µï¼‰ï¼Œå¿…å®šæ»¡è¶³ n=4^a(8b+7)
      *
      * @param n
      * @return
      */
     public int numSquares(int n) {
-        //ÏÈ¸ù¾ÝÉÏÃæÌáµ½µÄ¹«Ê½À´ËõÐ¡n
+        //å…ˆæ ¹æ®ä¸Šé¢æåˆ°çš„å…¬å¼æ¥ç¼©å°n
         while (n % 4 == 0) {
             n /= 4;
         }
-        //Èç¹ûÂú×ã¹«Ê½ Ôò·µ»Ø4
+        //å¦‚æžœæ»¡è¶³å…¬å¼ åˆ™è¿”å›ž4
         if (n % 8 == 7) {
             return 4;
         }
-        //ÔÚÅÐ¶ÏËõÐ¡ºóµÄÊýÊÇ·ñ¿ÉÒÔÓÉÒ»¸öÊýµÄÆ½·½»òÕßÁ½¸öÊýÆ½·½µÄºÍ×é³É
+        //åœ¨åˆ¤æ–­ç¼©å°åŽçš„æ•°æ˜¯å¦å¯ä»¥ç”±ä¸€ä¸ªæ•°çš„å¹³æ–¹æˆ–è€…ä¸¤ä¸ªæ•°å¹³æ–¹çš„å’Œç»„æˆ
         int a = 0;
         while ((a * a) <= n) {
             int b = (int) Math.sqrt((n - a * a));
             if (a * a + b * b == n) {
-                //Èç¹û¿ÉÒÔ ÔÚÕâÀï·µ»Ø
+                //å¦‚æžœå¯ä»¥ åœ¨è¿™é‡Œè¿”å›ž
                 if (a != 0 && b != 0) {
                     return 2;
                 } else {
@@ -34,7 +34,7 @@ public class NumSquares_279 {
             }
             a++;
         }
-        //Èç¹û²»ÐÐ ·µ»Ø3
+        //å¦‚æžœä¸è¡Œ è¿”å›ž3
         return 3;
     }
 }

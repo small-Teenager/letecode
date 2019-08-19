@@ -2,7 +2,7 @@ package problems.algorithm.string;
 /**
  * 
  * @author search yaodong199@icloud.com
- * ·´×ª×Ö·û´® II
+ * åè½¬å­—ç¬¦ä¸² II
  */
 public class ReverseStr_541 {
 

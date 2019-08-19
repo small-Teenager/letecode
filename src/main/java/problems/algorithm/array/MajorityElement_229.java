@@ -3,7 +3,7 @@ package problems.algorithm.array;
 import java.util.List;
 
 /**
- * ÇóÖÚÊı II
+ * æ±‚ä¼—æ•° II
  * 
  * @author search yaodong199@icloud.com
  *

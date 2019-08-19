@@ -1,14 +1,14 @@
 package problems.algorithm.string;
 /**
- * 831. Òş²Ø¸öÈËĞÅÏ¢
+ * 831. éšè—ä¸ªäººä¿¡æ¯
  * @author search
  * yaodong199@icloud.com
  */
 public class MaskPII_831 {
 
 	/**
-	 * Èç¹ûSÊÇÓÊÏä£¬ËùÓĞ×Ö·ûĞ¡Ğ´£¬°´¹æÔò×ª»»
-	 * Èç¹ûÊÇµç»°£¬
+	 * å¦‚æœSæ˜¯é‚®ç®±ï¼Œæ‰€æœ‰å­—ç¬¦å°å†™ï¼ŒæŒ‰è§„åˆ™è½¬æ¢
+	 * å¦‚æœæ˜¯ç”µè¯ï¼Œ
 	 * @param S
 	 * @return
 	 */

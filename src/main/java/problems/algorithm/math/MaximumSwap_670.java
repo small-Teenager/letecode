@@ -4,11 +4,11 @@ import java.util.LinkedList;
 /**
  * @author Search
  * @data 13:26 2019/1/28
- * 最大交换 670
+ * 鏈�澶т氦鎹� 670
  */
 public class MaximumSwap_670 {
     /**
-     * 左數第二位最大值 和第一位交換位置如果第一位小
+     * 宸︽暩绗簩浣嶆渶澶у�� 鍜岀涓�浣嶄氦鎻涗綅缃鏋滅涓�浣嶅皬
      * @param num
      * @return
      */

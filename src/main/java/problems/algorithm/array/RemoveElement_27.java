@@ -2,7 +2,7 @@ package problems.algorithm.array;
 
 /**
  * @author search
- * @version 创建时间：2018年4月23日 下午3:59:07 类说明 :移除元素
+ * @version 鍒涘缓鏃堕棿锛�2018骞�4鏈�23鏃� 涓嬪崍3:59:07 绫昏鏄� :绉婚櫎鍏冪礌
  */
 public class RemoveElement_27 {
 	//v1

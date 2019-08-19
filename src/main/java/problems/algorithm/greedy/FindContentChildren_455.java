@@ -3,7 +3,7 @@ package problems.algorithm.greedy;
 import java.util.Arrays;
 
 /**
- * 455. 分发饼干
+ * 455. 鍒嗗彂楗煎共
  * 
  * @author search
  *

@@ -2,13 +2,13 @@ package problems.algorithm.math;
 /**
  * @author Search
  * @data 17:02 2019/1/22
- * 排列硬币 441
+ * 鎺掑垪纭竵 441
  */
 public class ArrangeCoins_441 {
 
     /**
-     * 可以看成等差数列
-     * 等差数列求和公式  n = (1 + x) * x / 2  x = (-1 + sqrt(8 * n + 1)) / 2
+     * 鍙互鐪嬫垚绛夊樊鏁板垪
+     * 绛夊樊鏁板垪姹傚拰鍏紡  n = (1 + x) * x / 2  x = (-1 + sqrt(8 * n + 1)) / 2
      *
      * @param n
      * @return

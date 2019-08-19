@@ -1,7 +1,7 @@
 package problems.algorithm.string;
 
 /**
- * 验证 ip 地址
+ * 楠岃瘉 ip 鍦板潃
  * 
  * @author search yaodong199@icloud.com
  */
@@ -86,7 +86,7 @@ public class ValidIPAddress_468 {
 	}
 
 	/***
-	 * method 2 正则验证
+	 * method 2 姝ｅ垯楠岃瘉
 	 * 
 	 * @param IP
 	 * @return

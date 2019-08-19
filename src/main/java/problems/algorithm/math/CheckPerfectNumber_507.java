@@ -1,14 +1,14 @@
 package problems.algorithm.math;
 
 /**
- * 507. ÍêÃÀÊı
+ * 507. å®Œç¾æ•°
  * 
  * @author search yaodong199@icloud.com
  */
 public class CheckPerfectNumber_507 {
 
 	/**
-	 * ±©Á¦ÆÆ½â ³¬³öÊ±¼äÏŞÖÆ
+	 * æš´åŠ›ç ´è§£ è¶…å‡ºæ—¶é—´é™åˆ¶
 	 * @param num
 	 * @return
 	 */

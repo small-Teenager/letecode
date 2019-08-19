@@ -4,14 +4,14 @@ import java.util.Deque;
 import java.util.LinkedList;
 
 /**
- * ¼ò»¯Â·¾¶
+ * ç®€åŒ–è·¯å¾„
  * 
  * @author search
  *
  */
 public class SimplifyPath_71 {
 	
-	//Õ»½â¾ö,°Ñµ±Ç°Ä¿Â¼Ñ¹ÈëÕ»ÖĞ,Óöµ½..µ¯³öÕ»¶¥,×îºó·µ»ØÕ»ÖĞÔªËØ.
+	//æ ˆè§£å†³,æŠŠå½“å‰ç›®å½•å‹å…¥æ ˆä¸­,é‡åˆ°..å¼¹å‡ºæ ˆé¡¶,æœ€åè¿”å›æ ˆä¸­å…ƒç´ .
 	public String simplifyPath(String path) {
 		Deque<String> stack = new LinkedList<>();
 		for (String item : path.split("/")) {

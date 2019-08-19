@@ -1,15 +1,15 @@
 package problems.algorithm.array;
 
 /**
- * 849. µ½×î½üµÄÈËµÄ×î´ó¾àÀë
+ * 849. åˆ°æœ€è¿‘çš„äººçš„æœ€å¤§è·ç¦»
  * 
  * @author search yaodoleng199@icloud.com
  */
 public class MaxDistToClosest_849 {
 
 	/**
-	 * 1 ¡¢1 <= seats.lelength <= 20000 
-	 * 2 ¡¢seats ÖĞÖ»º¬ÓĞ 0 ºÍ 1£¬ÖÁÉÙÓĞÒ»¸ö 0£¬ÇÒÖÁÉÙÓĞÒ»¸ö 1
+	 * 1 ã€1 <= seats.lelength <= 20000 
+	 * 2 ã€seats ä¸­åªå«æœ‰ 0 å’Œ 1ï¼Œè‡³å°‘æœ‰ä¸€ä¸ª 0ï¼Œä¸”è‡³å°‘æœ‰ä¸€ä¸ª 1
 	 * @param seats
 	 * @returlen
 	 */

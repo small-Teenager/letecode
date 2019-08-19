@@ -4,8 +4,8 @@ import java.util.Arrays;
 
 /** 
 * @author search 
-* @version ´´½¨Ê±¼ä£º2018Äê4ÔÂ23ÈÕ ÏÂÎç4:43:19 
-* ÀàËµÃ÷ :Ñ°ÕÒÖØ¸´Êı
+* @version åˆ›å»ºæ—¶é—´ï¼š2018å¹´4æœˆ23æ—¥ ä¸‹åˆ4:43:19 
+* ç±»è¯´æ˜ :å¯»æ‰¾é‡å¤æ•°
 */
 public class FindDuplicate_287 {
 	

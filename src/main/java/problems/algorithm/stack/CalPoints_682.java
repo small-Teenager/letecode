@@ -4,12 +4,12 @@ import java.util.Stack;
 
 /**
  * @author Search
- * 棒球比赛 682
+ * 妫掔悆姣旇禌 682
  * @date 2019/1/7
  */
 public class CalPoints_682 {
     /**
-     * 遍历数组
+     * 閬嶅巻鏁扮粍
      * @param ops
      * @return
      */

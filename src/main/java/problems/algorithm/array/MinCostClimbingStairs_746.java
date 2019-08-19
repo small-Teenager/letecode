@@ -1,7 +1,7 @@
 package problems.algorithm.array;
 
 /**
- * 746. 使用最小花费爬楼梯
+ * 746. 浣跨敤鏈�灏忚姳璐圭埇妤兼
  * 
  * @author search yaodong199@icloud.com
  */

@@ -3,23 +3,23 @@ package problems.algorithm.math;
 /**
  * @author Search
  * @data 11:12 2019/3/19
- * µÈ²îÊıÁĞ»®·Ö
+ * ç­‰å·®æ•°åˆ—åˆ’åˆ†
  */
 public class NumberOfArithmeticSlices_413 {
 
     /**
-     * ¶¯Ì¬¹æ»®
+     * åŠ¨æ€è§„åˆ’
      * @param A
      * @return
      */
     public int numberOfArithmeticSlices(int[] A) {
         int res=0;
-        //ºóÃæ2¸ö¾Í²»ĞèÒªÅĞ¶ÏÁË
+        //åé¢2ä¸ªå°±ä¸éœ€è¦åˆ¤æ–­äº†
         for (int i=0;i<A.length-2;i++){
-            //ÓëºóÒ»¸öÊıµÄÏà²îÊı
+            //ä¸åä¸€ä¸ªæ•°çš„ç›¸å·®æ•°
             int c=A[i+1]-A[i];
             for (int j=i+2;j<A.length;j++){
-                //Èç¹ûÏà²îÏàµÈ¾Í¼Ó1;
+                //å¦‚æœç›¸å·®ç›¸ç­‰å°±åŠ 1;
                 if (A[j]-A[j-1]==c){
                     res++;
                 }else{

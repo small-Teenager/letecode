@@ -3,11 +3,11 @@ package problems.algorithm.math;
 /**
  * @author Search
  * @data 9:47 2019/2/14
- * µ½´ïÖÕµãÊý×Ö 754
+ * åˆ°è¾¾ç»ˆç‚¹æ•°å­— 754
  */
 public class ReachNumber_754 {
     /**
-     * sum £º1+2+3...+n
+     * sum ï¼š1+2+3...+n
      * sum=n(n+1)/2
      * n=sqrt(2sum-0.25)-0.5
      * n = (sqrt(8m-1)-1)/2

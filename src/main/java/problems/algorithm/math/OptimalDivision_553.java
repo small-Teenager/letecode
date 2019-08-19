@@ -3,12 +3,12 @@ package problems.algorithm.math;
 /**
  * @author Search
  * @data 17:40 2019/2/13
- * ×îÓÅ³ı·¨ 553
+ * æœ€ä¼˜é™¤æ³• 553
  */
 public class OptimalDivision_553 {
 
     /**
-     * Ò»×éÀ¨ºÅ°Ñ´ÓµÚ¶ş¸öÊı¿ªÊ¼µÄËùÓĞÊıÀ¨ÆğÀ´
+     * ä¸€ç»„æ‹¬å·æŠŠä»ç¬¬äºŒä¸ªæ•°å¼€å§‹çš„æ‰€æœ‰æ•°æ‹¬èµ·æ¥
      * @param nums
      * @return
      */

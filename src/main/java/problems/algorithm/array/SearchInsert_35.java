@@ -2,7 +2,7 @@ package problems.algorithm.array;
 
 /**
  * @author search
- * @version ´´½¨Ê±¼ä£º2018Äê4ÔÂ23ÈÕ ÏÂÎç3:50:25 ÀàËµÃ÷:ËÑË÷²åÈëÎ»ÖÃ
+ * @version åˆ›å»ºæ—¶é—´ï¼š2018å¹´4æœˆ23æ—¥ ä¸‹åˆ3:50:25 ç±»è¯´æ˜:æœç´¢æ’å…¥ä½ç½®
  */
 public class SearchInsert_35 {
 	public int searchInsert(int[] nums, int target) {

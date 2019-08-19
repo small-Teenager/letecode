@@ -3,12 +3,12 @@ package problems.algorithm.math;
 /**
  * @author Search
  * @data 17:51 2019/2/12
- * 求解方程 640
+ * 姹傝В鏂圭▼ 640
  */
 public class SolveEquation_640 {
 
     /**
-     * 从等式中分割等号左右。使用int []表示x的累积系数和常数
+     * 浠庣瓑寮忎腑鍒嗗壊绛夊彿宸﹀彸銆備娇鐢╥nt []琛ㄧずx鐨勭疮绉郴鏁板拰甯告暟
      * @param equation
      * @return
      */
