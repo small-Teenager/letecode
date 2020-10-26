@@ -1,0 +1,18 @@
+package spi.impl;
+
+import spi.Search;
+
+import java.util.List;
+
+/**
+ * @Description TODO
+ * @Author quancong
+ * @Email quancong@ixiappu.com
+ * @Date 2020/10/26
+ */
+public class ImageSearch implements Search {
+    @Override
+    public void searchDoc(String keyword) {
+        System.out.println("image search:"+keyword);
+    }
+}
