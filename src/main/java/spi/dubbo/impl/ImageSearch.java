@@ -1,8 +1,6 @@
-package spi.impl;
+package spi.dubbo.impl;
 
-import spi.Search;
-
-import java.util.List;
+import spi.dubbo.Search;
 
 /**
  * @Description TODO
@@ -13,6 +11,6 @@ import java.util.List;
 public class ImageSearch implements Search {
     @Override
     public void searchDoc(String keyword) {
-        System.out.println("image search:"+keyword);
+        System.out.println("dubbo image search:"+keyword);
     }
 }

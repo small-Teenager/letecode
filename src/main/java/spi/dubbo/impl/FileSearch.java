@@ -1,6 +1,6 @@
-package spi.impl;
+package spi.dubbo.impl;
 
-import spi.Search;
+import spi.dubbo.Search;
 
 /**
  * @Description TODO
@@ -11,6 +11,6 @@ import spi.Search;
 public class FileSearch implements Search {
     @Override
     public void searchDoc(String keyword) {
-        System.out.println("file search:" + keyword);
+        System.out.println("dubbo file search:" + keyword);
     }
 }
