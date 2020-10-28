@@ -9,7 +9,7 @@ import com.alibaba.dubbo.common.extension.SPI;
  * @Email quancong@ixiappu.com
  * @Date 2020/10/27
  */
-@SPI
+@SPI//表明该接口是一个扩展点。可以被Dubbo的ExtentionLoader加载。
 public interface Search {
     void searchDoc(String keyword);
 }
