@@ -1,0 +1,2 @@
+fileSearch = spi.dubbo.impl.FileSearch
+imageSearch = spi.dubbo.impl.ImageSearch
