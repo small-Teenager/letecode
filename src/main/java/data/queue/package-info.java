@@ -1,4 +1,0 @@
-/**
- * queue.
- */
-package data.queue;
