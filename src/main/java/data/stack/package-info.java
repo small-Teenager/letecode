@@ -1,0 +1,4 @@
+/**
+ * stack.
+ */
+package data.stack;
